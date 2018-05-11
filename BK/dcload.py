@@ -46,6 +46,7 @@ try:
     from   win32com.server.exception import COMException
 except:
     pass
+import threading
 
 # Debugging information is set to stdout by default.  You can change
 # the out variable to another method to e.g. write to a different
@@ -72,7 +73,10 @@ class InstrumentInterface:
     # Values for setting modes of CC, CV, CW, or CR
     modes = {"cc":0, "cv":1, "cw":2, "cr":3}
     def Initialize(self, com_port, baudrate, address=0):
-        self.sp = serial.Serial(com_port, baudrate)
+        self.serialLock = threading.Lock()
+        self.serialLock.acquire()
+        self.sp = serial.Serial(com_port, baudrate, timeout=0.1, write_timeout=0.1)
+        self.serialLock.release()
         self.address = address
     def DumpCommand(self, bytes1):
         '''Print out the contents of a 26 byte command.  Example:
@@ -152,8 +156,10 @@ class InstrumentInterface:
         '''
         command = [ord(c) for c in command] # python3 hack
         assert(len(command) == self.length_packet)
+        self.serialLock.acquire()
         self.sp.write(command)
         response = self.sp.read(self.length_packet)
+        self.serialLock.release()
         response = [chr(r) for r in response] # python3 hack
         assert(len(response) == self.length_packet)
         return response

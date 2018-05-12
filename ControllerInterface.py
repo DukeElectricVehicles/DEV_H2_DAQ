@@ -13,6 +13,7 @@ from CommInterface import CommInterface
 
 class ControllerInterface(CommInterface):
 	def __init__(self,port = '/dev/tty.teensy',baudrate = 9600):
+		CommInterface.__init__(self, logfileName='controller')
 		self.serialName = port
 		self.baudRate = baudrate
 		self.timeout = 0.1
@@ -37,11 +38,13 @@ class ControllerInterface(CommInterface):
 		return toRet
 
 	def collectData(self):
+		startT = time.time()
 		while self.collecting:
 			self.poll()
 			tmp = self.readLineData();
 			if ((len(tmp)==6) or (len(tmp)==11)):
 				self.mostRecentData = tmp
+				self.log(time.time()-startT,tmp)
 			else:
 				print('alicat read error')
 	def stop(self):

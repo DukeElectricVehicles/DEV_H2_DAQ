@@ -1,684 +1,1822 @@
 Identifying serial ports...
-	port /dev/cu.usbserial is a BK DC load
+	port /dev/cu.usbserial is an Alicat flowmeter
+	port /dev/cu.usbserial11 is a BK DC load
+Finished identifying serial ports
+starting input checking
+
+Efficiency: 0.0 	estimated leakage percent 0.05 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.0975 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.14262 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.18549 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.22622 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.26491 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.30166 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.33658 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.36975 	 0.0
 Running DC load
-	original setpoint          = 3.0
+Efficiency: 0.0 	estimated leakage percent 0.40126 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.4312 	 0.0
+	original setpoint          = 3.001
 	original mode              = cw
+Efficiency: 0.0 	estimated leakage percent 0.45964 	 0.0
 	Set max current to 7 A
 	turning load on
-7.81 V	5.536 A	43.236 W	0x1c	0x100
-7.81 V	5.536 A	43.236 W	0x1c	0x100
-17.11 V	0.81 A	13.859 W	0x1c	0x0
-17.11 V	0.81 A	13.859 W	0x1c	0x0
-17.75 V	0.189 A	3.354 W	0x1c	0x0
-17.75 V	0.189 A	3.354 W	0x1c	0x0
-17.97 V	0.17 A	3.054 W	0x1c	0x100
-17.97 V	0.17 A	3.054 W	0x1c	0x100
-18.08 V	0.166 A	3.001 W	0x1c	0x100
-18.08 V	0.166 A	3.001 W	0x1c	0x100
-18.13 V	0.165 A	2.991 W	0x1c	0x100
-18.13 V	0.165 A	2.991 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.19 V	0.165 A	3.001 W	0x1c	0x100
-18.19 V	0.165 A	3.001 W	0x1c	0x100
-18.2 V	0.164 A	2.984 W	0x1c	0x100
-18.2 V	0.164 A	2.984 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.21 V	0.164 A	2.986 W	0x1c	0x100
-18.2 V	0.164 A	2.984 W	0x1c	0x100
-18.2 V	0.164 A	2.984 W	0x1c	0x100
-18.2 V	0.164 A	2.984 W	0x1c	0x100
-18.2 V	0.164 A	2.984 W	0x1c	0x100
-18.19 V	0.164 A	2.983 W	0x1c	0x100
-18.19 V	0.164 A	2.983 W	0x1c	0x100
-18.19 V	0.164 A	2.983 W	0x1c	0x100
-18.19 V	0.164 A	2.983 W	0x1c	0x100
-18.19 V	0.164 A	2.983 W	0x1c	0x100
-18.19 V	0.164 A	2.983 W	0x1c	0x100
-18.18 V	0.164 A	2.981 W	0x1c	0x100
-18.18 V	0.164 A	2.981 W	0x1c	0x100
-18.18 V	0.165 A	2.999 W	0x1c	0x100
-18.18 V	0.165 A	2.999 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.17 V	0.165 A	2.998 W	0x1c	0x100
-18.16 V	0.165 A	2.996 W	0x1c	0x100
-18.16 V	0.165 A	2.996 W	0x1c	0x100
-18.16 V	0.165 A	2.996 W	0x1c	0x100
-18.16 V	0.165 A	2.996 W	0x1c	0x100
-18.16 V	0.165 A	2.996 W	0x1c	0x100
-18.16 V	0.165 A	2.996 W	0x1c	0x100
-18.15 V	0.165 A	2.994 W	0x1c	0x100
-18.15 V	0.165 A	2.994 W	0x1c	0x100
-18.15 V	0.165 A	2.994 W	0x1c	0x100
-18.14 V	0.165 A	2.993 W	0x1c	0x100
-18.14 V	0.165 A	2.993 W	0x1c	0x0
-18.14 V	0.165 A	2.993 W	0x1c	0x0
-15.95 V	2.293 A	36.573 W	0x1c	0x0
-15.95 V	2.293 A	36.573 W	0x1c	0x0
-15.66 V	2.795 A	43.769 W	0x1c	0x0
-15.66 V	2.795 A	43.769 W	0x1c	0x0
-15.62 V	2.869 A	44.813 W	0x1c	0x0
-15.62 V	2.869 A	44.813 W	0x1c	0x0
-15.61 V	2.879 A	44.941 W	0x1c	0x100
-15.61 V	2.879 A	44.941 W	0x1c	0x100
-15.61 V	2.881 A	44.972 W	0x1c	0x100
-15.61 V	2.881 A	44.972 W	0x1c	0x100
-15.6 V	2.881 A	44.943 W	0x1c	0x100
-15.6 V	2.881 A	44.943 W	0x1c	0x100
-15.6 V	2.883 A	44.974 W	0x1c	0x100
-15.6 V	2.883 A	44.974 W	0x1c	0x100
-15.59 V	2.883 A	44.945 W	0x1c	0x100
-15.59 V	2.883 A	44.945 W	0x1c	0x100
-15.59 V	2.886 A	44.992 W	0x1c	0x100
-15.59 V	2.886 A	44.992 W	0x1c	0x100
-15.59 V	2.886 A	44.992 W	0x1c	0x100
-15.59 V	2.886 A	44.992 W	0x1c	0x100
-15.58 V	2.886 A	44.963 W	0x1c	0x100
-15.58 V	2.886 A	44.963 W	0x1c	0x100
-15.58 V	2.887 A	44.979 W	0x1c	0x100
-15.58 V	2.887 A	44.979 W	0x1c	0x100
-15.5 V	2.887 A	44.748 W	0x1c	0x0
-15.5 V	2.887 A	44.748 W	0x1c	0x0
-15.5 V	2.902 A	44.981 W	0x1c	0x100
-15.5 V	2.902 A	44.981 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.51 V	2.903 A	45.025 W	0x1c	0x100
-15.51 V	2.903 A	45.025 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.52 V	2.9 A	45.008 W	0x1c	0x100
-15.52 V	2.9 A	45.008 W	0x1c	0x100
-15.52 V	2.899 A	44.992 W	0x1c	0x100
-15.52 V	2.899 A	44.992 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.899 A	44.992 W	0x1c	0x100
-15.52 V	2.899 A	44.992 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.52 V	2.898 A	44.976 W	0x1c	0x100
-15.51 V	2.898 A	44.947 W	0x1c	0x100
-15.51 V	2.898 A	44.947 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.51 V	2.9 A	44.979 W	0x1c	0x100
-15.5 V	2.9 A	44.95 W	0x1c	0x100
-15.5 V	2.9 A	44.95 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.5 V	2.903 A	44.996 W	0x1c	0x100
-15.49 V	2.903 A	44.967 W	0x1c	0x100
-15.49 V	2.903 A	44.967 W	0x1c	0x100
-15.49 V	2.904 A	44.982 W	0x1c	0x100
-15.49 V	2.904 A	44.982 W	0x1c	0x100
-15.49 V	2.904 A	44.982 W	0x1c	0x100
-15.49 V	2.904 A	44.982 W	0x1c	0x100
-0.37 V	2.905 A	1.074 W	0x1c	0x40
-0.37 V	2.905 A	1.074 W	0x1c	0x40
-13.44 V	6.763 A	90.894 W	0x1c	0x100
-13.44 V	6.763 A	90.894 W	0x1c	0x100
-15.81 V	3.647 A	57.659 W	0x1c	0x0
-15.81 V	3.647 A	57.659 W	0x1c	0x0
-16.06 V	2.882 A	46.284 W	0x1c	0x0
-16.06 V	2.882 A	46.284 W	0x1c	0x0
-16.06 V	2.803 A	45.016 W	0x1c	0x100
-16.06 V	2.803 A	45.016 W	0x1c	0x100
-16.04 V	2.801 A	44.928 W	0x1c	0x100
-16.04 V	2.801 A	44.928 W	0x1c	0x100
-16.01 V	2.804 A	44.892 W	0x1c	0x100
-16.01 V	2.804 A	44.892 W	0x1c	0x100
-15.99 V	2.809 A	44.915 W	0x1c	0x100
-15.99 V	2.809 A	44.915 W	0x1c	0x100
-15.97 V	2.813 A	44.923 W	0x1c	0x100
-15.97 V	2.813 A	44.923 W	0x1c	0x100
-15.95 V	2.816 A	44.915 W	0x1c	0x100
-15.95 V	2.816 A	44.915 W	0x1c	0x100
-15.94 V	2.82 A	44.95 W	0x1c	0x100
-15.94 V	2.82 A	44.95 W	0x1c	0x100
-15.93 V	2.823 A	44.97 W	0x1c	0x100
-15.93 V	2.823 A	44.97 W	0x1c	0x100
-15.92 V	2.824 A	44.958 W	0x1c	0x100
-15.92 V	2.824 A	44.958 W	0x1c	0x100
-15.91 V	2.825 A	44.945 W	0x1c	0x100
-15.91 V	2.825 A	44.945 W	0x1c	0x100
-15.9 V	2.828 A	44.965 W	0x1c	0x100
-15.9 V	2.828 A	44.965 W	0x1c	0x100
-15.89 V	2.829 A	44.952 W	0x1c	0x100
-15.89 V	2.829 A	44.952 W	0x1c	0x100
-15.88 V	2.83 A	44.94 W	0x1c	0x100
-15.88 V	2.83 A	44.94 W	0x1c	0x100
-15.87 V	2.832 A	44.943 W	0x1c	0x100
-15.87 V	2.832 A	44.943 W	0x1c	0x100
-15.86 V	2.834 A	44.947 W	0x1c	0x100
-15.86 V	2.834 A	44.947 W	0x1c	0x100
-15.86 V	2.836 A	44.978 W	0x1c	0x100
-15.86 V	2.836 A	44.978 W	0x1c	0x100
-15.85 V	2.836 A	44.95 W	0x1c	0x100
-15.85 V	2.836 A	44.95 W	0x1c	0x100
-15.85 V	2.839 A	44.998 W	0x1c	0x100
-15.85 V	2.839 A	44.998 W	0x1c	0x100
-15.84 V	2.839 A	44.969 W	0x1c	0x100
-15.84 V	2.839 A	44.969 W	0x1c	0x100
-15.83 V	2.839 A	44.941 W	0x1c	0x100
-15.83 V	2.839 A	44.941 W	0x1c	0x100
-15.83 V	2.841 A	44.973 W	0x1c	0x100
-15.83 V	2.841 A	44.973 W	0x1c	0x100
-15.82 V	2.841 A	44.944 W	0x1c	0x40
-15.74 V	2.85 A	44.859 W	0x1c	0x0
-15.73 V	3.0 A	47.19 W	0x1c	0x40
-15.73 V	3.0 A	47.19 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	3.0 A	47.16 W	0x1c	0x40
-15.72 V	3.0 A	47.16 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.71 V	3.0 A	47.13 W	0x1c	0x40
-15.71 V	3.0 A	47.13 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.68 V	3.0 A	47.04 W	0x1c	0x40
-15.68 V	3.0 A	47.04 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.67 V	2.999 A	46.994 W	0x1c	0x40
-15.67 V	2.999 A	46.994 W	0x1c	0x40
-15.67 V	3.0 A	47.01 W	0x1c	0x40
-15.67 V	3.0 A	47.01 W	0x1c	0x40
-15.67 V	3.0 A	47.01 W	0x1c	0x40
-15.67 V	3.0 A	47.01 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.59 V	3.0 A	46.77 W	0x1c	0x40
-15.59 V	3.0 A	46.77 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-15.58 V	2.999 A	46.724 W	0x1c	0x40
-4.2 V	2.999 A	12.595 W	0x1c	0x40
-4.2 V	2.999 A	12.595 W	0x1c	0x40
-4.99 V	2.999 A	14.965 W	0x1c	0x40
-4.99 V	2.999 A	14.965 W	0x1c	0x40
-15.9 V	2.999 A	47.684 W	0x1c	0x40
-15.9 V	2.999 A	47.684 W	0x1c	0x40
-16.02 V	2.999 A	48.043 W	0x1c	0x40
-16.02 V	2.999 A	48.043 W	0x1c	0x40
-15.98 V	2.999 A	47.924 W	0x1c	0x40
-15.98 V	2.999 A	47.924 W	0x1c	0x40
-15.95 V	2.999 A	47.834 W	0x1c	0x40
-15.95 V	2.999 A	47.834 W	0x1c	0x40
-15.93 V	2.999 A	47.774 W	0x1c	0x40
-15.93 V	2.999 A	47.774 W	0x1c	0x40
-15.91 V	3.0 A	47.73 W	0x1c	0x40
-15.91 V	3.0 A	47.73 W	0x1c	0x40
-15.89 V	2.999 A	47.654 W	0x1c	0x40
-15.89 V	2.999 A	47.654 W	0x1c	0x40
-15.87 V	2.999 A	47.594 W	0x1c	0x40
-15.87 V	2.999 A	47.594 W	0x1c	0x40
-15.86 V	2.999 A	47.564 W	0x1c	0x40
-15.86 V	2.999 A	47.564 W	0x1c	0x40
-15.85 V	2.999 A	47.534 W	0x1c	0x40
-15.85 V	2.999 A	47.534 W	0x1c	0x40
-15.84 V	2.999 A	47.504 W	0x1c	0x40
-15.84 V	2.999 A	47.504 W	0x1c	0x40
-15.83 V	2.999 A	47.474 W	0x1c	0x40
-15.83 V	2.999 A	47.474 W	0x1c	0x40
-15.82 V	2.999 A	47.444 W	0x1c	0x40
-15.82 V	2.999 A	47.444 W	0x1c	0x40
-15.81 V	2.999 A	47.414 W	0x1c	0x40
-15.81 V	2.999 A	47.414 W	0x1c	0x40
-15.81 V	2.999 A	47.414 W	0x1c	0x40
-15.81 V	2.999 A	47.414 W	0x1c	0x40
-15.8 V	2.999 A	47.384 W	0x1c	0x40
-15.8 V	2.999 A	47.384 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.78 V	2.999 A	47.324 W	0x1c	0x40
-15.78 V	2.999 A	47.324 W	0x1c	0x40
-15.77 V	3.0 A	47.31 W	0x1c	0x40
-15.77 V	3.0 A	47.31 W	0x1c	0x40
-15.77 V	2.999 A	47.294 W	0x1c	0x40
-15.77 V	2.999 A	47.294 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.75 V	3.0 A	47.25 W	0x1c	0x40
-15.75 V	3.0 A	47.25 W	0x1c	0x40
-15.75 V	2.999 A	47.234 W	0x1c	0x40
-15.75 V	2.999 A	47.234 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.71 V	3.0 A	47.13 W	0x1c	0x40
-15.71 V	3.0 A	47.13 W	0x1c	0x40
-15.71 V	3.0 A	47.13 W	0x1c	0x40
-15.71 V	3.0 A	47.13 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	3.0 A	46.86 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-15.59 V	2.999 A	46.754 W	0x1c	0x40
-0.23 V	2.999 A	0.689 W	0x1c	0x40
-0.23 V	2.999 A	0.689 W	0x1c	0x40
-13.46 V	3.0 A	40.38 W	0x1c	0x40
-13.46 V	3.0 A	40.38 W	0x1c	0x40
-16.01 V	2.999 A	48.013 W	0x1c	0x40
-16.01 V	2.999 A	48.013 W	0x1c	0x40
-16.01 V	2.999 A	48.013 W	0x1c	0x40
-16.01 V	2.999 A	48.013 W	0x1c	0x40
-15.98 V	2.999 A	47.924 W	0x1c	0x40
-15.98 V	2.999 A	47.924 W	0x1c	0x40
-15.95 V	2.999 A	47.834 W	0x1c	0x40
-15.95 V	2.999 A	47.834 W	0x1c	0x40
-15.93 V	2.999 A	47.774 W	0x1c	0x40
-15.93 V	2.999 A	47.774 W	0x1c	0x40
-15.91 V	3.0 A	47.73 W	0x1c	0x40
-15.91 V	3.0 A	47.73 W	0x1c	0x40
-15.89 V	3.0 A	47.67 W	0x1c	0x40
-15.89 V	3.0 A	47.67 W	0x1c	0x40
-15.88 V	2.999 A	47.624 W	0x1c	0x40
-15.88 V	2.999 A	47.624 W	0x1c	0x40
-15.87 V	2.999 A	47.594 W	0x1c	0x40
-15.87 V	2.999 A	47.594 W	0x1c	0x40
-15.86 V	2.999 A	47.564 W	0x1c	0x40
-15.86 V	2.999 A	47.564 W	0x1c	0x40
-15.84 V	2.999 A	47.504 W	0x1c	0x40
-15.84 V	2.999 A	47.504 W	0x1c	0x40
-15.84 V	2.999 A	47.504 W	0x1c	0x40
-15.84 V	2.999 A	47.504 W	0x1c	0x40
-15.83 V	2.999 A	47.474 W	0x1c	0x40
-15.83 V	2.999 A	47.474 W	0x1c	0x40
-15.82 V	2.999 A	47.444 W	0x1c	0x40
-15.82 V	2.999 A	47.444 W	0x1c	0x40
-15.81 V	2.999 A	47.414 W	0x1c	0x40
-15.81 V	2.999 A	47.414 W	0x1c	0x40
-15.8 V	2.999 A	47.384 W	0x1c	0x40
-15.8 V	2.999 A	47.384 W	0x1c	0x40
-15.8 V	2.999 A	47.384 W	0x1c	0x40
-15.8 V	2.999 A	47.384 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.79 V	2.999 A	47.354 W	0x1c	0x40
-15.78 V	2.999 A	47.324 W	0x1c	0x40
-15.78 V	2.999 A	47.324 W	0x1c	0x40
-15.77 V	2.999 A	47.294 W	0x1c	0x40
-15.77 V	2.999 A	47.294 W	0x1c	0x40
-15.77 V	2.999 A	47.294 W	0x1c	0x40
-15.77 V	2.999 A	47.294 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.76 V	2.999 A	47.264 W	0x1c	0x40
-15.75 V	2.999 A	47.234 W	0x1c	0x40
-15.75 V	2.999 A	47.234 W	0x1c	0x40
-15.75 V	2.999 A	47.234 W	0x1c	0x40
-15.75 V	2.999 A	47.234 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.74 V	3.0 A	47.22 W	0x1c	0x40
-15.74 V	3.0 A	47.22 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.74 V	2.999 A	47.204 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.73 V	2.999 A	47.174 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.72 V	2.999 A	47.144 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.71 V	2.999 A	47.114 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.7 V	2.999 A	47.084 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.69 V	3.0 A	47.07 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.69 V	2.999 A	47.054 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.68 V	2.999 A	47.024 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.64 V	2.999 A	46.904 W	0x1c	0x40
-15.64 V	2.999 A	46.904 W	0x1c	0x40
-15.64 V	3.0 A	46.92 W	0x1c	0x40
-15.64 V	3.0 A	46.92 W	0x1c	0x40
-15.64 V	2.999 A	46.904 W	0x1c	0x40
-15.64 V	2.999 A	46.904 W	0x1c	0x40
-15.64 V	2.999 A	46.904 W	0x1c	0x40
-15.64 V	2.999 A	46.904 W	0x1c	0x40
-15.64 V	3.0 A	46.92 W	0x1c	0x40
-15.64 V	3.0 A	46.92 W	0x1c	0x40
-15.64 V	3.0 A	46.92 W	0x1c	0x40
-15.64 V	3.0 A	46.92 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	3.0 A	46.89 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.63 V	2.999 A	46.874 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.62 V	2.999 A	46.844 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	2.999 A	46.814 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.61 V	3.0 A	46.83 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	2.999 A	46.784 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-15.6 V	3.0 A	46.8 W	0x1c	0x40
+Efficiency: 0.0 	estimated leakage percent 0.48666 	 0.0
+Efficiency: 0.0 	estimated leakage percent 0.51232 	 0.18030000000000002
+Efficiency: 0.0 	estimated leakage percent 0.53671 	 0.36060000000000003
+Efficiency: 0.0 	estimated leakage percent 0.55987 	 0.541
+Efficiency: 0.0 	estimated leakage percent 0.58187 	 0.7214
+Efficiency: 1e-05 	estimated leakage percent 0.60278 	 0.9018000000000002
+Efficiency: 1e-05 	estimated leakage percent 0.62263 	 1.0822
+Efficiency: 1e-05 	estimated leakage percent 0.6415 	 1.2628000000000001
+Efficiency: 1e-05 	estimated leakage percent 0.65942 	 1.4434000000000002
+Efficiency: 2e-05 	estimated leakage percent 0.67644 	 1.6240000000000003
+Efficiency: 2e-05 	estimated leakage percent 0.69261 	 1.8047000000000002
+Efficiency: 2e-05 	estimated leakage percent 0.70798 	 1.9854
+Efficiency: 3e-05 	estimated leakage percent 0.72257 	 2.1661
+Efficiency: 3e-05 	estimated leakage percent 0.73643 	 2.3468
+Efficiency: 4e-05 	estimated leakage percent 0.7496 	 2.5275
+Efficiency: 4e-05 	estimated leakage percent 0.76211 	 2.7082
+Efficiency: 4e-05 	estimated leakage percent 0.774 	 2.8890000000000002
+Efficiency: 5e-05 	estimated leakage percent 0.78529 	 3.0698000000000003
+Efficiency: 5e-05 	estimated leakage percent 0.79601 	 3.2506000000000004
+Efficiency: 6e-05 	estimated leakage percent 0.8062 	 3.4314999999999998
+Efficiency: 7e-05 	estimated leakage percent 0.81588 	 3.6123999999999996
+Efficiency: 7e-05 	estimated leakage percent 0.82507 	 3.7933000000000003
+Efficiency: 8e-05 	estimated leakage percent 0.8338 	 3.9741999999999997
+Efficiency: 8e-05 	estimated leakage percent 0.8421 	 4.1552
+Efficiency: 9e-05 	estimated leakage percent 0.84998 	 4.336200000000001
+Efficiency: 9e-05 	estimated leakage percent 0.85746 	 4.5172
+Efficiency: 0.0001 	estimated leakage percent 0.86457 	 4.699000000000001
+Efficiency: 0.00011 	estimated leakage percent 0.87133 	 4.8809000000000005
+Efficiency: 0.00011 	estimated leakage percent 0.87774 	 5.0626999999999995
+Efficiency: 0.00012 	estimated leakage percent 0.88384 	 5.244400000000001
+Efficiency: 0.00013 	estimated leakage percent 0.88963 	 5.4261
+Efficiency: 0.00013 	estimated leakage percent 0.89513 	 5.607800000000001
+Efficiency: 0.00014 	estimated leakage percent 0.90035 	 5.7895
+Efficiency: 0.00015 	estimated leakage percent 0.90531 	 5.9712000000000005
+Efficiency: 0.00015 	estimated leakage percent 0.91002 	 6.1527
+Efficiency: 0.00016 	estimated leakage percent 0.9145 	 6.3342
+Efficiency: 0.00017 	estimated leakage percent 0.91875 	 6.5157
+Efficiency: 0.00017 	estimated leakage percent 0.92279 	 6.6972
+Efficiency: 0.00018 	estimated leakage percent 0.92663 	 6.878700000000001
+Efficiency: 0.00019 	estimated leakage percent 0.93027 	 7.060200000000001
+Efficiency: 0.0002 	estimated leakage percent 0.93373 	 7.241700000000001
+Efficiency: 0.0002 	estimated leakage percent 0.93702 	 7.4232000000000005
+Efficiency: 0.00021 	estimated leakage percent 0.94014 	 7.6047
+Efficiency: 0.00022 	estimated leakage percent 0.94311 	 7.7862
+Efficiency: 0.00022 	estimated leakage percent 0.94593 	 7.9677
+Efficiency: 0.00023 	estimated leakage percent 0.9486 	 8.149199999999999
+Efficiency: 0.00024 	estimated leakage percent 0.95114 	 8.330699999999998
+Efficiency: 0.00025 	estimated leakage percent 0.95356 	 8.512199999999998
+Efficiency: 0.00025 	estimated leakage percent 0.95585 	 8.693699999999998
+Efficiency: 0.00026 	estimated leakage percent 0.95802 	 8.8752
+Efficiency: 0.00027 	estimated leakage percent 0.96009 	 9.0567
+Efficiency: 0.00028 	estimated leakage percent 0.96206 	 9.238199999999999
+Efficiency: 0.00029 	estimated leakage percent 0.96392 	 9.419699999999999
+Efficiency: 0.00029 	estimated leakage percent 0.96569 	 9.6014
+Efficiency: 0.0003 	estimated leakage percent 0.96737 	 9.7831
+Efficiency: 0.00031 	estimated leakage percent 0.96897 	 9.9648
+Efficiency: 0.00032 	estimated leakage percent 0.97048 	 10.146500000000001
+Efficiency: 0.00032 	estimated leakage percent 0.97192 	 10.3282
+Efficiency: 0.00033 	estimated leakage percent 0.97329 	 10.5099
+Efficiency: 0.00034 	estimated leakage percent 0.97459 	 10.691600000000001
+Efficiency: 0.00035 	estimated leakage percent 0.97582 	 10.8733
+Efficiency: 0.00036 	estimated leakage percent 0.97699 	 11.055
+Efficiency: 0.00036 	estimated leakage percent 0.9781 	 11.236699999999999
+Efficiency: 0.00037 	estimated leakage percent 0.97916 	 11.418500000000002
+Efficiency: 0.00038 	estimated leakage percent 0.98016 	 11.600299999999999
+Efficiency: 0.00039 	estimated leakage percent 0.98111 	 11.7821
+Efficiency: 0.0004 	estimated leakage percent 0.98202 	 11.9639
+Efficiency: 0.0004 	estimated leakage percent 0.98287 	 12.1457
+Efficiency: 0.00041 	estimated leakage percent 0.98369 	 12.3275
+Efficiency: 0.00042 	estimated leakage percent 0.98446 	 12.5093
+Efficiency: 0.00043 	estimated leakage percent 0.98519 	 12.6911
+Efficiency: 0.00044 	estimated leakage percent 0.98589 	 12.8729
+Efficiency: 0.00044 	estimated leakage percent 0.98655 	 13.0547
+Efficiency: 0.00045 	estimated leakage percent 0.98717 	 13.236500000000001
+Efficiency: 0.00046 	estimated leakage percent 0.98777 	 13.906
+Efficiency: 0.00047 	estimated leakage percent 0.98833 	 14.186500000000002
+Efficiency: 0.00048 	estimated leakage percent 0.98886 	 14.375700000000002
+Efficiency: 0.00048 	estimated leakage percent 0.98937 	 14.5557
+Efficiency: 0.00049 	estimated leakage percent 0.98985 	 14.7346
+Efficiency: 0.0005 	estimated leakage percent 0.9903 	 14.913499999999999
+Efficiency: 0.00051 	estimated leakage percent 0.99074 	 15.092399999999998
+Efficiency: 0.00052 	estimated leakage percent 0.99115 	 15.271499999999998
+Efficiency: 0.00053 	estimated leakage percent 0.99154 	 15.450600000000001
+Efficiency: 0.00053 	estimated leakage percent 0.9919 	 15.6299
+Efficiency: 0.00054 	estimated leakage percent 0.99225 	 15.809199999999999
+Efficiency: 0.00055 	estimated leakage percent 0.99259 	 15.9886
+Efficiency: 0.00056 	estimated leakage percent 0.9929 	 16.168000000000003
+Efficiency: 0.01974 	estimated leakage percent 0.9632 	 16.3476
+Efficiency: 0.03818 	estimated leakage percent 0.93465 	 16.527200000000004
+Efficiency: 0.05592 	estimated leakage percent 0.90721 	 16.7069
+Efficiency: 0.07271 	estimated leakage percent 0.88124 	 16.8867
+Efficiency: 0.08916 	estimated leakage percent 0.8558 	 17.0665
+Efficiency: 0.10472 	estimated leakage percent 0.83176 	 17.2463
+Efficiency: 0.12001 	estimated leakage percent 0.80813 	 17.4262
+Efficiency: 0.13475 	estimated leakage percent 0.78536 	 17.606100000000005
+Efficiency: 0.14898 	estimated leakage percent 0.76339 	 17.7861
+Efficiency: 0.16272 	estimated leakage percent 0.74219 	 17.966100000000004
+Efficiency: 0.17569 	estimated leakage percent 0.72219 	 18.146200000000004
+Efficiency: 0.18853 	estimated leakage percent 0.70239 	 18.326300000000003
+Efficiency: 0.20064 	estimated leakage percent 0.68373 	 18.506400000000003
+Efficiency: 0.21267 	estimated leakage percent 0.66519 	 18.686600000000006
+Efficiency: 0.22379 	estimated leakage percent 0.64806 	 18.686500000000002
+Efficiency: 0.23467 	estimated leakage percent 0.63131 	 18.686400000000003
+Efficiency: 0.24469 	estimated leakage percent 0.61588 	 18.686300000000003
+Efficiency: 0.25452 	estimated leakage percent 0.60073 	 18.686200000000003
+Efficiency: 0.26386 	estimated leakage percent 0.58634 	 18.686100000000007
+Efficiency: 0.27273 	estimated leakage percent 0.57266 	 18.686100000000007
+30W
+Efficiency: 0.28085 	estimated leakage percent 0.56017 	 18.685900000000004
+Efficiency: 0.28887 	estimated leakage percent 0.5478 	 18.685700000000004
+Efficiency: 0.29649 	estimated leakage percent 0.53606 	 18.685700000000004
+Efficiency: 0.30374 	estimated leakage percent 0.5249 	 18.685600000000004
+Efficiency: 0.3103 	estimated leakage percent 0.51479 	 18.6855
+Efficiency: 0.31685 	estimated leakage percent 0.5047 	 18.6855
+Efficiency: 0.32308 	estimated leakage percent 0.49511 	 18.6855
+Efficiency: 0.32899 	estimated leakage percent 0.486 	 18.6855
+Efficiency: 0.33429 	estimated leakage percent 0.47784 	 18.6855
+Efficiency: 0.33964 	estimated leakage percent 0.46959 	 18.6855
+Efficiency: 0.34441 	estimated leakage percent 0.46225 	 18.6855
+Efficiency: 0.34926 	estimated leakage percent 0.45478 	 18.6855
+Efficiency: 0.35355 	estimated leakage percent 0.44818 	 18.685400000000005
+Efficiency: 0.35793 	estimated leakage percent 0.44142 	 18.685400000000005
+Efficiency: 0.36179 	estimated leakage percent 0.43549 	 18.685400000000005
+Efficiency: 0.36577 	estimated leakage percent 0.42936 	 18.685400000000005
+Efficiency: 0.36987 	estimated leakage percent 0.42303 	 18.685300000000005
+Efficiency: 0.37445 	estimated leakage percent 0.41596 	 18.685200000000005
+Efficiency: 0.37879 	estimated leakage percent 0.40925 	 18.685200000000005
+Efficiency: 0.38292 	estimated leakage percent 0.40288 	 18.684400000000004
+Efficiency: 0.3865 	estimated leakage percent 0.39736 	 18.684000000000005
+Efficiency: 0.3899 	estimated leakage percent 0.39211 	 18.684000000000005
+Efficiency: 0.39313 	estimated leakage percent 0.38713 	 18.684100000000004
+Efficiency: 0.3962 	estimated leakage percent 0.3824 	 18.684200000000004
+Efficiency: 0.39912 	estimated leakage percent 0.3779 	 18.684300000000004
+Efficiency: 0.40155 	estimated leakage percent 0.37415 	 18.684300000000004
+Efficiency: 0.40386 	estimated leakage percent 0.37058 	 18.684300000000004
+Efficiency: 0.40574 	estimated leakage percent 0.3677 	 18.684500000000003
+Efficiency: 0.40784 	estimated leakage percent 0.36446 	 18.684700000000003
+Efficiency: 0.40984 	estimated leakage percent 0.36138 	 18.684700000000003
+Efficiency: 0.41174 	estimated leakage percent 0.35845 	 18.684700000000003
+Efficiency: 0.41354 	estimated leakage percent 0.35567 	 18.684700000000003
+Efficiency: 0.41493 	estimated leakage percent 0.35354 	 18.684700000000003
+Efficiency: 0.41658 	estimated leakage percent 0.351 	 18.684700000000003
+Efficiency: 0.41814 	estimated leakage percent 0.34859 	 18.684700000000003
+Efficiency: 0.4193 	estimated leakage percent 0.34681 	 18.684700000000003
+Efficiency: 0.4204 	estimated leakage percent 0.34512 	 18.684700000000003
+Efficiency: 0.42177 	estimated leakage percent 0.34301 	 18.684700000000003
+Efficiency: 0.42275 	estimated leakage percent 0.3415 	 18.684700000000003
+Efficiency: 0.42368 	estimated leakage percent 0.34007 	 18.684700000000003
+Efficiency: 0.42456 	estimated leakage percent 0.33872 	 18.684700000000003
+Efficiency: 0.4254 	estimated leakage percent 0.33743 	 18.684700000000003
+Efficiency: 0.42652 	estimated leakage percent 0.3357 	 18.684700000000003
+Efficiency: 0.42726 	estimated leakage percent 0.33456 	 18.684700000000003
+Efficiency: 0.42829 	estimated leakage percent 0.33298 	 18.684700000000003
+Efficiency: 0.42894 	estimated leakage percent 0.33198 	 18.684700000000003
+Efficiency: 0.42956 	estimated leakage percent 0.33103 	 18.684500000000003
+Efficiency: 0.43015 	estimated leakage percent 0.33012 	 18.684300000000004
+Efficiency: 0.43071 	estimated leakage percent 0.32927 	 18.684300000000004
+Efficiency: 0.43124 	estimated leakage percent 0.32845 	 18.684300000000004
+Efficiency: 0.43174 	estimated leakage percent 0.32768 	 18.684300000000004
+Efficiency: 0.43191 	estimated leakage percent 0.32743 	 18.684300000000004
+Efficiency: 0.43238 	estimated leakage percent 0.32671 	 18.684300000000004
+Efficiency: 0.43283 	estimated leakage percent 0.32602 	 18.684300000000004
+Efficiency: 0.43325 	estimated leakage percent 0.32537 	 18.684300000000004
+Efficiency: 0.43334 	estimated leakage percent 0.32524 	 18.684300000000004
+Efficiency: 0.43374 	estimated leakage percent 0.32463 	 18.6842
+Efficiency: 0.43412 	estimated leakage percent 0.32404 	 18.6842
+Efficiency: 0.43448 	estimated leakage percent 0.32349 	 18.6842
+Efficiency: 0.43451 	estimated leakage percent 0.32345 	 18.6842
+Efficiency: 0.43485 	estimated leakage percent 0.32293 	 18.6842
+Efficiency: 0.43517 	estimated leakage percent 0.32243 	 18.6842
+Efficiency: 0.43548 	estimated leakage percent 0.32196 	 18.6841
+Efficiency: 0.43546 	estimated leakage percent 0.322 	 18.6841
+Efficiency: 0.43607 	estimated leakage percent 0.32104 	 18.6841
+Efficiency: 0.43722 	estimated leakage percent 0.31962 	 18.6841
+Efficiency: 0.43853 	estimated leakage percent 0.31826 	 18.684
+Efficiency: 0.43927 	estimated leakage percent 0.31789 	 18.196300000000004
+Efficiency: 0.43973 	estimated leakage percent 0.31738 	 18.2805
+Efficiency: 0.44063 	estimated leakage percent 0.31599 	 18.7638
+Efficiency: 0.44123 	estimated leakage percent 0.31506 	 18.829500000000003
+Efficiency: 0.44155 	estimated leakage percent 0.31457 	 18.896300000000004
+Efficiency: 0.44186 	estimated leakage percent 0.31409 	 18.902
+Efficiency: 0.44249 	estimated leakage percent 0.31312 	 18.902700000000003
+Efficiency: 0.44308 	estimated leakage percent 0.3122 	 18.9025
+Efficiency: 0.44364 	estimated leakage percent 0.31132 	 18.902300000000004
+Efficiency: 0.44385 	estimated leakage percent 0.31101 	 18.9021
+Efficiency: 0.44404 	estimated leakage percent 0.3107 	 18.9019
+Efficiency: 0.44456 	estimated leakage percent 0.30991 	 18.9017
+Efficiency: 0.44472 	estimated leakage percent 0.30966 	 18.9016
+Efficiency: 0.44487 	estimated leakage percent 0.30943 	 18.901300000000003
+Efficiency: 0.44535 	estimated leakage percent 0.30869 	 18.901100000000003
+Efficiency: 0.4458 	estimated leakage percent 0.308 	 18.901000000000003
+Efficiency: 0.44589 	estimated leakage percent 0.30785 	 18.900900000000004
+Efficiency: 0.44599 	estimated leakage percent 0.30771 	 18.9008
+Efficiency: 0.44608 	estimated leakage percent 0.30757 	 18.900700000000004
+Efficiency: 0.44616 	estimated leakage percent 0.30744 	 18.900600000000004
+Efficiency: 0.44624 	estimated leakage percent 0.30732 	 18.900500000000005
+Efficiency: 0.44632 	estimated leakage percent 0.30721 	 18.9003
+Efficiency: 0.44672 	estimated leakage percent 0.30659 	 18.9003
+Efficiency: 0.44677 	estimated leakage percent 0.30651 	 18.9002
+Efficiency: 0.44682 	estimated leakage percent 0.30644 	 18.900100000000002
+Efficiency: 0.44687 	estimated leakage percent 0.30637 	 18.899900000000002
+Efficiency: 0.44691 	estimated leakage percent 0.3063 	 18.899800000000003
+Efficiency: 0.44696 	estimated leakage percent 0.30624 	 18.899700000000006
+Efficiency: 0.447 	estimated leakage percent 0.30618 	 18.899700000000006
+Efficiency: 0.44671 	estimated leakage percent 0.30662 	 18.899600000000003
+Efficiency: 0.44677 	estimated leakage percent 0.30654 	 18.899500000000003
+Efficiency: 0.44682 	estimated leakage percent 0.30646 	 18.899500000000003
+Efficiency: 0.44686 	estimated leakage percent 0.30639 	 18.8994
+Efficiency: 0.44659 	estimated leakage percent 0.30682 	 18.8994
+Efficiency: 0.44665 	estimated leakage percent 0.30674 	 18.8994
+Efficiency: 0.44638 	estimated leakage percent 0.30715 	 18.899200000000004
+Efficiency: 0.44645 	estimated leakage percent 0.30704 	 18.899000000000004
+Efficiency: 0.4462 	estimated leakage percent 0.30744 	 18.899000000000004
+Efficiency: 0.44628 	estimated leakage percent 0.30732 	 18.8989
+Efficiency: 0.44603 	estimated leakage percent 0.30771 	 18.898800000000005
+Efficiency: 0.44612 	estimated leakage percent 0.30758 	 18.8987
+Efficiency: 0.44588 	estimated leakage percent 0.30795 	 18.898600000000002
+Efficiency: 0.44597 	estimated leakage percent 0.30781 	 18.898500000000002
+Efficiency: 0.44574 	estimated leakage percent 0.30817 	 18.898400000000002
+Efficiency: 0.44584 	estimated leakage percent 0.30801 	 18.898400000000002
+Efficiency: 0.44562 	estimated leakage percent 0.30836 	 18.898400000000002
+Efficiency: 0.44573 	estimated leakage percent 0.3082 	 18.898300000000003
+Efficiency: 0.44551 	estimated leakage percent 0.30854 	 18.8982
+Efficiency: 0.44562 	estimated leakage percent 0.30837 	 18.898100000000003
+Efficiency: 0.44541 	estimated leakage percent 0.3087 	 18.898000000000003
+Efficiency: 0.44553 	estimated leakage percent 0.30852 	 18.898000000000003
+Efficiency: 0.44631 	estimated leakage percent 0.30732 	 18.897900000000003
+Efficiency: 0.4474 	estimated leakage percent 0.30563 	 18.897800000000004
+Efficiency: 0.44843 	estimated leakage percent 0.30402 	 18.8972
+Efficiency: 0.44907 	estimated leakage percent 0.30304 	 18.896400000000003
+Efficiency: 0.44967 	estimated leakage percent 0.30211 	 18.8956
+Efficiency: 0.4499 	estimated leakage percent 0.30176 	 18.8956
+Efficiency: 0.45046 	estimated leakage percent 0.30089 	 18.8957
+Efficiency: 0.451 	estimated leakage percent 0.30007 	 18.8958
+Efficiency: 0.4515 	estimated leakage percent 0.29929 	 18.8958
+Efficiency: 0.45164 	estimated leakage percent 0.29907 	 18.8958
+Efficiency: 0.45145 	estimated leakage percent 0.29938 	 18.8958
+Efficiency: 0.45159 	estimated leakage percent 0.29916 	 18.896
+Efficiency: 0.45173 	estimated leakage percent 0.29895 	 18.896200000000004
+Efficiency: 0.45186 	estimated leakage percent 0.29875 	 18.896200000000004
+Efficiency: 0.45165 	estimated leakage percent 0.29907 	 18.896200000000004
+Efficiency: 0.45146 	estimated leakage percent 0.29938 	 18.896200000000004
+Efficiency: 0.45127 	estimated leakage percent 0.29967 	 18.896200000000004
+Efficiency: 0.45143 	estimated leakage percent 0.29943 	 18.896200000000004
+Efficiency: 0.45124 	estimated leakage percent 0.29972 	 18.896200000000004
+Efficiency: 0.45107 	estimated leakage percent 0.29999 	 18.896200000000004
+Efficiency: 0.45123 	estimated leakage percent 0.29974 	 18.896200000000004
+Efficiency: 0.45106 	estimated leakage percent 0.30001 	 18.896200000000004
+Efficiency: 0.45089 	estimated leakage percent 0.30027 	 18.896200000000004
+Efficiency: 0.45074 	estimated leakage percent 0.30051 	 18.896200000000004
+Efficiency: 0.45059 	estimated leakage percent 0.30075 	 18.896200000000004
+Efficiency: 0.45012 	estimated leakage percent 0.30146 	 18.896200000000004
+Efficiency: 0.45001 	estimated leakage percent 0.30165 	 18.896200000000004
+Efficiency: 0.44989 	estimated leakage percent 0.30183 	 18.896200000000004
+Efficiency: 0.44979 	estimated leakage percent 0.30199 	 18.896200000000004
+Efficiency: 0.44968 	estimated leakage percent 0.30215 	 18.896200000000004
+Efficiency: 0.44927 	estimated leakage percent 0.3028 	 18.896
+Efficiency: 0.44919 	estimated leakage percent 0.30292 	 18.896
+Efficiency: 0.44912 	estimated leakage percent 0.30303 	 18.896
+Efficiency: 0.44905 	estimated leakage percent 0.30314 	 18.896
+Efficiency: 0.44867 	estimated leakage percent 0.30374 	 18.896
+Efficiency: 0.44862 	estimated leakage percent 0.30381 	 18.896
+Efficiency: 0.44858 	estimated leakage percent 0.30388 	 18.896
+Efficiency: 0.44854 	estimated leakage percent 0.30394 	 18.8961
+Efficiency: 0.4485 	estimated leakage percent 0.30401 	 18.8961
+Efficiency: 0.44814 	estimated leakage percent 0.30456 	 18.896
+Efficiency: 0.44812 	estimated leakage percent 0.30459 	 18.895900000000005
+Efficiency: 0.44778 	estimated leakage percent 0.30512 	 18.8958
+Efficiency: 0.44778 	estimated leakage percent 0.30512 	 18.8958
+Efficiency: 0.44746 	estimated leakage percent 0.30562 	 18.8958
+Efficiency: 0.44748 	estimated leakage percent 0.3056 	 18.895900000000005
+Efficiency: 0.44717 	estimated leakage percent 0.30608 	 18.895900000000005
+Efficiency: 0.4472 	estimated leakage percent 0.30603 	 18.895900000000005
+Efficiency: 0.44691 	estimated leakage percent 0.30649 	 18.895900000000005
+Efficiency: 0.44728 	estimated leakage percent 0.30591 	 18.896
+Efficiency: 0.44775 	estimated leakage percent 0.30536 	 18.896
+Efficiency: 0.44867 	estimated leakage percent 0.30466 	 18.713200000000004
+Efficiency: 0.4485 	estimated leakage percent 0.30543 	 18.222500000000004
+Efficiency: 0.44838 	estimated leakage percent 0.30578 	 18.158600000000003
+Efficiency: 0.44823 	estimated leakage percent 0.30541 	 18.526600000000006
+Efficiency: 0.44811 	estimated leakage percent 0.30498 	 18.849600000000006
+alicat read error ['']
+Efficiency: 0.44837 	estimated leakage percent 0.30396 	 18.888800000000003
+Efficiency: 0.44897 	estimated leakage percent 0.30245 	 18.892200000000003
+Efficiency: 0.44989 	estimated leakage percent 0.30046 	 18.8926
+Efficiency: 0.45114 	estimated leakage percent 0.29799 	 18.892800000000005
+Efficiency: 0.45232 	estimated leakage percent 0.29564 	 18.8926
+Efficiency: 0.45381 	estimated leakage percent 0.29281 	 18.892300000000002
+Efficiency: 0.45563 	estimated leakage percent 0.28952 	 18.8921
+Efficiency: 0.45735 	estimated leakage percent 0.28639 	 18.892
+Efficiency: 0.45938 	estimated leakage percent 0.28278 	 18.8919
+Efficiency: 0.46173 	estimated leakage percent 0.2787 	 18.891599999999997
+Efficiency: 0.4644 	estimated leakage percent 0.27414 	 18.891299999999998
+Efficiency: 0.46692 	estimated leakage percent 0.26982 	 18.891099999999998
+Efficiency: 0.46977 	estimated leakage percent 0.26501 	 18.891
+Efficiency: 0.47247 	estimated leakage percent 0.26044 	 18.8909
+Efficiency: 0.4755 	estimated leakage percent 0.25537 	 18.8908
+Efficiency: 0.47838 	estimated leakage percent 0.25056 	 18.8907
+Efficiency: 0.48159 	estimated leakage percent 0.24524 	 18.8905
+Efficiency: 0.48513 	estimated leakage percent 0.23941 	 18.8903
+Efficiency: 0.48849 	estimated leakage percent 0.23387 	 18.8902
+Efficiency: 0.4922 	estimated leakage percent 0.2278 	 18.8903
+Efficiency: 0.49572 	estimated leakage percent 0.22203 	 18.8902
+Efficiency: 0.49264 	estimated leakage percent 0.22669 	 18.8902
+Efficiency: 0.49002 	estimated leakage percent 0.23063 	 18.8901
+Efficiency: 0.48722 	estimated leakage percent 0.23486 	 18.889999999999997
+Efficiency: 0.48456 	estimated leakage percent 0.23889 	 18.889899999999997
+Efficiency: 0.48204 	estimated leakage percent 0.24271 	 18.889799999999997
+Efficiency: 0.47995 	estimated leakage percent 0.24584 	 18.889699999999998
+Efficiency: 0.47766 	estimated leakage percent 0.24932 	 18.889599999999998
+Efficiency: 0.47579 	estimated leakage percent 0.25212 	 18.889499999999995
+Efficiency: 0.4737 	estimated leakage percent 0.25529 	 18.8894
+Efficiency: 0.47204 	estimated leakage percent 0.25779 	 18.8894
+Efficiency: 0.47014 	estimated leakage percent 0.26067 	 18.8892
+Efficiency: 0.46833 	estimated leakage percent 0.26341 	 18.8891
+Efficiency: 0.46662 	estimated leakage percent 0.266 	 18.8891
+Efficiency: 0.4653 	estimated leakage percent 0.26797 	 18.8891
+Efficiency: 0.46374 	estimated leakage percent 0.27034 	 18.8891
+Efficiency: 0.46226 	estimated leakage percent 0.27259 	 18.888999999999996
+Efficiency: 0.46084 	estimated leakage percent 0.27473 	 18.888999999999996
+Efficiency: 0.45982 	estimated leakage percent 0.27627 	 18.8888
+Efficiency: 0.45853 	estimated leakage percent 0.27822 	 18.888699999999996
+Efficiency: 0.45731 	estimated leakage percent 0.28008 	 18.8886
+Efficiency: 0.45614 	estimated leakage percent 0.28185 	 18.8886
+Efficiency: 0.45535 	estimated leakage percent 0.28303 	 18.8886
+Efficiency: 0.45429 	estimated leakage percent 0.28464 	 18.8886
+Efficiency: 0.45297 	estimated leakage percent 0.28666 	 18.8885
+Efficiency: 0.45202 	estimated leakage percent 0.2881 	 18.8885
+Efficiency: 0.45144 	estimated leakage percent 0.28897 	 18.8885
+Efficiency: 0.45121 	estimated leakage percent 0.28928 	 18.8885
+Efficiency: 0.45132 	estimated leakage percent 0.28905 	 18.8884
+Efficiency: 0.45177 	estimated leakage percent 0.2883 	 18.888299999999997
+Efficiency: 0.4522 	estimated leakage percent 0.28758 	 18.8875
+Efficiency: 0.45297 	estimated leakage percent 0.28634 	 18.886599999999998
+Efficiency: 0.45406 	estimated leakage percent 0.28459 	 18.8858
+Efficiency: 0.45509 	estimated leakage percent 0.28292 	 18.885099999999998
+Efficiency: 0.45645 	estimated leakage percent 0.28075 	 18.884399999999996
+Efficiency: 0.45774 	estimated leakage percent 0.27869 	 18.883699999999997
+Efficiency: 0.45936 	estimated leakage percent 0.27612 	 18.8831
+Efficiency: 0.46089 	estimated leakage percent 0.27368 	 18.882499999999997
+Efficiency: 0.46275 	estimated leakage percent 0.27072 	 18.8821
+Efficiency: 0.46452 	estimated leakage percent 0.26792 	 18.8817
+Efficiency: 0.46661 	estimated leakage percent 0.2646 	 18.8814
+Efficiency: 0.46819 	estimated leakage percent 0.26211 	 18.8811
+Efficiency: 0.4701 	estimated leakage percent 0.25908 	 18.880799999999997
+Efficiency: 0.47191 	estimated leakage percent 0.25621 	 18.880499999999998
+Efficiency: 0.47364 	estimated leakage percent 0.25348 	 18.8802
+Efficiency: 0.47527 	estimated leakage percent 0.25089 	 18.8799
+Efficiency: 0.47726 	estimated leakage percent 0.24775 	 18.8797
+Efficiency: 0.47872 	estimated leakage percent 0.24544 	 18.8795
+Efficiency: 0.48053 	estimated leakage percent 0.24258 	 18.879299999999997
+Efficiency: 0.48225 	estimated leakage percent 0.23986 	 18.879099999999998
+Efficiency: 0.48389 	estimated leakage percent 0.23727 	 18.878899999999998
+Efficiency: 0.48544 	estimated leakage percent 0.23482 	 18.8787
+Efficiency: 0.48692 	estimated leakage percent 0.23248 	 18.8786
+Efficiency: 0.48832 	estimated leakage percent 0.23027 	 18.8785
+Efficiency: 0.4901 	estimated leakage percent 0.22746 	 18.878399999999996
+Efficiency: 0.49178 	estimated leakage percent 0.2248 	 18.8783
+Efficiency: 0.49339 	estimated leakage percent 0.22227 	 18.8781
+Efficiency: 0.49447 	estimated leakage percent 0.22057 	 18.877899999999997
+Efficiency: 0.49594 	estimated leakage percent 0.21825 	 18.8777
+Efficiency: 0.49733 	estimated leakage percent 0.21605 	 18.8775
+Efficiency: 0.49866 	estimated leakage percent 0.21395 	 18.8773
+Efficiency: 0.49947 	estimated leakage percent 0.21267 	 18.8771
+Efficiency: 0.50069 	estimated leakage percent 0.21075 	 18.8768
+Efficiency: 0.50231 	estimated leakage percent 0.2082 	 18.8766
+Efficiency: 0.50338 	estimated leakage percent 0.2065 	 18.8766
+Efficiency: 0.50486 	estimated leakage percent 0.20416 	 18.8766
+Efficiency: 0.50581 	estimated leakage percent 0.20267 	 18.8766
+Efficiency: 0.50717 	estimated leakage percent 0.20052 	 18.8765
+Efficiency: 0.508 	estimated leakage percent 0.19921 	 18.8764
+Efficiency: 0.50925 	estimated leakage percent 0.19724 	 18.8763
+Efficiency: 0.50998 	estimated leakage percent 0.19609 	 18.8763
+Efficiency: 0.51113 	estimated leakage percent 0.19428 	 18.8763
+Efficiency: 0.51177 	estimated leakage percent 0.19328 	 18.8763
+Efficiency: 0.51283 	estimated leakage percent 0.1916 	 18.8763
+Efficiency: 0.51338 	estimated leakage percent 0.19073 	 18.8763
+Efficiency: 0.51484 	estimated leakage percent 0.18844 	 18.8762
+Efficiency: 0.51649 	estimated leakage percent 0.18625 	 18.8762
+Efficiency: 0.51883 	estimated leakage percent 0.1834 	 18.8762
+Efficiency: 0.52098 	estimated leakage percent 0.18169 	 18.444300000000002
+Efficiency: 0.52259 	estimated leakage percent 0.18082 	 18.1186
+Efficiency: 0.52357 	estimated leakage percent 0.18081 	 18.081699999999998
+Efficiency: 0.5245 	estimated leakage percent 0.18081 	 18.0813
+Efficiency: 0.52491 	estimated leakage percent 0.18152 	 18.083899999999996
+Efficiency: 0.52529 	estimated leakage percent 0.1822 	 18.0864
+Efficiency: 0.5252 	estimated leakage percent 0.18352 	 18.0894
+Efficiency: 0.52511 	estimated leakage percent 0.18477 	 18.0924
+Efficiency: 0.52459 	estimated leakage percent 0.18663 	 18.0953
+Efficiency: 0.52409 	estimated leakage percent 0.18838 	 18.098
+Efficiency: 0.52361 	estimated leakage percent 0.19004 	 18.1006
+Efficiency: 0.52273 	estimated leakage percent 0.19227 	 18.103199999999998
+Efficiency: 0.52148 	estimated leakage percent 0.195 	 18.1057
+Efficiency: 0.52029 	estimated leakage percent 0.19759 	 18.1081
+Efficiency: 0.51916 	estimated leakage percent 0.20005 	 18.1105
+Efficiency: 0.51769 	estimated leakage percent 0.20298 	 18.112799999999996
+Efficiency: 0.51629 	estimated leakage percent 0.20577 	 18.115099999999998
+Efficiency: 0.51457 	estimated leakage percent 0.209 	 18.117399999999996
+Efficiency: 0.51293 	estimated leakage percent 0.21206 	 18.1196
+Efficiency: 0.51101 	estimated leakage percent 0.21554 	 18.121899999999997
+Efficiency: 0.50917 	estimated leakage percent 0.21884 	 18.124099999999995
+Efficiency: 0.50707 	estimated leakage percent 0.22252 	 18.126199999999997
+Efficiency: 0.51334 	estimated leakage percent 0.21348 	 18.128299999999996
+Efficiency: 0.51866 	estimated leakage percent 0.20587 	 18.1303
+Efficiency: 0.52435 	estimated leakage percent 0.19765 	 18.132299999999997
+Efficiency: 0.52911 	estimated leakage percent 0.19082 	 18.134199999999996
+Efficiency: 0.53428 	estimated leakage percent 0.18335 	 18.1363
+Efficiency: 0.53855 	estimated leakage percent 0.17722 	 18.138299999999997
+Efficiency: 0.54325 	estimated leakage percent 0.17042 	 18.140299999999996
+Efficiency: 0.54706 	estimated leakage percent 0.16493 	 18.1422
+Efficiency: 0.55134 	estimated leakage percent 0.15873 	 18.144099999999998
+Efficiency: 0.55475 	estimated leakage percent 0.15381 	 18.145999999999997
+Efficiency: 0.55864 	estimated leakage percent 0.14816 	 18.1478
+Efficiency: 0.56301 	estimated leakage percent 0.14176 	 18.1496
+Efficiency: 0.56648 	estimated leakage percent 0.1367 	 18.1513
+Efficiency: 0.56914 	estimated leakage percent 0.13287 	 18.1529
+Efficiency: 0.57231 	estimated leakage percent 0.12825 	 18.1545
+Efficiency: 0.57599 	estimated leakage percent 0.12283 	 18.1562
+Efficiency: 0.57882 	estimated leakage percent 0.1187 	 18.157899999999998
+Efficiency: 0.58151 	estimated leakage percent 0.11477 	 18.159499999999998
+Efficiency: 0.58406 	estimated leakage percent 0.11103 	 18.161199999999997
+Efficiency: 0.58715 	estimated leakage percent 0.10646 	 18.1628
+Efficiency: 0.58942 	estimated leakage percent 0.10313 	 18.164399999999997
+Efficiency: 0.59158 	estimated leakage percent 0.09996 	 18.1659
+Efficiency: 0.59363 	estimated leakage percent 0.09695 	 18.167399999999997
+Efficiency: 0.59624 	estimated leakage percent 0.09306 	 18.1689
+Efficiency: 0.59806 	estimated leakage percent 0.09039 	 18.170499999999997
+Efficiency: 0.59978 	estimated leakage percent 0.08784 	 18.171999999999997
+Efficiency: 0.60142 	estimated leakage percent 0.08542 	 18.1735
+Efficiency: 0.60297 	estimated leakage percent 0.08311 	 18.174999999999997
+Efficiency: 0.60445 	estimated leakage percent 0.08092 	 18.176499999999997
+Efficiency: 0.60653 	estimated leakage percent 0.07781 	 18.177999999999997
+Efficiency: 0.60783 	estimated leakage percent 0.07587 	 18.179399999999998
+Efficiency: 0.60906 	estimated leakage percent 0.07403 	 18.180799999999998
+Efficiency: 0.61023 	estimated leakage percent 0.07227 	 18.182199999999998
+Efficiency: 0.61202 	estimated leakage percent 0.06958 	 18.1836
+Efficiency: 0.61305 	estimated leakage percent 0.06804 	 18.185
+Efficiency: 0.61402 	estimated leakage percent 0.06657 	 18.1864
+Efficiency: 0.61494 	estimated leakage percent 0.06518 	 18.1877
+Efficiency: 0.61582 	estimated leakage percent 0.06385 	 18.188999999999997
+Efficiency: 0.61666 	estimated leakage percent 0.06258 	 18.190399999999997
+Efficiency: 0.61745 	estimated leakage percent 0.06137 	 18.191799999999997
+Efficiency: 0.6182 	estimated leakage percent 0.06022 	 18.193099999999998
+Efficiency: 0.61892 	estimated leakage percent 0.05912 	 18.194399999999998
+Efficiency: 0.6196 	estimated leakage percent 0.05808 	 18.1957
+Efficiency: 0.62024 	estimated leakage percent 0.05708 	 18.197
+Efficiency: 0.62153 	estimated leakage percent 0.05511 	 18.198199999999996
+Efficiency: 0.62208 	estimated leakage percent 0.05425 	 18.1997
+Efficiency: 0.6226 	estimated leakage percent 0.05344 	 18.2011
+Efficiency: 0.6231 	estimated leakage percent 0.05266 	 18.202499999999997
+Efficiency: 0.62424 	estimated leakage percent 0.05089 	 18.203899999999997
+Efficiency: 0.62466 	estimated leakage percent 0.05023 	 18.205299999999998
+Efficiency: 0.62572 	estimated leakage percent 0.04858 	 18.206699999999998
+Efficiency: 0.62606 	estimated leakage percent 0.04803 	 18.208099999999998
+Efficiency: 0.62706 	estimated leakage percent 0.04648 	 18.2094
+Efficiency: 0.62733 	estimated leakage percent 0.04602 	 18.2107
+Efficiency: 0.62759 	estimated leakage percent 0.04559 	 18.212
+Efficiency: 0.62784 	estimated leakage percent 0.04518 	 18.2133
+Efficiency: 0.62875 	estimated leakage percent 0.04375 	 18.214499999999997
+Efficiency: 0.62894 	estimated leakage percent 0.04342 	 18.215799999999998
+Efficiency: 0.62912 	estimated leakage percent 0.04311 	 18.2171
+Efficiency: 0.62929 	estimated leakage percent 0.0428 	 18.2184
+Efficiency: 0.63013 	estimated leakage percent 0.04148 	 18.2197
+Efficiency: 0.63025 	estimated leakage percent 0.04125 	 18.220999999999997
+Efficiency: 0.63037 	estimated leakage percent 0.04103 	 18.222299999999997
+Efficiency: 0.63048 	estimated leakage percent 0.04082 	 18.223599999999998
+Efficiency: 0.63058 	estimated leakage percent 0.04061 	 18.224699999999995
+Efficiency: 0.63068 	estimated leakage percent 0.04041 	 18.225799999999996
+Efficiency: 0.63078 	estimated leakage percent 0.04022 	 18.226899999999997
+Efficiency: 0.63087 	estimated leakage percent 0.04003 	 18.227999999999994
+Efficiency: 0.63095 	estimated leakage percent 0.03985 	 18.2291
+Efficiency: 0.63103 	estimated leakage percent 0.03968 	 18.230299999999996
+Efficiency: 0.63111 	estimated leakage percent 0.03951 	 18.231399999999994
+Efficiency: 0.63118 	estimated leakage percent 0.03935 	 18.232499999999998
+Efficiency: 0.63125 	estimated leakage percent 0.03919 	 18.233599999999996
+Efficiency: 0.63132 	estimated leakage percent 0.03904 	 18.234699999999997
+Efficiency: 0.63138 	estimated leakage percent 0.0389 	 18.235799999999994
+Efficiency: 0.63144 	estimated leakage percent 0.03875 	 18.236899999999995
+Efficiency: 0.6315 	estimated leakage percent 0.03861 	 18.237999999999996
+Efficiency: 0.63222 	estimated leakage percent 0.03745 	 18.239099999999993
+Efficiency: 0.63224 	estimated leakage percent 0.03737 	 18.240199999999998
+Efficiency: 0.63226 	estimated leakage percent 0.0373 	 18.241199999999996
+Efficiency: 0.63227 	estimated leakage percent 0.03722 	 18.242199999999993
+Efficiency: 0.63296 	estimated leakage percent 0.03612 	 18.243199999999998
+Efficiency: 0.63294 	estimated leakage percent 0.03609 	 18.244299999999996
+Efficiency: 0.63292 	estimated leakage percent 0.03607 	 18.245499999999996
+Efficiency: 0.63291 	estimated leakage percent 0.03604 	 18.246599999999997
+Efficiency: 0.63356 	estimated leakage percent 0.03499 	 18.247700000000002
+Efficiency: 0.63351 	estimated leakage percent 0.03501 	 18.248700000000003
+Efficiency: 0.63282 	estimated leakage percent 0.03601 	 18.249800000000004
+Efficiency: 0.63281 	estimated leakage percent 0.03597 	 18.250900000000005
+Efficiency: 0.63347 	estimated leakage percent 0.03491 	 18.252000000000006
+Efficiency: 0.63343 	estimated leakage percent 0.03492 	 18.253100000000007
+Efficiency: 0.63339 	estimated leakage percent 0.03493 	 18.254200000000004
+Efficiency: 0.63335 	estimated leakage percent 0.03494 	 18.255200000000002
+Efficiency: 0.63331 	estimated leakage percent 0.03495 	 18.256200000000007
+Efficiency: 0.63327 	estimated leakage percent 0.03495 	 18.257200000000008
+Efficiency: 0.63324 	estimated leakage percent 0.03494 	 18.258200000000006
+Efficiency: 0.63321 	estimated leakage percent 0.03494 	 18.259300000000007
+Efficiency: 0.63318 	estimated leakage percent 0.03493 	 18.260300000000008
+Efficiency: 0.63315 	estimated leakage percent 0.03492 	 18.261300000000006
+Efficiency: 0.63312 	estimated leakage percent 0.03491 	 18.262300000000007
+Efficiency: 0.6331 	estimated leakage percent 0.0349 	 18.263300000000008
+Efficiency: 0.63307 	estimated leakage percent 0.03488 	 18.264300000000006
+Efficiency: 0.63305 	estimated leakage percent 0.03487 	 18.265300000000007
+Efficiency: 0.63303 	estimated leakage percent 0.03485 	 18.266400000000004
+Efficiency: 0.63301 	estimated leakage percent 0.03483 	 18.267300000000006
+Efficiency: 0.63299 	estimated leakage percent 0.0348 	 18.268200000000007
+Efficiency: 0.63297 	estimated leakage percent 0.03478 	 18.269100000000005
+Efficiency: 0.63295 	estimated leakage percent 0.03476 	 18.270000000000007
+Efficiency: 0.63361 	estimated leakage percent 0.0337 	 18.270900000000008
+Efficiency: 0.63356 	estimated leakage percent 0.03373 	 18.271800000000006
+Efficiency: 0.63286 	estimated leakage percent 0.03473 	 18.272700000000004
+Efficiency: 0.63285 	estimated leakage percent 0.0347 	 18.273600000000005
+Efficiency: 0.63351 	estimated leakage percent 0.03364 	 18.274500000000007
+Efficiency: 0.63347 	estimated leakage percent 0.03366 	 18.275400000000005
+Efficiency: 0.63278 	estimated leakage percent 0.03466 	 18.276300000000003
+Efficiency: 0.63277 	estimated leakage percent 0.03462 	 18.277100000000008
+Efficiency: 0.63276 	estimated leakage percent 0.03459 	 18.277900000000006
+Efficiency: 0.63275 	estimated leakage percent 0.03455 	 18.278700000000008
+Efficiency: 0.63274 	estimated leakage percent 0.03451 	 18.27950000000001
+Efficiency: 0.63273 	estimated leakage percent 0.03447 	 18.280300000000008
+Efficiency: 0.63208 	estimated leakage percent 0.03542 	 18.281100000000006
+Efficiency: 0.63211 	estimated leakage percent 0.03533 	 18.281900000000007
+Efficiency: 0.63213 	estimated leakage percent 0.03525 	 18.282700000000006
+Efficiency: 0.63215 	estimated leakage percent 0.03516 	 18.283500000000004
+Efficiency: 0.63217 	estimated leakage percent 0.03508 	 18.284200000000006
+Efficiency: 0.63219 	estimated leakage percent 0.035 	 18.284900000000004
+Efficiency: 0.63221 	estimated leakage percent 0.03492 	 18.285600000000006
+Efficiency: 0.63223 	estimated leakage percent 0.03485 	 18.286500000000004
+Efficiency: 0.63225 	estimated leakage percent 0.03478 	 18.287400000000005
+Efficiency: 0.63226 	estimated leakage percent 0.0347 	 18.288300000000003
+Efficiency: 0.63228 	estimated leakage percent 0.03463 	 18.289200000000005
+Efficiency: 0.63229 	estimated leakage percent 0.03456 	 18.290100000000006
+Efficiency: 0.6323 	estimated leakage percent 0.03449 	 18.291000000000007
+Efficiency: 0.63232 	estimated leakage percent 0.03442 	 18.291900000000005
+Efficiency: 0.63233 	estimated leakage percent 0.03436 	 18.292800000000007
+Efficiency: 0.63234 	estimated leakage percent 0.03429 	 18.293700000000005
+Efficiency: 0.63235 	estimated leakage percent 0.03423 	 18.294600000000006
+Efficiency: 0.63236 	estimated leakage percent 0.03416 	 18.295500000000004
+Efficiency: 0.63238 	estimated leakage percent 0.0341 	 18.296200000000006
+Efficiency: 0.63239 	estimated leakage percent 0.03404 	 18.297000000000004
+Efficiency: 0.63239 	estimated leakage percent 0.03398 	 18.297800000000006
+Efficiency: 0.6324 	estimated leakage percent 0.03392 	 18.298600000000004
+Efficiency: 0.63241 	estimated leakage percent 0.03386 	 18.299400000000006
+Efficiency: 0.63242 	estimated leakage percent 0.0338 	 18.300200000000007
+alicat read error ['']
+Efficiency: 0.6331 	estimated leakage percent 0.03271 	 18.301200000000005
+Efficiency: 0.63445 	estimated leakage percent 0.0306 	 18.301900000000007
+Efficiency: 0.63573 	estimated leakage percent 0.0286 	 18.30260000000001
+Efficiency: 0.63695 	estimated leakage percent 0.02669 	 18.303300000000007
+Efficiency: 0.63884 	estimated leakage percent 0.02376 	 18.30400000000001
+Efficiency: 0.64063 	estimated leakage percent 0.02097 	 18.304700000000008
+Efficiency: 0.64311 	estimated leakage percent 0.01714 	 18.305400000000006
+Efficiency: 0.64545 	estimated leakage percent 0.0135 	 18.306100000000008
+Efficiency: 0.64849 	estimated leakage percent 0.00882 	 18.306800000000006
+Efficiency: 0.65137 	estimated leakage percent 0.00437 	 18.307500000000005
+Efficiency: 0.65494 	estimated leakage percent -0.00115 	 18.308200000000006
+Efficiency: 0.65834 	estimated leakage percent -0.00639 	 18.308900000000005
+Efficiency: 0.66245 	estimated leakage percent -0.01272 	 18.309600000000007
+Efficiency: 0.66636 	estimated leakage percent -0.01874 	 18.310200000000005
+Efficiency: 0.67099 	estimated leakage percent -0.02588 	 18.310800000000008
+Efficiency: 0.6754 	estimated leakage percent -0.03266 	 18.311500000000006
+Efficiency: 0.68055 	estimated leakage percent -0.04059 	 18.312200000000008
+Efficiency: 0.68545 	estimated leakage percent -0.04813 	 18.31290000000001
+Efficiency: 0.69113 	estimated leakage percent -0.05686 	 18.313600000000008
+Efficiency: 0.69652 	estimated leakage percent -0.06516 	 18.314300000000006
+Efficiency: 0.69332 	estimated leakage percent -0.0603 	 18.315000000000005
+Efficiency: 0.69028 	estimated leakage percent -0.0557 	 18.315700000000003
+Efficiency: 0.68739 	estimated leakage percent -0.05132 	 18.316400000000005
+Efficiency: 0.68465 	estimated leakage percent -0.04716 	 18.317100000000007
+Efficiency: 0.68204 	estimated leakage percent -0.04322 	 18.317800000000005
+Efficiency: 0.67957 	estimated leakage percent -0.03947 	 18.318400000000008
+Efficiency: 0.67721 	estimated leakage percent -0.03591 	 18.319000000000006
+Efficiency: 0.67498 	estimated leakage percent -0.03253 	 18.319600000000005
+Efficiency: 0.67285 	estimated leakage percent -0.02932 	 18.320200000000007
+Efficiency: 0.67084 	estimated leakage percent -0.02628 	 18.320800000000006
+Efficiency: 0.66892 	estimated leakage percent -0.02338 	 18.321400000000008
+Efficiency: 0.6671 	estimated leakage percent -0.02064 	 18.322000000000006
+Efficiency: 0.66472 	estimated leakage percent -0.01704 	 18.322600000000005
+Efficiency: 0.66311 	estimated leakage percent -0.01462 	 18.323300000000007
+Efficiency: 0.66226 	estimated leakage percent -0.01335 	 18.32410000000001
+Efficiency: 0.66077 	estimated leakage percent -0.01111 	 18.324900000000007
+Efficiency: 0.65871 	estimated leakage percent -0.008 	 18.32570000000001
+Efficiency: 0.6574 	estimated leakage percent -0.00603 	 18.326500000000006
+Efficiency: 0.65683 	estimated leakage percent -0.0052 	 18.327200000000005
+Efficiency: 0.65561 	estimated leakage percent -0.00338 	 18.327900000000007
+Efficiency: 0.65381 	estimated leakage percent -0.00066 	 18.328600000000005
+Efficiency: 0.65274 	estimated leakage percent 0.00093 	 18.3293
+Efficiency: 0.65241 	estimated leakage percent 0.00141 	 18.33
+Efficiency: 0.65141 	estimated leakage percent 0.00289 	 18.330699999999997
+Efficiency: 0.65047 	estimated leakage percent 0.0043 	 18.3314
+Efficiency: 0.64957 	estimated leakage percent 0.00564 	 18.332099999999997
+Efficiency: 0.64871 	estimated leakage percent 0.0069 	 18.332899999999995
+Efficiency: 0.6479 	estimated leakage percent 0.0081 	 18.333699999999997
+Efficiency: 0.64713 	estimated leakage percent 0.00924 	 18.3345
+Efficiency: 0.6464 	estimated leakage percent 0.01032 	 18.335299999999997
+Efficiency: 0.64571 	estimated leakage percent 0.01135 	 18.3361
+Efficiency: 0.64505 	estimated leakage percent 0.01232 	 18.336899999999996
+Efficiency: 0.64442 	estimated leakage percent 0.01324 	 18.3376
+Efficiency: 0.64383 	estimated leakage percent 0.01411 	 18.3383
+Efficiency: 0.64326 	estimated leakage percent 0.01493 	 18.338999999999995
+Efficiency: 0.64272 	estimated leakage percent 0.01572 	 18.339699999999997
+Efficiency: 0.64221 	estimated leakage percent 0.01646 	 18.3404
+Efficiency: 0.64173 	estimated leakage percent 0.01716 	 18.341099999999994
+Efficiency: 0.64127 	estimated leakage percent 0.01783 	 18.341799999999996
+Efficiency: 0.64083 	estimated leakage percent 0.01846 	 18.342499999999998
+Efficiency: 0.64042 	estimated leakage percent 0.01906 	 18.343199999999996
+Efficiency: 0.64002 	estimated leakage percent 0.01963 	 18.343899999999998
+Efficiency: 0.63965 	estimated leakage percent 0.02016 	 18.344599999999996
+Efficiency: 0.63864 	estimated leakage percent 0.02166 	 18.345299999999998
+Efficiency: 0.63834 	estimated leakage percent 0.02209 	 18.3461
+Efficiency: 0.63805 	estimated leakage percent 0.0225 	 18.346899999999998
+Efficiency: 0.63777 	estimated leakage percent 0.02288 	 18.3477
+Efficiency: 0.63686 	estimated leakage percent 0.02423 	 18.348499999999998
+Efficiency: 0.63665 	estimated leakage percent 0.02453 	 18.349299999999996
+Efficiency: 0.63644 	estimated leakage percent 0.0248 	 18.350099999999998
+Efficiency: 0.63625 	estimated leakage percent 0.02506 	 18.350899999999996
+Efficiency: 0.63542 	estimated leakage percent 0.0263 	 18.351699999999997
+Efficiency: 0.63527 	estimated leakage percent 0.02648 	 18.3525
+Efficiency: 0.63449 	estimated leakage percent 0.02764 	 18.353299999999997
+Efficiency: 0.6344 	estimated leakage percent 0.02775 	 18.3541
+Efficiency: 0.63431 	estimated leakage percent 0.02785 	 18.354899999999997
+Efficiency: 0.63422 	estimated leakage percent 0.02795 	 18.355699999999995
+Efficiency: 0.63349 	estimated leakage percent 0.02903 	 18.3565
+Efficiency: 0.63345 	estimated leakage percent 0.02906 	 18.3573
+Efficiency: 0.6334 	estimated leakage percent 0.02909 	 18.358099999999997
+Efficiency: 0.63336 	estimated leakage percent 0.02911 	 18.3589
+Efficiency: 0.63268 	estimated leakage percent 0.03012 	 18.3597
+Efficiency: 0.63267 	estimated leakage percent 0.03009 	 18.3605
+Efficiency: 0.63267 	estimated leakage percent 0.03006 	 18.361099999999997
+Efficiency: 0.63267 	estimated leakage percent 0.03003 	 18.361699999999995
+Efficiency: 0.63202 	estimated leakage percent 0.03099 	 18.362399999999997
+Efficiency: 0.63205 	estimated leakage percent 0.03091 	 18.3631
+Efficiency: 0.63207 	estimated leakage percent 0.03083 	 18.363799999999998
+Efficiency: 0.6321 	estimated leakage percent 0.03075 	 18.3645
+Efficiency: 0.63213 	estimated leakage percent 0.03068 	 18.365199999999998
+Efficiency: 0.63215 	estimated leakage percent 0.03061 	 18.3659
+Efficiency: 0.63217 	estimated leakage percent 0.03053 	 18.366600000000002
+Efficiency: 0.63219 	estimated leakage percent 0.03047 	 18.3673
+Efficiency: 0.63221 	estimated leakage percent 0.0304 	 18.368000000000002
+Efficiency: 0.63223 	estimated leakage percent 0.03033 	 18.3688
+Efficiency: 0.63225 	estimated leakage percent 0.03027 	 18.3695
+Efficiency: 0.63227 	estimated leakage percent 0.0302 	 18.3702
+Efficiency: 0.63229 	estimated leakage percent 0.03014 	 18.3709
+Efficiency: 0.63166 	estimated leakage percent 0.03107 	 18.371599999999997
+Efficiency: 0.63106 	estimated leakage percent 0.03195 	 18.3723
+Efficiency: 0.62987 	estimated leakage percent 0.03374 	 18.372899999999998
+Efficiency: 0.62875 	estimated leakage percent 0.03543 	 18.3735
+Efficiency: 0.62708 	estimated leakage percent 0.03796 	 18.3741
+Efficiency: 0.6255 	estimated leakage percent 0.04036 	 18.3747
+Efficiency: 0.62342 	estimated leakage percent 0.04351 	 18.3754
+Efficiency: 0.62145 	estimated leakage percent 0.0465 	 18.3761
+Efficiency: 0.61902 	estimated leakage percent 0.05019 	 18.3768
+Efficiency: 0.61672 	estimated leakage percent 0.0537 	 18.377499999999998
+Efficiency: 0.614 	estimated leakage percent 0.05784 	 18.3782
+Efficiency: 0.61141 	estimated leakage percent 0.06177 	 18.378899999999998
+Efficiency: 0.60845 	estimated leakage percent 0.06629 	 18.379599999999996
+Efficiency: 0.60563 	estimated leakage percent 0.07058 	 18.3803
+Efficiency: 0.60246 	estimated leakage percent 0.07541 	 18.380999999999997
+Efficiency: 0.59945 	estimated leakage percent 0.08 	 18.3817
+Efficiency: 0.59612 	estimated leakage percent 0.08509 	 18.382399999999997
+Efficiency: 0.59295 	estimated leakage percent 0.08992 	 18.383
+Efficiency: 0.58948 	estimated leakage percent 0.09521 	 18.383599999999998
+Efficiency: 0.58618 	estimated leakage percent 0.10024 	 18.3842
+Efficiency: 0.58261 	estimated leakage percent 0.1057 	 18.384799999999995
+Efficiency: 0.58511 	estimated leakage percent 0.10183 	 18.3854
+Efficiency: 0.58684 	estimated leakage percent 0.09913 	 18.385999999999996
+Efficiency: 0.58913 	estimated leakage percent 0.09558 	 18.386599999999998
+Efficiency: 0.59066 	estimated leakage percent 0.0932 	 18.387199999999996
+Efficiency: 0.59276 	estimated leakage percent 0.08994 	 18.3878
+Efficiency: 0.59475 	estimated leakage percent 0.08685 	 18.388399999999997
+Efficiency: 0.59665 	estimated leakage percent 0.08391 	 18.389
+Efficiency: 0.5978 	estimated leakage percent 0.0821 	 18.3897
+Efficiency: 0.59954 	estimated leakage percent 0.07939 	 18.390399999999996
+Efficiency: 0.6012 	estimated leakage percent 0.07682 	 18.391099999999994
+Efficiency: 0.60277 	estimated leakage percent 0.07437 	 18.391799999999996
+Efficiency: 0.60362 	estimated leakage percent 0.07303 	 18.392499999999995
+Efficiency: 0.60507 	estimated leakage percent 0.07077 	 18.393199999999997
+Efficiency: 0.60645 	estimated leakage percent 0.06862 	 18.3939
+Efficiency: 0.60711 	estimated leakage percent 0.06756 	 18.394499999999994
+Efficiency: 0.60839 	estimated leakage percent 0.06557 	 18.394999999999992
+Efficiency: 0.6096 	estimated leakage percent 0.06367 	 18.395499999999995
+Efficiency: 0.61076 	estimated leakage percent 0.06187 	 18.395999999999997
+Efficiency: 0.61121 	estimated leakage percent 0.06115 	 18.3965
+Efficiency: 0.61228 	estimated leakage percent 0.05947 	 18.397
+Efficiency: 0.61329 	estimated leakage percent 0.05788 	 18.397499999999997
+Efficiency: 0.61426 	estimated leakage percent 0.05636 	 18.398
+Efficiency: 0.61454 	estimated leakage percent 0.05591 	 18.398500000000002
+Efficiency: 0.61544 	estimated leakage percent 0.05449 	 18.399000000000004
+Efficiency: 0.61565 	estimated leakage percent 0.05413 	 18.399500000000007
+Efficiency: 0.6165 	estimated leakage percent 0.05279 	 18.400000000000006
+Efficiency: 0.61666 	estimated leakage percent 0.05251 	 18.400500000000005
+Efficiency: 0.61746 	estimated leakage percent 0.05126 	 18.400900000000004
+Efficiency: 0.61757 	estimated leakage percent 0.05105 	 18.401300000000003
+Efficiency: 0.61833 	estimated leakage percent 0.04987 	 18.401800000000005
+Efficiency: 0.6184 	estimated leakage percent 0.04973 	 18.402300000000004
+Efficiency: 0.61911 	estimated leakage percent 0.04861 	 18.402800000000003
+Efficiency: 0.61914 	estimated leakage percent 0.04853 	 18.403300000000005
+Efficiency: 0.61981 	estimated leakage percent 0.04747 	 18.403800000000007
+Efficiency: 0.6198 	estimated leakage percent 0.04745 	 18.404300000000006
+Efficiency: 0.62044 	estimated leakage percent 0.04643 	 18.404800000000005
+Efficiency: 0.62041 	estimated leakage percent 0.04646 	 18.405300000000008
+Efficiency: 0.62102 	estimated leakage percent 0.04549 	 18.405800000000006
+Efficiency: 0.62095 	estimated leakage percent 0.04556 	 18.406300000000005
+Efficiency: 0.62153 	estimated leakage percent 0.04464 	 18.406800000000004
+Efficiency: 0.62144 	estimated leakage percent 0.04475 	 18.407300000000003
+Efficiency: 0.622 	estimated leakage percent 0.04386 	 18.407800000000005
+Efficiency: 0.62188 	estimated leakage percent 0.04401 	 18.408300000000008
+Efficiency: 0.62242 	estimated leakage percent 0.04316 	 18.40880000000001
+Efficiency: 0.62228 	estimated leakage percent 0.04334 	 18.40930000000001
+Efficiency: 0.62279 	estimated leakage percent 0.04252 	 18.409700000000008
+Efficiency: 0.62328 	estimated leakage percent 0.04174 	 18.410100000000007
+Efficiency: 0.62375 	estimated leakage percent 0.04099 	 18.410500000000006
+Efficiency: 0.62355 	estimated leakage percent 0.04128 	 18.410900000000005
+Efficiency: 0.624 	estimated leakage percent 0.04056 	 18.411300000000008
+Efficiency: 0.62443 	estimated leakage percent 0.03987 	 18.411700000000007
+Efficiency: 0.62483 	estimated leakage percent 0.03921 	 18.412300000000005
+Efficiency: 0.62457 	estimated leakage percent 0.03958 	 18.412900000000004
+Efficiency: 0.62497 	estimated leakage percent 0.03894 	 18.413500000000006
+Efficiency: 0.62535 	estimated leakage percent 0.03833 	 18.414100000000005
+Efficiency: 0.62572 	estimated leakage percent 0.03774 	 18.414700000000007
+Efficiency: 0.62606 	estimated leakage percent 0.03718 	 18.415300000000006
+Efficiency: 0.62639 	estimated leakage percent 0.03665 	 18.415900000000004
+Efficiency: 0.6267 	estimated leakage percent 0.03615 	 18.416500000000006
+Efficiency: 0.62634 	estimated leakage percent 0.03666 	 18.417100000000005
+Efficiency: 0.62666 	estimated leakage percent 0.03615 	 18.417700000000007
+Efficiency: 0.62695 	estimated leakage percent 0.03567 	 18.418300000000006
+Efficiency: 0.62723 	estimated leakage percent 0.0352 	 18.418900000000004
+Efficiency: 0.62686 	estimated leakage percent 0.03576 	 18.419500000000006
+Efficiency: 0.62714 	estimated leakage percent 0.03529 	 18.420100000000005
+Efficiency: 0.62742 	estimated leakage percent 0.03484 	 18.420700000000007
+Efficiency: 0.62767 	estimated leakage percent 0.03441 	 18.421200000000006
+Efficiency: 0.62728 	estimated leakage percent 0.035 	 18.421700000000005
+Efficiency: 0.62754 	estimated leakage percent 0.03456 	 18.422200000000004
+Efficiency: 0.62715 	estimated leakage percent 0.03514 	 18.422700000000006
+Efficiency: 0.62742 	estimated leakage percent 0.03469 	 18.423200000000005
+Efficiency: 0.62704 	estimated leakage percent 0.03526 	 18.423700000000007
+Efficiency: 0.62731 	estimated leakage percent 0.0348 	 18.424200000000006
+Efficiency: 0.62693 	estimated leakage percent 0.03536 	 18.424700000000005
+Efficiency: 0.62722 	estimated leakage percent 0.0349 	 18.425200000000004
+Efficiency: 0.62684 	estimated leakage percent 0.03545 	 18.425700000000006
+Efficiency: 0.62713 	estimated leakage percent 0.03498 	 18.426200000000005
+Efficiency: 0.62676 	estimated leakage percent 0.03552 	 18.426700000000007
+Efficiency: 0.62705 	estimated leakage percent 0.03505 	 18.427200000000006
+Efficiency: 0.62668 	estimated leakage percent 0.03558 	 18.42770000000001
+Efficiency: 0.62697 	estimated leakage percent 0.0351 	 18.428200000000007
+Efficiency: 0.62661 	estimated leakage percent 0.03564 	 18.428700000000006
+Efficiency: 0.62691 	estimated leakage percent 0.03515 	 18.429200000000005
+Efficiency: 0.62655 	estimated leakage percent 0.03568 	 18.429700000000008
+Efficiency: 0.62685 	estimated leakage percent 0.03518 	 18.430200000000006
+Efficiency: 0.62649 	estimated leakage percent 0.03571 	 18.430600000000005
+Efficiency: 0.62679 	estimated leakage percent 0.03521 	 18.431000000000008
+Efficiency: 0.62644 	estimated leakage percent 0.03573 	 18.431400000000007
+Efficiency: 0.62674 	estimated leakage percent 0.03523 	 18.431900000000006
+Efficiency: 0.62704 	estimated leakage percent 0.03476 	 18.43240000000001
+Efficiency: 0.62731 	estimated leakage percent 0.0343 	 18.432800000000007
+Efficiency: 0.62693 	estimated leakage percent 0.03487 	 18.433200000000006
+Efficiency: 0.62721 	estimated leakage percent 0.0344 	 18.43360000000001
+Efficiency: 0.62748 	estimated leakage percent 0.03397 	 18.434000000000008
+Efficiency: 0.62774 	estimated leakage percent 0.03355 	 18.434400000000007
+Efficiency: 0.62733 	estimated leakage percent 0.03414 	 18.434800000000006
+Efficiency: 0.62759 	estimated leakage percent 0.03371 	 18.435200000000005
+Efficiency: 0.62784 	estimated leakage percent 0.0333 	 18.435600000000004
+Efficiency: 0.62808 	estimated leakage percent 0.03292 	 18.436000000000003
+Efficiency: 0.62766 	estimated leakage percent 0.03354 	 18.436500000000006
+Efficiency: 0.6279 	estimated leakage percent 0.03313 	 18.437000000000005
+Efficiency: 0.62814 	estimated leakage percent 0.03275 	 18.437500000000007
+Efficiency: 0.62836 	estimated leakage percent 0.03238 	 18.438000000000006
+Efficiency: 0.62857 	estimated leakage percent 0.03203 	 18.438600000000005
+Efficiency: 0.62812 	estimated leakage percent 0.03269 	 18.439100000000007
+Efficiency: 0.62834 	estimated leakage percent 0.03232 	 18.43960000000001
+Efficiency: 0.62855 	estimated leakage percent 0.03197 	 18.440100000000008
+Efficiency: 0.62875 	estimated leakage percent 0.03164 	 18.440500000000007
+Efficiency: 0.6283 	estimated leakage percent 0.03231 	 18.440900000000006
+Efficiency: 0.62851 	estimated leakage percent 0.03196 	 18.441300000000005
+Efficiency: 0.62871 	estimated leakage percent 0.03162 	 18.441800000000004
+Efficiency: 0.6289 	estimated leakage percent 0.0313 	 18.442200000000003
+Efficiency: 0.62844 	estimated leakage percent 0.03199 	 18.442600000000006
+Efficiency: 0.62864 	estimated leakage percent 0.03165 	 18.44300000000001
+Efficiency: 0.62819 	estimated leakage percent 0.03231 	 18.443400000000008
+Efficiency: 0.62841 	estimated leakage percent 0.03195 	 18.443800000000007
+Efficiency: 0.62797 	estimated leakage percent 0.03261 	 18.444200000000006
+Efficiency: 0.6282 	estimated leakage percent 0.03223 	 18.444700000000008
+Efficiency: 0.62777 	estimated leakage percent 0.03286 	 18.445100000000007
+Efficiency: 0.62801 	estimated leakage percent 0.03247 	 18.445500000000006
+Efficiency: 0.62759 	estimated leakage percent 0.03309 	 18.445900000000005
+Efficiency: 0.62784 	estimated leakage percent 0.03269 	 18.446300000000004
+Efficiency: 0.62743 	estimated leakage percent 0.03329 	 18.446800000000007
+Efficiency: 0.62768 	estimated leakage percent 0.03287 	 18.447400000000005
+Efficiency: 0.62728 	estimated leakage percent 0.03347 	 18.447900000000004
+Efficiency: 0.62754 	estimated leakage percent 0.03304 	 18.448400000000003
+Efficiency: 0.62715 	estimated leakage percent 0.03362 	 18.448900000000005
+Efficiency: 0.62741 	estimated leakage percent 0.03318 	 18.449400000000004
+Efficiency: 0.62702 	estimated leakage percent 0.03376 	 18.449900000000003
+Efficiency: 0.6273 	estimated leakage percent 0.03331 	 18.450300000000006
+Efficiency: 0.62691 	estimated leakage percent 0.03387 	 18.450700000000005
+Efficiency: 0.62719 	estimated leakage percent 0.03342 	 18.451200000000007
+Efficiency: 0.62682 	estimated leakage percent 0.03398 	 18.451700000000006
+Efficiency: 0.6271 	estimated leakage percent 0.03351 	 18.45210000000001
+Efficiency: 0.62673 	estimated leakage percent 0.03406 	 18.452500000000004
+Efficiency: 0.62702 	estimated leakage percent 0.03359 	 18.452900000000007
+Efficiency: 0.62664 	estimated leakage percent 0.03413 	 18.453400000000006
+Efficiency: 0.62694 	estimated leakage percent 0.03366 	 18.453800000000005
+Efficiency: 0.62722 	estimated leakage percent 0.0332 	 18.454200000000004
+Efficiency: 0.62748 	estimated leakage percent 0.03277 	 18.454600000000006
+Efficiency: 0.62709 	estimated leakage percent 0.03335 	 18.455000000000005
+Efficiency: 0.62736 	estimated leakage percent 0.03291 	 18.455400000000008
+Efficiency: 0.62762 	estimated leakage percent 0.03249 	 18.455800000000007
+Efficiency: 0.62786 	estimated leakage percent 0.03208 	 18.456200000000006
+Efficiency: 0.62745 	estimated leakage percent 0.0327 	 18.456600000000005
+Efficiency: 0.62705 	estimated leakage percent 0.03328 	 18.457000000000004
+Efficiency: 0.62733 	estimated leakage percent 0.03283 	 18.457400000000007
+Efficiency: 0.62759 	estimated leakage percent 0.03241 	 18.457900000000006
+Efficiency: 0.62719 	estimated leakage percent 0.033 	 18.458400000000008
+Efficiency: 0.62681 	estimated leakage percent 0.03356 	 18.459000000000007
+Efficiency: 0.62709 	estimated leakage percent 0.0331 	 18.459600000000005
+Efficiency: 0.62736 	estimated leakage percent 0.03265 	 18.460000000000004
+Efficiency: 0.62697 	estimated leakage percent 0.03323 	 18.460400000000003
+Efficiency: 0.6266 	estimated leakage percent 0.03377 	 18.460800000000006
+Efficiency: 0.6269 	estimated leakage percent 0.03329 	 18.461200000000005
+Efficiency: 0.62653 	estimated leakage percent 0.03383 	 18.461600000000004
+Efficiency: 0.62683 	estimated leakage percent 0.03335 	 18.462000000000007
+Efficiency: 0.62647 	estimated leakage percent 0.03388 	 18.462400000000006
+Efficiency: 0.62677 	estimated leakage percent 0.03339 	 18.462800000000005
+Efficiency: 0.62641 	estimated leakage percent 0.03392 	 18.463200000000008
+Efficiency: 0.62671 	estimated leakage percent 0.03343 	 18.463600000000007
+Efficiency: 0.62636 	estimated leakage percent 0.03396 	 18.46400000000001
+Efficiency: 0.62666 	estimated leakage percent 0.03346 	 18.46440000000001
+Efficiency: 0.62631 	estimated leakage percent 0.03398 	 18.464800000000007
+Efficiency: 0.62662 	estimated leakage percent 0.03348 	 18.465200000000006
+Efficiency: 0.62626 	estimated leakage percent 0.034 	 18.465600000000006
+Efficiency: 0.62657 	estimated leakage percent 0.0335 	 18.466000000000005
+Efficiency: 0.62622 	estimated leakage percent 0.03401 	 18.466400000000004
+Efficiency: 0.62654 	estimated leakage percent 0.03351 	 18.466800000000006
+Efficiency: 0.62619 	estimated leakage percent 0.03402 	 18.467200000000005
+Efficiency: 0.6265 	estimated leakage percent 0.03351 	 18.467600000000004
+Efficiency: 0.62615 	estimated leakage percent 0.03402 	 18.468100000000003
+Efficiency: 0.62647 	estimated leakage percent 0.03351 	 18.468600000000006
+Efficiency: 0.62612 	estimated leakage percent 0.03402 	 18.469100000000005
+Efficiency: 0.62644 	estimated leakage percent 0.03351 	 18.469600000000003
+Efficiency: 0.6261 	estimated leakage percent 0.03401 	 18.470100000000002
+Efficiency: 0.62641 	estimated leakage percent 0.0335 	 18.4706
+Efficiency: 0.62672 	estimated leakage percent 0.033 	 18.471100000000003
+Efficiency: 0.627 	estimated leakage percent 0.03254 	 18.471600000000006
+Efficiency: 0.62663 	estimated leakage percent 0.03309 	 18.472100000000008
+Efficiency: 0.62692 	estimated leakage percent 0.03261 	 18.472600000000007
+Efficiency: 0.6272 	estimated leakage percent 0.03216 	 18.473100000000006
+Efficiency: 0.62747 	estimated leakage percent 0.03173 	 18.473600000000005
+Efficiency: 0.62707 	estimated leakage percent 0.03231 	 18.474100000000004
+Efficiency: 0.62734 	estimated leakage percent 0.03187 	 18.474600000000006
+Efficiency: 0.6276 	estimated leakage percent 0.03145 	 18.475100000000005
+Efficiency: 0.62784 	estimated leakage percent 0.03105 	 18.475600000000004
+Efficiency: 0.62807 	estimated leakage percent 0.03066 	 18.476100000000002
+Efficiency: 0.62765 	estimated leakage percent 0.0313 	 18.476500000000005
+Efficiency: 0.62789 	estimated leakage percent 0.0309 	 18.476900000000008
+Efficiency: 0.62812 	estimated leakage percent 0.03052 	 18.477400000000006
+Efficiency: 0.62834 	estimated leakage percent 0.03016 	 18.477900000000005
+Efficiency: 0.6279 	estimated leakage percent 0.03081 	 18.478400000000004
+Efficiency: 0.62813 	estimated leakage percent 0.03043 	 18.478900000000007
+Efficiency: 0.62835 	estimated leakage percent 0.03007 	 18.479400000000005
+Efficiency: 0.62855 	estimated leakage percent 0.02973 	 18.479900000000004
+Efficiency: 0.62811 	estimated leakage percent 0.0304 	 18.480400000000003
+Efficiency: 0.62832 	estimated leakage percent 0.03003 	 18.481000000000005
+Efficiency: 0.62853 	estimated leakage percent 0.02969 	 18.481600000000004
+Efficiency: 0.62873 	estimated leakage percent 0.02936 	 18.482100000000003
+Efficiency: 0.62827 	estimated leakage percent 0.03004 	 18.4826
+Efficiency: 0.62848 	estimated leakage percent 0.02969 	 18.483100000000004
+Efficiency: 0.62804 	estimated leakage percent 0.03035 	 18.483600000000003
+Efficiency: 0.62826 	estimated leakage percent 0.02998 	 18.484000000000005
+Efficiency: 0.62783 	estimated leakage percent 0.03063 	 18.484500000000004
+Efficiency: 0.62806 	estimated leakage percent 0.03024 	 18.485000000000003
+Efficiency: 0.62764 	estimated leakage percent 0.03087 	 18.485500000000002
+Efficiency: 0.62788 	estimated leakage percent 0.03047 	 18.486
+Efficiency: 0.62747 	estimated leakage percent 0.03109 	 18.486500000000003
+Efficiency: 0.62772 	estimated leakage percent 0.03067 	 18.487000000000005
+Efficiency: 0.62731 	estimated leakage percent 0.03128 	 18.487400000000004
+Efficiency: 0.62757 	estimated leakage percent 0.03085 	 18.487900000000003
+Efficiency: 0.62717 	estimated leakage percent 0.03144 	 18.488400000000006
+Efficiency: 0.62744 	estimated leakage percent 0.03101 	 18.488900000000005
+Efficiency: 0.62705 	estimated leakage percent 0.03159 	 18.489400000000003
+Efficiency: 0.62732 	estimated leakage percent 0.03114 	 18.489900000000002
+Efficiency: 0.62694 	estimated leakage percent 0.03172 	 18.490400000000005
+Efficiency: 0.62721 	estimated leakage percent 0.03126 	 18.490800000000004
+Efficiency: 0.62683 	estimated leakage percent 0.03182 	 18.491300000000003
+Efficiency: 0.62712 	estimated leakage percent 0.03136 	 18.4918
+Efficiency: 0.62674 	estimated leakage percent 0.03192 	 18.4923
+Efficiency: 0.62703 	estimated leakage percent 0.03145 	 18.4928
+Efficiency: 0.62666 	estimated leakage percent 0.032 	 18.493199999999998
+Efficiency: 0.62695 	estimated leakage percent 0.03152 	 18.493599999999997
+Efficiency: 0.62659 	estimated leakage percent 0.03206 	 18.4941
+Efficiency: 0.62688 	estimated leakage percent 0.03158 	 18.4946
+Efficiency: 0.62716 	estimated leakage percent 0.03112 	 18.495099999999997
+Efficiency: 0.62743 	estimated leakage percent 0.03068 	 18.495599999999996
+Efficiency: 0.62704 	estimated leakage percent 0.03126 	 18.4961
+Efficiency: 0.62732 	estimated leakage percent 0.03082 	 18.4966
+Efficiency: 0.62758 	estimated leakage percent 0.03039 	 18.4971
+Efficiency: 0.62782 	estimated leakage percent 0.02998 	 18.4975
+Efficiency: 0.62741 	estimated leakage percent 0.03059 	 18.497899999999998
+Efficiency: 0.62767 	estimated leakage percent 0.03018 	 18.4984
+Efficiency: 0.62791 	estimated leakage percent 0.02978 	 18.4989
+Efficiency: 0.62814 	estimated leakage percent 0.0294 	 18.499399999999998
+Efficiency: 0.62836 	estimated leakage percent 0.02903 	 18.4998
+Efficiency: 0.62792 	estimated leakage percent 0.02969 	 18.5003
+Efficiency: 0.62815 	estimated leakage percent 0.02931 	 18.500799999999998
+Efficiency: 0.62837 	estimated leakage percent 0.02894 	 18.501299999999997
+Efficiency: 0.62858 	estimated leakage percent 0.0286 	 18.5018
+Efficiency: 0.62813 	estimated leakage percent 0.02927 	 18.5023
+Efficiency: 0.62835 	estimated leakage percent 0.0289 	 18.5028
+Efficiency: 0.62856 	estimated leakage percent 0.02856 	 18.5033
+Efficiency: 0.62876 	estimated leakage percent 0.02822 	 18.5038
+Efficiency: 0.6283 	estimated leakage percent 0.02891 	 18.504299999999997
+Efficiency: 0.62852 	estimated leakage percent 0.02855 	 18.5048
+Efficiency: 0.62872 	estimated leakage percent 0.02822 	 18.5052
+Efficiency: 0.62891 	estimated leakage percent 0.0279 	 18.505599999999998
+Efficiency: 0.62844 	estimated leakage percent 0.02859 	 18.505899999999997
+Efficiency: 0.62865 	estimated leakage percent 0.02825 	 18.5062
+Efficiency: 0.62884 	estimated leakage percent 0.02793 	 18.5065
+Efficiency: 0.62903 	estimated leakage percent 0.02762 	 18.5068
+Efficiency: 0.62856 	estimated leakage percent 0.02833 	 18.507299999999997
+Efficiency: 0.62876 	estimated leakage percent 0.028 	 18.5078
+Efficiency: 0.6283 	estimated leakage percent 0.02868 	 18.5083
+Efficiency: 0.62851 	estimated leakage percent 0.02833 	 18.508799999999997
+Efficiency: 0.62807 	estimated leakage percent 0.02899 	 18.509299999999996
+Efficiency: 0.62829 	estimated leakage percent 0.02862 	 18.5098
+Efficiency: 0.62786 	estimated leakage percent 0.02927 	 18.5103
+Efficiency: 0.62809 	estimated leakage percent 0.02889 	 18.5108
+Efficiency: 0.62767 	estimated leakage percent 0.02952 	 18.511300000000002
+Efficiency: 0.62791 	estimated leakage percent 0.02912 	 18.5118
+Efficiency: 0.6275 	estimated leakage percent 0.02973 	 18.5123
+Efficiency: 0.62775 	estimated leakage percent 0.02932 	 18.5128
+Efficiency: 0.62734 	estimated leakage percent 0.02992 	 18.513299999999997
+Efficiency: 0.62761 	estimated leakage percent 0.0295 	 18.5138
+Efficiency: 0.62721 	estimated leakage percent 0.03009 	 18.5143
+Efficiency: 0.62747 	estimated leakage percent 0.02965 	 18.514799999999997
+Efficiency: 0.62708 	estimated leakage percent 0.03023 	 18.515299999999996
+Efficiency: 0.62736 	estimated leakage percent 0.02979 	 18.515799999999995
+Efficiency: 0.62697 	estimated leakage percent 0.03036 	 18.516199999999998
+Efficiency: 0.62725 	estimated leakage percent 0.02991 	 18.5166
+Efficiency: 0.62687 	estimated leakage percent 0.03047 	 18.517
+Efficiency: 0.62716 	estimated leakage percent 0.03001 	 18.5174
+Efficiency: 0.62743 	estimated leakage percent 0.02957 	 18.517799999999998
+Efficiency: 0.62704 	estimated leakage percent 0.03015 	 18.518199999999997
+Efficiency: 0.62667 	estimated leakage percent 0.03069 	 18.5186
+Efficiency: 0.62696 	estimated leakage percent 0.03022 	 18.519
+Efficiency: 0.62724 	estimated leakage percent 0.02976 	 18.519499999999997
+Efficiency: 0.62687 	estimated leakage percent 0.03033 	 18.52
+Efficiency: 0.62651 	estimated leakage percent 0.03086 	 18.5205
+Efficiency: 0.62681 	estimated leakage percent 0.03037 	 18.520999999999997
+Efficiency: 0.6271 	estimated leakage percent 0.0299 	 18.5215
+Efficiency: 0.62673 	estimated leakage percent 0.03045 	 18.522
+Efficiency: 0.62637 	estimated leakage percent 0.03098 	 18.522499999999997
+Efficiency: 0.62604 	estimated leakage percent 0.03147 	 18.522999999999996
+Efficiency: 0.62637 	estimated leakage percent 0.03094 	 18.5235
+Efficiency: 0.62603 	estimated leakage percent 0.03144 	 18.524
+Efficiency: 0.62636 	estimated leakage percent 0.03091 	 18.5245
+Efficiency: 0.62602 	estimated leakage percent 0.0314 	 18.525000000000002
+Efficiency: 0.62635 	estimated leakage percent 0.03087 	 18.5255
+Efficiency: 0.62602 	estimated leakage percent 0.03136 	 18.526
+Efficiency: 0.62635 	estimated leakage percent 0.03083 	 18.5265
+Efficiency: 0.62602 	estimated leakage percent 0.03133 	 18.526999999999997
+Efficiency: 0.62634 	estimated leakage percent 0.03079 	 18.5275
+Efficiency: 0.62601 	estimated leakage percent 0.03129 	 18.528
+Efficiency: 0.62634 	estimated leakage percent 0.03075 	 18.5284
+Efficiency: 0.62601 	estimated leakage percent 0.03125 	 18.5288
+Efficiency: 0.62634 	estimated leakage percent 0.03071 	 18.5292
+Efficiency: 0.62601 	estimated leakage percent 0.0312 	 18.5296
+Efficiency: 0.62634 	estimated leakage percent 0.03067 	 18.529999999999998
+Efficiency: 0.626 	estimated leakage percent 0.03116 	 18.530399999999997
+Efficiency: 0.62634 	estimated leakage percent 0.03063 	 18.5308
+Efficiency: 0.626 	estimated leakage percent 0.03112 	 18.531200000000002
+Efficiency: 0.62633 	estimated leakage percent 0.03059 	 18.5316
+Efficiency: 0.626 	estimated leakage percent 0.03108 	 18.532
+Efficiency: 0.62633 	estimated leakage percent 0.03055 	 18.532400000000003
+Efficiency: 0.626 	estimated leakage percent 0.03104 	 18.5328
+Efficiency: 0.62633 	estimated leakage percent 0.03051 	 18.5332
+Efficiency: 0.626 	estimated leakage percent 0.031 	 18.5337
+Efficiency: 0.62633 	estimated leakage percent 0.03047 	 18.5342
+Efficiency: 0.626 	estimated leakage percent 0.03096 	 18.5347
+Efficiency: 0.62633 	estimated leakage percent 0.03042 	 18.5352
+Efficiency: 0.626 	estimated leakage percent 0.03091 	 18.535700000000002
+Efficiency: 0.62633 	estimated leakage percent 0.03038 	 18.536200000000004
+Efficiency: 0.626 	estimated leakage percent 0.03087 	 18.536700000000003
+Efficiency: 0.62634 	estimated leakage percent 0.03033 	 18.537200000000002
+Efficiency: 0.626 	estimated leakage percent 0.03082 	 18.5377
+Efficiency: 0.62634 	estimated leakage percent 0.03029 	 18.5382
+Efficiency: 0.62601 	estimated leakage percent 0.03078 	 18.538700000000002
+Efficiency: 0.62634 	estimated leakage percent 0.03024 	 18.539200000000005
+Efficiency: 0.62601 	estimated leakage percent 0.03073 	 18.539700000000003
+Efficiency: 0.62634 	estimated leakage percent 0.0302 	 18.540100000000002
+Efficiency: 0.62665 	estimated leakage percent 0.02969 	 18.5405
+Efficiency: 0.62631 	estimated leakage percent 0.0302 	 18.5409
+Efficiency: 0.62598 	estimated leakage percent 0.03069 	 18.541300000000003
+Efficiency: 0.62631 	estimated leakage percent 0.03015 	 18.541700000000002
+Efficiency: 0.62663 	estimated leakage percent 0.02964 	 18.5421
+Efficiency: 0.62629 	estimated leakage percent 0.03015 	 18.5425
+Efficiency: 0.62596 	estimated leakage percent 0.03064 	 18.542900000000003
+Efficiency: 0.62629 	estimated leakage percent 0.0301 	 18.5433
+Efficiency: 0.62661 	estimated leakage percent 0.02958 	 18.5437
+Efficiency: 0.62627 	estimated leakage percent 0.03009 	 18.544100000000004
+Efficiency: 0.62594 	estimated leakage percent 0.03058 	 18.5445
+Efficiency: 0.62563 	estimated leakage percent 0.03104 	 18.544900000000002
+Efficiency: 0.62599 	estimated leakage percent 0.03047 	 18.5453
+Efficiency: 0.62567 	estimated leakage percent 0.03093 	 18.5457
+Efficiency: 0.62602 	estimated leakage percent 0.03037 	 18.546100000000003
+Efficiency: 0.62571 	estimated leakage percent 0.03084 	 18.5465
+Efficiency: 0.62606 	estimated leakage percent 0.03028 	 18.547
+Efficiency: 0.62574 	estimated leakage percent 0.03075 	 18.547500000000003
+Efficiency: 0.62609 	estimated leakage percent 0.03019 	 18.548000000000002
+Efficiency: 0.62577 	estimated leakage percent 0.03066 	 18.5485
+Efficiency: 0.62612 	estimated leakage percent 0.0301 	 18.549000000000003
+Efficiency: 0.6258 	estimated leakage percent 0.03057 	 18.549500000000002
+Efficiency: 0.62615 	estimated leakage percent 0.03002 	 18.55
+Efficiency: 0.62583 	estimated leakage percent 0.03049 	 18.5505
+Efficiency: 0.62617 	estimated leakage percent 0.02994 	 18.551000000000002
+Efficiency: 0.62585 	estimated leakage percent 0.03041 	 18.551500000000004
+Efficiency: 0.62619 	estimated leakage percent 0.02986 	 18.552000000000003
+Efficiency: 0.62587 	estimated leakage percent 0.03034 	 18.552500000000006
+Efficiency: 0.62621 	estimated leakage percent 0.02979 	 18.553000000000004
+Efficiency: 0.62589 	estimated leakage percent 0.03026 	 18.553300000000004
+Efficiency: 0.62623 	estimated leakage percent 0.02972 	 18.5536
+Efficiency: 0.62591 	estimated leakage percent 0.03019 	 18.553900000000002
+Efficiency: 0.62625 	estimated leakage percent 0.02965 	 18.554200000000005
+Efficiency: 0.62592 	estimated leakage percent 0.03013 	 18.5545
+Efficiency: 0.62626 	estimated leakage percent 0.02958 	 18.5548
+Efficiency: 0.62594 	estimated leakage percent 0.03007 	 18.555100000000003
+Efficiency: 0.62627 	estimated leakage percent 0.02952 	 18.555400000000002
+Efficiency: 0.62595 	estimated leakage percent 0.03001 	 18.5557
+Efficiency: 0.62629 	estimated leakage percent 0.02947 	 18.556
+Efficiency: 0.62596 	estimated leakage percent 0.02995 	 18.556300000000004
+Efficiency: 0.6263 	estimated leakage percent 0.02941 	 18.556600000000003
+Efficiency: 0.62597 	estimated leakage percent 0.0299 	 18.556900000000002
+Efficiency: 0.6263 	estimated leakage percent 0.02936 	 18.5572
+Efficiency: 0.62598 	estimated leakage percent 0.02985 	 18.5575
+Efficiency: 0.62631 	estimated leakage percent 0.02931 	 18.557800000000004
+Efficiency: 0.62598 	estimated leakage percent 0.0298 	 18.558100000000003
+Efficiency: 0.62632 	estimated leakage percent 0.02926 	 18.558400000000002
+Efficiency: 0.62599 	estimated leakage percent 0.02975 	 18.5587
+Efficiency: 0.62632 	estimated leakage percent 0.02921 	 18.559
+Efficiency: 0.62599 	estimated leakage percent 0.0297 	 18.559300000000004
+Efficiency: 0.62568 	estimated leakage percent 0.03017 	 18.5597
+Efficiency: 0.62538 	estimated leakage percent 0.03061 	 18.560100000000002
+Efficiency: 0.62575 	estimated leakage percent 0.03002 	 18.5605
+Efficiency: 0.62609 	estimated leakage percent 0.02947 	 18.5609
+Efficiency: 0.62577 	estimated leakage percent 0.02994 	 18.5613
+Efficiency: 0.62547 	estimated leakage percent 0.03039 	 18.5616
+Efficiency: 0.62583 	estimated leakage percent 0.02981 	 18.561899999999998
+Efficiency: 0.62617 	estimated leakage percent 0.02926 	 18.5622
+Efficiency: 0.62585 	estimated leakage percent 0.02974 	 18.5625
+Efficiency: 0.62554 	estimated leakage percent 0.0302 	 18.5629
+Efficiency: 0.6259 	estimated leakage percent 0.02963 	 18.563200000000002
+Efficiency: 0.62624 	estimated leakage percent 0.02908 	 18.5635
+Efficiency: 0.62591 	estimated leakage percent 0.02957 	 18.563799999999997
+Efficiency: 0.62625 	estimated leakage percent 0.02903 	 18.5641
+Efficiency: 0.62592 	estimated leakage percent 0.02951 	 18.5645
+Efficiency: 0.62626 	estimated leakage percent 0.02897 	 18.5648
+Efficiency: 0.62593 	estimated leakage percent 0.02946 	 18.5651
+Efficiency: 0.62562 	estimated leakage percent 0.02992 	 18.5654
+Efficiency: 0.62533 	estimated leakage percent 0.03036 	 18.5657
+Efficiency: 0.62569 	estimated leakage percent 0.02977 	 18.566100000000002
+Efficiency: 0.62539 	estimated leakage percent 0.03022 	 18.5665
+Efficiency: 0.62576 	estimated leakage percent 0.02964 	 18.5668
+Efficiency: 0.62545 	estimated leakage percent 0.03009 	 18.5671
+Efficiency: 0.62581 	estimated leakage percent 0.02951 	 18.5674
+Efficiency: 0.62551 	estimated leakage percent 0.02996 	 18.5677
+Efficiency: 0.62586 	estimated leakage percent 0.02939 	 18.568
+Efficiency: 0.62556 	estimated leakage percent 0.02985 	 18.5683
+Efficiency: 0.62591 	estimated leakage percent 0.02928 	 18.568700000000003
+Efficiency: 0.6256 	estimated leakage percent 0.02974 	 18.569
+Efficiency: 0.62595 	estimated leakage percent 0.02918 	 18.5693
+Efficiency: 0.62564 	estimated leakage percent 0.02965 	 18.5696
+Efficiency: 0.62599 	estimated leakage percent 0.02909 	 18.5699
+Efficiency: 0.62568 	estimated leakage percent 0.02955 	 18.5703
+Efficiency: 0.62602 	estimated leakage percent 0.029 	 18.5707
+Efficiency: 0.62571 	estimated leakage percent 0.02947 	 18.5711
+Efficiency: 0.62605 	estimated leakage percent 0.02891 	 18.571499999999997
+Efficiency: 0.62574 	estimated leakage percent 0.02938 	 18.571800000000003
+Efficiency: 0.62608 	estimated leakage percent 0.02883 	 18.572100000000002
+Efficiency: 0.62576 	estimated leakage percent 0.02931 	 18.5724
+Efficiency: 0.6261 	estimated leakage percent 0.02875 	 18.572699999999998
+Efficiency: 0.62578 	estimated leakage percent 0.02923 	 18.572999999999997
+Efficiency: 0.62612 	estimated leakage percent 0.02868 	 18.573199999999996
+Efficiency: 0.6258 	estimated leakage percent 0.02916 	 18.5734
+Efficiency: 0.62614 	estimated leakage percent 0.02862 	 18.5737
+Efficiency: 0.62582 	estimated leakage percent 0.0291 	 18.573999999999998
+Efficiency: 0.62616 	estimated leakage percent 0.02855 	 18.5743
+Efficiency: 0.62583 	estimated leakage percent 0.02904 	 18.5746
+Efficiency: 0.62617 	estimated leakage percent 0.0285 	 18.5748
+Efficiency: 0.62585 	estimated leakage percent 0.02898 	 18.575
+Efficiency: 0.62554 	estimated leakage percent 0.02944 	 18.575300000000002
+Efficiency: 0.62525 	estimated leakage percent 0.02988 	 18.575600000000005
+Efficiency: 0.62561 	estimated leakage percent 0.02929 	 18.5759
+Efficiency: 0.62531 	estimated leakage percent 0.02973 	 18.576100000000004
+Efficiency: 0.62503 	estimated leakage percent 0.03015 	 18.576400000000003
+Efficiency: 0.62476 	estimated leakage percent 0.03055 	 18.576700000000006
+Efficiency: 0.62515 	estimated leakage percent 0.02993 	 18.577000000000005
+Efficiency: 0.62488 	estimated leakage percent 0.03033 	 18.577300000000005
+Efficiency: 0.62462 	estimated leakage percent 0.03072 	 18.577600000000004
+Efficiency: 0.62437 	estimated leakage percent 0.03109 	 18.577900000000007
+Efficiency: 0.62478 	estimated leakage percent 0.03043 	 18.578200000000006
+Efficiency: 0.62452 	estimated leakage percent 0.03081 	 18.578500000000002
+Efficiency: 0.62428 	estimated leakage percent 0.03117 	 18.578700000000005
+Efficiency: 0.62405 	estimated leakage percent 0.03151 	 18.579000000000004
+Efficiency: 0.62383 	estimated leakage percent 0.03184 	 18.579300000000003
+Efficiency: 0.62426 	estimated leakage percent 0.03114 	 18.579600000000006
+Efficiency: 0.62403 	estimated leakage percent 0.03148 	 18.579900000000006
+Efficiency: 0.62381 	estimated leakage percent 0.03181 	 18.580100000000005
+Efficiency: 0.62361 	estimated leakage percent 0.03211 	 18.580300000000005
+Efficiency: 0.62405 	estimated leakage percent 0.0314 	 18.580500000000004
+Efficiency: 0.62383 	estimated leakage percent 0.03173 	 18.580700000000004
+Efficiency: 0.62362 	estimated leakage percent 0.03203 	 18.581000000000007
+Efficiency: 0.62342 	estimated leakage percent 0.03233 	 18.581400000000002
+Efficiency: 0.62388 	estimated leakage percent 0.0316 	 18.581800000000005
+Efficiency: 0.62367 	estimated leakage percent 0.03191 	 18.582200000000007
+Efficiency: 0.62347 	estimated leakage percent 0.03221 	 18.582600000000003
+Efficiency: 0.62328 	estimated leakage percent 0.03249 	 18.583000000000006
+Efficiency: 0.62374 	estimated leakage percent 0.03175 	 18.583400000000005
+Efficiency: 0.62354 	estimated leakage percent 0.03205 	 18.583800000000004
+Efficiency: 0.62399 	estimated leakage percent 0.03133 	 18.584200000000006
+Efficiency: 0.62377 	estimated leakage percent 0.03165 	 18.584600000000005
+Efficiency: 0.62421 	estimated leakage percent 0.03095 	 18.585000000000004
+Efficiency: 0.62398 	estimated leakage percent 0.03128 	 18.585400000000003
+Efficiency: 0.62441 	estimated leakage percent 0.0306 	 18.585800000000003
+Efficiency: 0.62417 	estimated leakage percent 0.03095 	 18.5862
+Efficiency: 0.62459 	estimated leakage percent 0.03028 	 18.586600000000004
+Efficiency: 0.62435 	estimated leakage percent 0.03065 	 18.587000000000003
+Efficiency: 0.62476 	estimated leakage percent 0.02999 	 18.587400000000002
+Efficiency: 0.6245 	estimated leakage percent 0.03037 	 18.587800000000005
+Efficiency: 0.62491 	estimated leakage percent 0.02972 	 18.588200000000004
+Efficiency: 0.62465 	estimated leakage percent 0.03011 	 18.588600000000003
+Efficiency: 0.62504 	estimated leakage percent 0.02948 	 18.589000000000006
+Efficiency: 0.62478 	estimated leakage percent 0.02988 	 18.58940000000001
+Efficiency: 0.62517 	estimated leakage percent 0.02925 	 18.589800000000007
+Efficiency: 0.62489 	estimated leakage percent 0.02966 	 18.590300000000006
+Efficiency: 0.62528 	estimated leakage percent 0.02904 	 18.590800000000005
+Efficiency: 0.625 	estimated leakage percent 0.02946 	 18.591300000000004
+Efficiency: 0.62538 	estimated leakage percent 0.02885 	 18.591800000000003
+Efficiency: 0.62509 	estimated leakage percent 0.02927 	 18.592300000000005
+Efficiency: 0.62547 	estimated leakage percent 0.02867 	 18.592800000000004
+Efficiency: 0.62518 	estimated leakage percent 0.0291 	 18.593300000000006
+Efficiency: 0.62555 	estimated leakage percent 0.0285 	 18.593700000000005
+Efficiency: 0.62526 	estimated leakage percent 0.02894 	 18.594100000000005
+Efficiency: 0.62498 	estimated leakage percent 0.02935 	 18.594500000000007
+Efficiency: 0.62471 	estimated leakage percent 0.02974 	 18.594900000000006
+Efficiency: 0.62511 	estimated leakage percent 0.02911 	 18.595300000000005
+Efficiency: 0.62484 	estimated leakage percent 0.02951 	 18.595700000000004
+Efficiency: 0.62458 	estimated leakage percent 0.02989 	 18.596000000000004
+Efficiency: 0.62434 	estimated leakage percent 0.03025 	 18.596400000000006
+Efficiency: 0.62475 	estimated leakage percent 0.02959 	 18.596800000000005
+Efficiency: 0.6245 	estimated leakage percent 0.02996 	 18.597100000000008
+Efficiency: 0.62426 	estimated leakage percent 0.03032 	 18.597500000000007
+Efficiency: 0.62403 	estimated leakage percent 0.03065 	 18.597900000000006
+Efficiency: 0.62382 	estimated leakage percent 0.03097 	 18.598300000000005
+Efficiency: 0.62361 	estimated leakage percent 0.03127 	 18.598600000000005
+Efficiency: 0.62341 	estimated leakage percent 0.03156 	 18.598900000000004
+Efficiency: 0.62323 	estimated leakage percent 0.03183 	 18.599300000000007
+Efficiency: 0.6237 	estimated leakage percent 0.03108 	 18.59970000000001
+Efficiency: 0.6235 	estimated leakage percent 0.03137 	 18.600100000000005
+Efficiency: 0.62331 	estimated leakage percent 0.03164 	 18.600500000000007
+Efficiency: 0.62313 	estimated leakage percent 0.03191 	 18.600800000000003
+Efficiency: 0.62296 	estimated leakage percent 0.03215 	 18.601100000000006
+Efficiency: 0.6228 	estimated leakage percent 0.03239 	 18.601500000000005
+Efficiency: 0.62264 	estimated leakage percent 0.03261 	 18.601900000000008
+Efficiency: 0.62249 	estimated leakage percent 0.03282 	 18.60230000000001
+Efficiency: 0.62236 	estimated leakage percent 0.03301 	 18.602700000000006
+Efficiency: 0.62287 	estimated leakage percent 0.0322 	 18.60310000000001
+Efficiency: 0.62271 	estimated leakage percent 0.03242 	 18.603500000000007
+Efficiency: 0.62256 	estimated leakage percent 0.03264 	 18.603700000000007
+Efficiency: 0.62242 	estimated leakage percent 0.03284 	 18.60400000000001
+Efficiency: 0.62293 	estimated leakage percent 0.03203 	 18.60440000000001
+Efficiency: 0.62277 	estimated leakage percent 0.03226 	 18.604900000000008
+Efficiency: 0.62261 	estimated leakage percent 0.03248 	 18.605300000000007
+Efficiency: 0.62247 	estimated leakage percent 0.03269 	 18.605600000000006
+Efficiency: 0.62298 	estimated leakage percent 0.03188 	 18.605900000000005
+Efficiency: 0.62281 	estimated leakage percent 0.03212 	 18.60620000000001
+Efficiency: 0.62266 	estimated leakage percent 0.03234 	 18.606500000000008
+Efficiency: 0.62251 	estimated leakage percent 0.03255 	 18.606800000000007
+Efficiency: 0.62301 	estimated leakage percent 0.03175 	 18.607100000000006
+Efficiency: 0.62285 	estimated leakage percent 0.03198 	 18.60740000000001
+Efficiency: 0.62269 	estimated leakage percent 0.03221 	 18.607700000000005
+Efficiency: 0.62254 	estimated leakage percent 0.03243 	 18.608000000000008
+Efficiency: 0.62304 	estimated leakage percent 0.03162 	 18.608400000000007
+Efficiency: 0.62287 	estimated leakage percent 0.03187 	 18.60880000000001
+Efficiency: 0.62272 	estimated leakage percent 0.03209 	 18.60910000000001
+Efficiency: 0.62256 	estimated leakage percent 0.03231 	 18.609400000000004
+Efficiency: 0.62307 	estimated leakage percent 0.03151 	 18.609800000000007
+Efficiency: 0.6229 	estimated leakage percent 0.03176 	 18.610200000000003
+Efficiency: 0.62338 	estimated leakage percent 0.03098 	 18.610700000000005
+Efficiency: 0.6232 	estimated leakage percent 0.03125 	 18.611100000000004
+Efficiency: 0.62367 	estimated leakage percent 0.0305 	 18.6114
+Efficiency: 0.62347 	estimated leakage percent 0.03079 	 18.6117
+Efficiency: 0.62393 	estimated leakage percent 0.03006 	 18.612000000000002
+Efficiency: 0.62372 	estimated leakage percent 0.03037 	 18.6125
+Efficiency: 0.62416 	estimated leakage percent 0.02966 	 18.6129
+Efficiency: 0.62394 	estimated leakage percent 0.02999 	 18.613200000000003
+Efficiency: 0.62437 	estimated leakage percent 0.0293 	 18.613500000000002
+Efficiency: 0.62414 	estimated leakage percent 0.02964 	 18.6138
+Efficiency: 0.62456 	estimated leakage percent 0.02896 	 18.614100000000004
+Efficiency: 0.62432 	estimated leakage percent 0.02932 	 18.6144
+Efficiency: 0.62473 	estimated leakage percent 0.02866 	 18.614700000000003
+Efficiency: 0.62448 	estimated leakage percent 0.02903 	 18.615000000000002
+Efficiency: 0.62489 	estimated leakage percent 0.02838 	 18.6154
+Efficiency: 0.62463 	estimated leakage percent 0.02877 	 18.615800000000004
+Efficiency: 0.62438 	estimated leakage percent 0.02913 	 18.616200000000003
+Efficiency: 0.62415 	estimated leakage percent 0.02948 	 18.6167
+Efficiency: 0.62457 	estimated leakage percent 0.0288 	 18.617200000000004
+Efficiency: 0.62433 	estimated leakage percent 0.02916 	 18.617700000000003
+Efficiency: 0.6241 	estimated leakage percent 0.0295 	 18.6182
+Efficiency: 0.62388 	estimated leakage percent 0.02982 	 18.6187
+Efficiency: 0.62431 	estimated leakage percent 0.02913 	 18.619200000000003
+Efficiency: 0.62408 	estimated leakage percent 0.02946 	 18.619600000000002
+Efficiency: 0.62386 	estimated leakage percent 0.02978 	 18.6199
+Efficiency: 0.62366 	estimated leakage percent 0.03009 	 18.620200000000004
+Efficiency: 0.6241 	estimated leakage percent 0.02937 	 18.620500000000003
+Efficiency: 0.62388 	estimated leakage percent 0.0297 	 18.6208
+Efficiency: 0.62367 	estimated leakage percent 0.03 	 18.621100000000002
+Efficiency: 0.62348 	estimated leakage percent 0.03029 	 18.621400000000005
+Efficiency: 0.62329 	estimated leakage percent 0.03057 	 18.6217
+Efficiency: 0.62311 	estimated leakage percent 0.03083 	 18.622
+Efficiency: 0.62294 	estimated leakage percent 0.03107 	 18.622300000000003
+Efficiency: 0.62342 	estimated leakage percent 0.0303 	 18.622600000000002
+Efficiency: 0.62323 	estimated leakage percent 0.03057 	 18.6229
+Efficiency: 0.62306 	estimated leakage percent 0.03083 	 18.6232
+Efficiency: 0.62289 	estimated leakage percent 0.03107 	 18.623500000000003
+Efficiency: 0.62337 	estimated leakage percent 0.0303 	 18.623800000000003
+Efficiency: 0.62319 	estimated leakage percent 0.03057 	 18.624100000000002
+Efficiency: 0.62301 	estimated leakage percent 0.03082 	 18.6244
+Efficiency: 0.62285 	estimated leakage percent 0.03106 	 18.6247
+Efficiency: 0.62333 	estimated leakage percent 0.03028 	 18.625000000000004
+Efficiency: 0.62315 	estimated leakage percent 0.03055 	 18.625300000000003
+Efficiency: 0.62298 	estimated leakage percent 0.0308 	 18.625600000000002
+Efficiency: 0.62281 	estimated leakage percent 0.03104 	 18.6259
+Efficiency: 0.62266 	estimated leakage percent 0.03127 	 18.626200000000004
+Efficiency: 0.62251 	estimated leakage percent 0.03148 	 18.6264
+Efficiency: 0.62301 	estimated leakage percent 0.03068 	 18.626600000000003
+Efficiency: 0.62284 	estimated leakage percent 0.03092 	 18.626800000000003
+Efficiency: 0.62268 	estimated leakage percent 0.03115 	 18.627000000000002
+Efficiency: 0.62253 	estimated leakage percent 0.03137 	 18.627200000000002
+Efficiency: 0.62304 	estimated leakage percent 0.03057 	 18.627400000000005
+Efficiency: 0.62287 	estimated leakage percent 0.03081 	 18.627600000000005
+Efficiency: 0.62271 	estimated leakage percent 0.03105 	 18.627900000000004
+Efficiency: 0.62256 	estimated leakage percent 0.03127 	 18.628200000000003
+Efficiency: 0.62306 	estimated leakage percent 0.03047 	 18.628500000000003
+Efficiency: 0.62289 	estimated leakage percent 0.03072 	 18.628800000000005
+Efficiency: 0.62272 	estimated leakage percent 0.03095 	 18.629100000000005
+Efficiency: 0.62257 	estimated leakage percent 0.03117 	 18.6294
+Efficiency: 0.62307 	estimated leakage percent 0.03038 	 18.629800000000003
+alicat read error ['']
+Efficiency: 0.62355 	estimated leakage percent 0.02962 	 18.630100000000006
+Efficiency: 0.62467 	estimated leakage percent 0.02786 	 18.630400000000005
+Efficiency: 0.62574 	estimated leakage percent 0.02618 	 18.630700000000004
+Efficiency: 0.62745 	estimated leakage percent 0.02349 	 18.631000000000004
+Efficiency: 0.62908 	estimated leakage percent 0.02093 	 18.631300000000003
+Efficiency: 0.63137 	estimated leakage percent 0.01736 	 18.631600000000002
+Efficiency: 0.63354 	estimated leakage percent 0.01397 	 18.632
+Efficiency: 0.63636 	estimated leakage percent 0.00955 	 18.6323
+Efficiency: 0.63905 	estimated leakage percent 0.00535 	 18.632600000000007
+Efficiency: 0.6424 	estimated leakage percent 0.00011 	 18.632900000000003
+Efficiency: 0.64559 	estimated leakage percent -0.00486 	 18.633200000000002
+Efficiency: 0.64945 	estimated leakage percent -0.0109 	 18.6335
+Efficiency: 0.65313 	estimated leakage percent -0.01664 	 18.6338
+Efficiency: 0.6575 	estimated leakage percent -0.02346 	 18.6341
+Efficiency: 0.66165 	estimated leakage percent -0.02995 	 18.634400000000003
+Efficiency: 0.66652 	estimated leakage percent -0.03755 	 18.634700000000002
+Efficiency: 0.67115 	estimated leakage percent -0.04477 	 18.635
+Efficiency: 0.67554 	estimated leakage percent -0.05163 	 18.635299999999997
+Efficiency: 0.68069 	estimated leakage percent -0.05967 	 18.635600000000004
+Efficiency: 0.68661 	estimated leakage percent -0.0689 	 18.635900000000003
+Efficiency: 0.68326 	estimated leakage percent -0.0637 	 18.636300000000002
+Efficiency: 0.68008 	estimated leakage percent -0.05877 	 18.6367
+Efficiency: 0.67706 	estimated leakage percent -0.05408 	 18.636999999999997
+Efficiency: 0.67483 	estimated leakage percent -0.05063 	 18.6372
+Efficiency: 0.67207 	estimated leakage percent -0.04635 	 18.6375
+Efficiency: 0.66945 	estimated leakage percent -0.04229 	 18.6378
+Efficiency: 0.66696 	estimated leakage percent -0.03843 	 18.638099999999998
+Efficiency: 0.66524 	estimated leakage percent -0.03576 	 18.6384
+Efficiency: 0.66296 	estimated leakage percent -0.03223 	 18.638699999999996
+Efficiency: 0.6608 	estimated leakage percent -0.02887 	 18.638999999999996
+Efficiency: 0.65874 	estimated leakage percent -0.02569 	 18.639299999999995
+Efficiency: 0.65743 	estimated leakage percent -0.02366 	 18.639699999999998
+Efficiency: 0.65554 	estimated leakage percent -0.02074 	 18.6401
+Efficiency: 0.65375 	estimated leakage percent -0.01796 	 18.640499999999996
+Efficiency: 0.65204 	estimated leakage percent -0.01532 	 18.6409
+Efficiency: 0.65107 	estimated leakage percent -0.01383 	 18.641299999999998
+Efficiency: 0.6495 	estimated leakage percent -0.0114 	 18.641699999999997
+Efficiency: 0.64801 	estimated leakage percent -0.00909 	 18.642099999999996
+Efficiency: 0.64659 	estimated leakage percent -0.0069 	 18.642399999999995
+Efficiency: 0.64525 	estimated leakage percent -0.00482 	 18.642699999999998
+Efficiency: 0.64397 	estimated leakage percent -0.00284 	 18.642999999999997
+Efficiency: 0.64275 	estimated leakage percent -0.00097 	 18.6434
+Efficiency: 0.6416 	estimated leakage percent 0.00081 	 18.643800000000002
+Efficiency: 0.6405 	estimated leakage percent 0.0025 	 18.644200000000005
+Efficiency: 0.6401 	estimated leakage percent 0.0031 	 18.644600000000004
+Efficiency: 0.63908 	estimated leakage percent 0.00468 	 18.644900000000003
+Efficiency: 0.63811 	estimated leakage percent 0.00617 	 18.645200000000003
+Efficiency: 0.63719 	estimated leakage percent 0.00759 	 18.6456
+Efficiency: 0.63696 	estimated leakage percent 0.00793 	 18.646000000000004
+Efficiency: 0.6361 	estimated leakage percent 0.00926 	 18.646400000000007
+Efficiency: 0.63527 	estimated leakage percent 0.01052 	 18.646800000000002
+Efficiency: 0.63449 	estimated leakage percent 0.01172 	 18.647200000000005
+Efficiency: 0.6344 	estimated leakage percent 0.01185 	 18.647600000000008
+Efficiency: 0.63366 	estimated leakage percent 0.01298 	 18.648000000000003
+Efficiency: 0.63296 	estimated leakage percent 0.01405 	 18.648400000000006
+Efficiency: 0.6323 	estimated leakage percent 0.01507 	 18.6487
+Efficiency: 0.63231 	estimated leakage percent 0.01503 	 18.649000000000004
+Efficiency: 0.63168 	estimated leakage percent 0.01599 	 18.649200000000004
+Efficiency: 0.63108 	estimated leakage percent 0.01691 	 18.649400000000004
+Efficiency: 0.63051 	estimated leakage percent 0.01778 	 18.649600000000003
+Efficiency: 0.63062 	estimated leakage percent 0.0176 	 18.649800000000006
+Efficiency: 0.63007 	estimated leakage percent 0.01844 	 18.650000000000006
+Efficiency: 0.62955 	estimated leakage percent 0.01923 	 18.650200000000005
+Efficiency: 0.62906 	estimated leakage percent 0.01999 	 18.650400000000005
+Efficiency: 0.62923 	estimated leakage percent 0.0197 	 18.650600000000004
+Efficiency: 0.62875 	estimated leakage percent 0.02042 	 18.650800000000004
+Efficiency: 0.62894 	estimated leakage percent 0.02011 	 18.651000000000007
+Efficiency: 0.62848 	estimated leakage percent 0.02082 	 18.651300000000003
+Efficiency: 0.62869 	estimated leakage percent 0.02048 	 18.651600000000002
+Efficiency: 0.62823 	estimated leakage percent 0.02117 	 18.651900000000005
+Efficiency: 0.62845 	estimated leakage percent 0.02082 	 18.652200000000004
+Efficiency: 0.62801 	estimated leakage percent 0.02148 	 18.652500000000003
+Efficiency: 0.62759 	estimated leakage percent 0.02212 	 18.652800000000006
+Efficiency: 0.6272 	estimated leakage percent 0.02272 	 18.653100000000006
+Efficiency: 0.62747 	estimated leakage percent 0.02229 	 18.653400000000005
+Efficiency: 0.62707 	estimated leakage percent 0.02288 	 18.653700000000004
+Efficiency: 0.6267 	estimated leakage percent 0.02344 	 18.654000000000003
+Efficiency: 0.62635 	estimated leakage percent 0.02397 	 18.654300000000003
+Efficiency: 0.62666 	estimated leakage percent 0.02347 	 18.654600000000002
+Efficiency: 0.62631 	estimated leakage percent 0.024 	 18.654900000000005
+Efficiency: 0.62598 	estimated leakage percent 0.0245 	 18.655200000000004
+Efficiency: 0.62566 	estimated leakage percent 0.02498 	 18.655500000000004
+Efficiency: 0.62601 	estimated leakage percent 0.02443 	 18.655800000000006
+Efficiency: 0.62569 	estimated leakage percent 0.02491 	 18.656100000000006
+Efficiency: 0.62603 	estimated leakage percent 0.02435 	 18.6564
+Efficiency: 0.62571 	estimated leakage percent 0.02483 	 18.656700000000004
+Efficiency: 0.62541 	estimated leakage percent 0.02529 	 18.657000000000004
+alicat read error ['']
+Efficiency: 0.62576 	estimated leakage percent 0.02472 	 18.657300000000003
+Efficiency: 0.62678 	estimated leakage percent 0.02312 	 18.657600000000006
+Efficiency: 0.62774 	estimated leakage percent 0.02161 	 18.657900000000005
+Efficiency: 0.62865 	estimated leakage percent 0.02017 	 18.658200000000004
+Efficiency: 0.63022 	estimated leakage percent 0.0177 	 18.658500000000004
+Efficiency: 0.63244 	estimated leakage percent 0.01422 	 18.658800000000003
+Efficiency: 0.63456 	estimated leakage percent 0.0109 	 18.659000000000002
+Efficiency: 0.63657 	estimated leakage percent 0.00776 	 18.659200000000006
+Efficiency: 0.63924 	estimated leakage percent 0.00357 	 18.659400000000005
+Efficiency: 0.64258 	estimated leakage percent -0.00166 	 18.659600000000008
+Efficiency: 0.64576 	estimated leakage percent -0.00662 	 18.659800000000008
+Efficiency: 0.64877 	estimated leakage percent -0.01134 	 18.660000000000004
+Efficiency: 0.65164 	estimated leakage percent -0.01583 	 18.660200000000003
+Efficiency: 0.65436 	estimated leakage percent -0.02009 	 18.660400000000006
+Efficiency: 0.65695 	estimated leakage percent -0.02414 	 18.660600000000006
+Efficiency: 0.6594 	estimated leakage percent -0.02798 	 18.660800000000005
+Efficiency: 0.66174 	estimated leakage percent -0.03164 	 18.661000000000005
+Efficiency: 0.66395 	estimated leakage percent -0.03511 	 18.661300000000008
+Efficiency: 0.66606 	estimated leakage percent -0.03841 	 18.661700000000007
+Efficiency: 0.66806 	estimated leakage percent -0.04155 	 18.662100000000006
+Efficiency: 0.66277 	estimated leakage percent -0.03331 	 18.662500000000005
+Efficiency: 0.65774 	estimated leakage percent -0.02549 	 18.662900000000004
+Efficiency: 0.65246 	estimated leakage percent -0.01726 	 18.663300000000003
+Efficiency: 0.64744 	estimated leakage percent -0.00945 	 18.663700000000006
+Efficiency: 0.64217 	estimated leakage percent -0.00126 	 18.664100000000005
+
+Efficiency: 0.63717 	estimated leakage percent 0.00653 	 18.664500000000004
+
+Efficiency: 0.63195 	estimated leakage percent 0.01466 	 18.664900000000006
+
+Efficiency: 0.62698 	estimated leakage percent 0.02238 	 18.665300000000006
+
+Efficiency: 0.62169 	estimated leakage percent -34.83075 	 15957.269230000004
+Efficiency: 0.61653 	estimated leakage percent -102.80242 	 31895.87315999999
+Efficiency: 0.61108 	estimated leakage percent -200.4634 	 47834.47708999999
+Efficiency: 0.60578 	estimated leakage percent -327.51166 	 63773.08102000001
+Efficiency: 0.60575 	estimated leakage percent -517.45573 	 79711.68495000002
+Efficiency: 0.60558 	estimated leakage percent -739.16687 	 95650.28888000001
+Efficiency: 0.60527 	estimated leakage percent -991.05672 	 111588.89280999998
+Efficiency: 0.60484 	estimated leakage percent -1271.61635 	 127527.49673999996
+Efficiency: 0.60428 	estimated leakage percent -1579.41225 	 143466.10066999996
+Efficiency: 0.60361 	estimated leakage percent -1913.08263 	 159404.70459999997
+Efficiency: 0.60344 	estimated leakage percent -2280.79116 	 175343.30852999995
+Efficiency: 0.60252 	estimated leakage percent -2661.92113 	 191281.91245999996
+Efficiency: 0.60151 	estimated leakage percent -3065.25887 	 207220.51638999998
+Efficiency: 0.6004 	estimated leakage percent -3489.69399 	 223159.12031999996
+Efficiency: 0.5998 	estimated leakage percent -3947.06771 	 239097.72424999997
+Efficiency: 0.59849 	estimated leakage percent -4409.94092 	 255036.32817999995
+Efficiency: 0.59709 	estimated leakage percent -4890.93473 	 270974.93200999993
+Efficiency: 0.59563 	estimated leakage percent -5389.14312 	 286913.53583999997
+Efficiency: 0.59468 	estimated leakage percent -5920.04014 	 302852.13966999995
+Efficiency: 0.59305 	estimated leakage percent -6449.3218 	 318790.7435
+Efficiency: 0.59135 	estimated leakage percent -6993.40363 	 334729.34733
+Efficiency: 0.5896 	estimated leakage percent -7551.54565 	 350667.95116
+Efficiency: 0.58837 	estimated leakage percent -8142.8183 	 366606.55499
+Efficiency: 0.58647 	estimated leakage percent -8726.01811 	 382545.15882
+Efficiency: 0.58453 	estimated leakage percent -9321.3222 	 398483.76264999993
+Efficiency: 0.58254 	estimated leakage percent -9928.12535 	 414422.36647999997
+Efficiency: 0.58107 	estimated leakage percent -10569.06477 	 430360.97031000006
+Efficiency: 0.57897 	estimated leakage percent -11196.00933 	 446299.57641000004
+Efficiency: 0.57629 	estimated leakage percent -11808.93669 	 462238.18021
+Efficiency: 0.57414 	estimated leakage percent -12456.41619 	 478176.78401
+Efficiency: 0.5725 	estimated leakage percent -13139.43683 	 494115.38781
+Efficiency: 0.57025 	estimated leakage percent -13802.91986 	 510053.9916099999
+Efficiency: 0.56744 	estimated leakage percent -14447.25761 	 525992.59541
+Efficiency: 0.56515 	estimated leakage percent -15127.87813 	 541931.19921
+Efficiency: 0.56338 	estimated leakage percent -15845.82143 	 557869.8030099999
+Efficiency: 0.561 	estimated leakage percent -16539.04229 	 573808.40681
+Efficiency: 0.55809 	estimated leakage percent -17208.32986 	 589747.01061
+Efficiency: 0.5557 	estimated leakage percent -17915.95383 	 605685.6144099999
+Efficiency: 0.55381 	estimated leakage percent -18662.9891 	 621624.21821
+Efficiency: 0.55134 	estimated leakage percent -19380.40864 	 637562.8220100001
+Efficiency: 0.54885 	estimated leakage percent -20103.22148 	 653501.42581
+Efficiency: 0.54634 	estimated leakage percent -20831.15794 	 669440.0296100001
+Efficiency: 0.54432 	estimated leakage percent -21600.92875 	 685378.6334100001
+Efficiency: 0.54175 	estimated leakage percent -22336.50838 	 701317.23721
+Efficiency: 0.53916 	estimated leakage percent -23076.5733 	 717255.8410100001
+Efficiency: 0.53656 	estimated leakage percent -23820.89923 	 733194.4448100001
+Efficiency: 0.53445 	estimated leakage percent -24609.67874 	 749133.0486100002
+Efficiency: 0.53179 	estimated leakage percent -25359.87794 	 765071.6524100002
+Efficiency: 0.52913 	estimated leakage percent -26113.83144 	 781010.2562100003
+Efficiency: 0.52645 	estimated leakage percent -26871.35154 	 796948.8600100002
+Efficiency: 0.52376 	estimated leakage percent -27632.25989 	 812887.4638100002
+Efficiency: 0.52107 	estimated leakage percent -28396.3871 	 828826.0676100003
+Efficiency: 0.51836 	estimated leakage percent -29163.57221 	 844764.6713100001
+Efficiency: 0.51565 	estimated leakage percent -29933.66233 	 860703.27501
+Efficiency: 0.51292 	estimated leakage percent -30706.51221 	 876641.8787100001
+Efficiency: 0.51019 	estimated leakage percent -31481.98387 	 892580.4824100002
+Efficiency: 0.50746 	estimated leakage percent -32259.94621 	 908519.0861100001
+Efficiency: 0.50471 	estimated leakage percent -33040.2747 	 924457.68981
+Efficiency: 0.50196 	estimated leakage percent -33822.85103 	 940396.2935100001
+Efficiency: 0.4992 	estimated leakage percent -34607.56281 	 956334.89721
+Efficiency: 0.49643 	estimated leakage percent -35394.30326 	 972273.50091
+Efficiency: 0.49366 	estimated leakage percent -36182.97096 	 988212.10461
+Efficiency: 0.49089 	estimated leakage percent -36973.46955 	 1004150.7083100001
+Efficiency: 0.4881 	estimated leakage percent -37765.70747 	 1020089.31201
+Efficiency: 0.48532 	estimated leakage percent -38559.59775 	 1036027.91571
+Efficiency: 0.48253 	estimated leakage percent -39355.0578 	 1051966.51941
+Efficiency: 0.47973 	estimated leakage percent -40152.00911 	 1067905.12539
+Efficiency: 0.47693 	estimated leakage percent -40950.37713 	 1083843.73137
+Efficiency: 0.47413 	estimated leakage percent -41750.09102 	 1099782.3376099998
+Efficiency: 0.47132 	estimated leakage percent -42551.08349 	 1115720.9438500002
+Efficiency: 0.46851 	estimated leakage percent -43353.2906 	 1131659.5500899998
+Efficiency: 0.46528 	estimated leakage percent -44097.23013 	 1147598.1563300001
+Efficiency: 0.46207 	estimated leakage percent -44844.41166 	 1163536.76257
+Efficiency: 0.45849 	estimated leakage percent -45535.99601 	 1179475.3688100001
+Efficiency: 0.45495 	estimated leakage percent -46232.64721 	 1195413.97505
+Efficiency: 0.45108 	estimated leakage percent -46876.16677 	 1211352.5812900001
+Efficiency: 0.44727 	estimated leakage percent -47526.394 	 1227291.18753
+Efficiency: 0.44316 	estimated leakage percent -48125.76768 	 1243229.79377
+Efficiency: 0.43912 	estimated leakage percent -48733.32266 	 1259168.40001
+Efficiency: 0.43482 	estimated leakage percent -49292.13056 	 1275107.0062500003
+Efficiency: 0.4306 	estimated leakage percent -49860.44157 	 1291045.6124900002
+Efficiency: 0.42615 	estimated leakage percent -50381.95488 	 1306984.2187300003
+Efficiency: 0.42179 	estimated leakage percent -50914.15524 	 1322922.8249700002
+Efficiency: 0.41722 	estimated leakage percent -51401.36347 	 1338861.43121
+Efficiency: 0.41275 	estimated leakage percent -51900.31752 	 1354800.0374500002
+Efficiency: 0.4081 	estimated leakage percent -52355.95329 	 1370738.6436900003
+Efficiency: 0.40355 	estimated leakage percent -52824.28007 	 1386677.2499300002
+Efficiency: 0.39884 	estimated leakage percent -53250.8418 	 1402615.8561700003
+Efficiency: 0.39424 	estimated leakage percent -53690.93665 	 1418554.4624100002
+Efficiency: 0.38974 	estimated leakage percent -54143.88794 	 1434493.0685500002
+Efficiency: 0.3851 	estimated leakage percent -54555.28322 	 1450431.67459
+Efficiency: 0.38357 	estimated leakage percent -55623.83008 	 1466370.2806300002
+Efficiency: 0.38197 	estimated leakage percent -56680.21387 	 1482308.8866700002
+Efficiency: 0.38067 	estimated leakage percent -57805.85295 	 1498247.4927100001
+Efficiency: 0.37893 	estimated leakage percent -58835.66414 	 1514186.0987500004
+Efficiency: 0.37714 	estimated leakage percent -59855.24905 	 1530124.70479
+Efficiency: 0.37528 	estimated leakage percent -60865.11898 	 1546063.3108300003
+Efficiency: 0.37373 	estimated leakage percent -61950.00858 	 1562001.91687
+Efficiency: 0.37176 	estimated leakage percent -62937.66908 	 1577940.5229100003
+Efficiency: 0.36974 	estimated leakage percent -63917.21083 	 1593879.1289500003
+Efficiency: 0.36783 	estimated leakage percent -64847.77549 	 1593879.1314600003
+Efficiency: 0.36635 	estimated leakage percent -65817.78017 	 1593879.1339700003
+Efficiency: 0.36461 	estimated leakage percent -66653.31638 	 1593879.1364800003
+Efficiency: 0.36295 	estimated leakage percent -67447.07579 	 1593879.1389900004
+Efficiency: 0.36137 	estimated leakage percent -68201.14724 	 1593879.1415000001
+Efficiency: 0.36022 	estimated leakage percent -69003.48335 	 1593879.14372
+Efficiency: 0.35878 	estimated leakage percent -69679.73443 	 1593879.1462000003
+Efficiency: 0.35741 	estimated leakage percent -70322.17296 	 1593879.1486800003
+Efficiency: 0.35611 	estimated leakage percent -70932.48957 	 1593879.1511600001
+Efficiency: 0.35487 	estimated leakage percent -71512.29036 	 1593879.1536400001
+Efficiency: 0.35369 	estimated leakage percent -72063.10112 	 1593879.1561200004
+Efficiency: 0.35292 	estimated leakage percent -72672.33958 	 1593879.1586000002
+Efficiency: 0.35185 	estimated leakage percent -73165.14788 	 1593879.16108
+Efficiency: 0.35082 	estimated leakage percent -73633.31578 	 1593879.1635600002
+Efficiency: 0.34985 	estimated leakage percent -74078.07529 	 1593879.1660400003
+Efficiency: 0.34927 	estimated leakage percent -74586.56507 	 1593879.1685200003
+Efficiency: 0.34837 	estimated leakage percent -74983.66212 	 1593879.1710000003
+Efficiency: 0.34752 	estimated leakage percent -75360.90434 	 1593879.1734800003
+Efficiency: 0.34671 	estimated leakage percent -75719.28444 	 1593879.1759600001
+Efficiency: 0.34628 	estimated leakage percent -76145.71379 	 1593879.1784400004
+Efficiency: 0.34554 	estimated leakage percent -76464.85344 	 1593879.1809200002
+Efficiency: 0.34482 	estimated leakage percent -76768.03611 	 1593879.1834000002
+Efficiency: 0.34415 	estimated leakage percent -77056.05965 	 1593879.1858800002
+Efficiency: 0.3435 	estimated leakage percent -77329.68203 	 1593879.1883600003
+Efficiency: 0.34289 	estimated leakage percent -77589.62329 	 1593879.1908400003
+Efficiency: 0.34231 	estimated leakage percent -77836.56749 	 1593879.19332
+Efficiency: 0.34176 	estimated leakage percent -78071.16449 	 1593879.1957999999
+Efficiency: 0.34158 	estimated leakage percent -78379.99988 	 1593879.19601
+Efficiency: 0.34107 	estimated leakage percent -78587.42527 	 1593879.19852
+Efficiency: 0.34058 	estimated leakage percent -78784.4794 	 1593879.20103
+Efficiency: 0.34011 	estimated leakage percent -78971.68082 	 1593879.2035400001
+Efficiency: 0.34001 	estimated leakage percent -79235.49042 	 1593879.2060500002
+Efficiency: 0.33957 	estimated leakage percent -79400.14131 	 1593879.2085600002
+Efficiency: 0.33916 	estimated leakage percent -79556.55966 	 1593879.2110700002
+Efficiency: 0.33876 	estimated leakage percent -79705.1571 	 1593879.2135800002
+Efficiency: 0.33873 	estimated leakage percent -79932.29291 	 1593879.2160900002
+Efficiency: 0.33836 	estimated leakage percent -80062.1037 	 1593879.2186000003
+Efficiency: 0.338 	estimated leakage percent -80185.42395 	 1593879.2211100003
+Efficiency: 0.33766 	estimated leakage percent -80302.5782 	 1593879.2233300002
+Efficiency: 0.33734 	estimated leakage percent -80413.87475 	 1593879.22555
+Efficiency: 0.33703 	estimated leakage percent -80519.60647 	 1593879.22777
+Efficiency: 0.33674 	estimated leakage percent -80620.05161 	 1593879.22999
+Efficiency: 0.33646 	estimated leakage percent -80715.4745 	 1593879.23221
+Efficiency: 0.3362 	estimated leakage percent -80806.12625 	 1593879.23469
+Efficiency: 0.33595 	estimated leakage percent -80892.24542 	 1593879.2369100002
+Efficiency: 0.33571 	estimated leakage percent -80974.05863 	 1593879.2391300001
+Efficiency: 0.33548 	estimated leakage percent -81051.7812 	 1593879.24135
+Efficiency: 0.33527 	estimated leakage percent -81125.61764 	 1593879.24383
+Efficiency: 0.33506 	estimated leakage percent -81195.76226 	 1593879.2460500002
+Efficiency: 0.33487 	estimated leakage percent -81262.39966 	 1593879.24827
+Efficiency: 0.33468 	estimated leakage percent -81325.70519 	 1593879.2507500001
+Efficiency: 0.3345 	estimated leakage percent -81385.84546 	 1593879.25297
+Efficiency: 0.33434 	estimated leakage percent -81442.97871 	 1593879.25519
+Efficiency: 0.33418 	estimated leakage percent -81497.25531 	 1593879.25741
+Efficiency: 0.33402 	estimated leakage percent -81548.81809 	 1593879.25963
+Efficiency: 0.33388 	estimated leakage percent -81597.80273 	 1593879.26211
+Efficiency: 0.33374 	estimated leakage percent -81644.33815 	 1593879.26433
+Efficiency: 0.33361 	estimated leakage percent -81688.5468 	 1593879.2665499998
+Efficiency: 0.33348 	estimated leakage percent -81730.54502 	 1593879.26877
+Efficiency: 0.33336 	estimated leakage percent -81770.44334 	 1593879.27125
+Efficiency: 0.33325 	estimated leakage percent -81808.34675 	 1593879.2737299998
+Efficiency: 0.33314 	estimated leakage percent -81844.355 	 1593879.2759499997
+Efficiency: 0.33304 	estimated leakage percent -81878.56284 	 1593879.2781699998
+Efficiency: 0.33294 	estimated leakage percent -81911.06029 	 1593879.28065
+Efficiency: 0.33284 	estimated leakage percent -81941.93288 	 1593879.28287
+Efficiency: 0.33275 	estimated leakage percent -81971.26184 	 1593879.28509
+Efficiency: 0.33267 	estimated leakage percent -81999.12436 	 1593879.28503
+Efficiency: 0.33259 	estimated leakage percent -82025.59374 	 1593879.2849700002
+Efficiency: 0.33251 	estimated leakage percent -82050.73966 	 1593879.2846499998
+Efficiency: 0.33244 	estimated leakage percent -82074.62828 	 1593879.2843300002
+Efficiency: 0.33237 	estimated leakage percent -82097.32247 	 1593879.2840099998
+Efficiency: 0.3323 	estimated leakage percent -82118.88195 	 1593879.28369
+Efficiency: 0.33224 	estimated leakage percent -82139.36346 	 1593879.2833699998
+Efficiency: 0.33218 	estimated leakage percent -82158.82089 	 1593879.28305
+Efficiency: 0.33212 	estimated leakage percent -82177.30544 	 1593879.2827299999
+Efficiency: 0.33206 	estimated leakage percent -82194.86577 	 1593879.2826699999
+Efficiency: 0.33201 	estimated leakage percent -82211.54808 	 1593879.28235
+Efficiency: 0.33196 	estimated leakage percent -82227.39628 	 1593879.28175
+Efficiency: 0.33191 	estimated leakage percent -82242.45206 	 1593879.28115
+Efficiency: 0.33187 	estimated leakage percent -82256.75505 	 1593879.2787699997
+Efficiency: 0.33217 	estimated leakage percent -82356.31112 	 1593879.2763899998
+Efficiency: 0.33211 	estimated leakage percent -82364.92114 	 1593879.2740099998
+Efficiency: 0.33205 	estimated leakage percent -82373.10066 	 1593879.2716299999
+Efficiency: 0.332 	estimated leakage percent -82380.87119 	 1593879.26925
+Efficiency: 0.33194 	estimated leakage percent -82388.25319 	 1593879.26687
+Efficiency: 0.33189 	estimated leakage percent -82395.26608 	 1593879.26449
+Efficiency: 0.33185 	estimated leakage percent -82401.92833 	 1593879.2621099998
+Efficiency: 0.3318 	estimated leakage percent -82408.25745 	 1593879.2597299998
+Efficiency: 0.33143 	estimated leakage percent -82331.7406 	 1593879.2573499996
+Efficiency: 0.3314 	estimated leakage percent -82341.5791 	 1593879.25497
+Efficiency: 0.33138 	estimated leakage percent -82350.92567 	 1593879.2525899997
+Efficiency: 0.33136 	estimated leakage percent -82359.8049 	 1593879.2502099997
+Efficiency: 0.33133 	estimated leakage percent -82368.24017 	 1593879.2478299998
+Efficiency: 0.33131 	estimated leakage percent -82376.25366 	 1593879.2454499998
+Efficiency: 0.33129 	estimated leakage percent -82383.86648 	 1593879.2430699999
+Efficiency: 0.33127 	estimated leakage percent -82391.09865 	 1593879.2406899997
+Efficiency: 0.33125 	estimated leakage percent -82397.9692 	 1593879.2383099997
+Efficiency: 0.33123 	estimated leakage percent -82404.49622 	 1593879.2359299997
+Efficiency: 0.33121 	estimated leakage percent -82410.69688 	 1593879.2335499998
+Efficiency: 0.3312 	estimated leakage percent -82416.5875 	 1593879.2311699996
+Efficiency: 0.33118 	estimated leakage percent -82422.18359 	 1593879.2287899998
+Efficiency: 0.33116 	estimated leakage percent -82427.49987 	 1593879.2264099997
+Efficiency: 0.33115 	estimated leakage percent -82432.55032 	 1593879.2240299997
+Efficiency: 0.33113 	estimated leakage percent -82437.34825 	 1593879.2216499997
+Efficiency: 0.33112 	estimated leakage percent -82441.90627 	 1593879.2192699995
+Efficiency: 0.3311 	estimated leakage percent -82446.23639 	 1593879.2171799997
+Efficiency: 0.33109 	estimated leakage percent -82450.34999 	 1593879.2148299997
+Efficiency: 0.33108 	estimated leakage percent -82454.25791 	 1593879.2124799998
+Efficiency: 0.33106 	estimated leakage percent -82457.97043 	 1593879.2101299996
+Efficiency: 0.33105 	estimated leakage percent -82461.49732 	 1593879.2077799998
+Efficiency: 0.33071 	estimated leakage percent -82382.31834 	 1593879.2054299996
+Efficiency: 0.33071 	estimated leakage percent -82389.62782 	 1593879.2030799997
+Efficiency: 0.33072 	estimated leakage percent -82396.57182 	 1593879.2007299997
+Efficiency: 0.33072 	estimated leakage percent -82403.16861 	 1593879.1983799995
+Efficiency: 0.3304 	estimated leakage percent -82326.90605 	 1593879.1960299995
+Efficiency: 0.33042 	estimated leakage percent -82336.98611 	 1593879.1936799996
+Efficiency: 0.33043 	estimated leakage percent -82346.56217 	 1593879.1913299996
+Efficiency: 0.33045 	estimated leakage percent -82355.65942 	 1593879.1889799996
+Efficiency: 0.33014 	estimated leakage percent -82281.7723 	 1593879.1866299994
+Efficiency: 0.33017 	estimated leakage percent -82294.10903 	 1593879.1865499998
+Efficiency: 0.3302 	estimated leakage percent -82305.82893 	 1593879.1841699996
+Efficiency: 0.33023 	estimated leakage percent -82316.96282 	 1593879.1817899996
+Efficiency: 0.33025 	estimated leakage percent -82327.54001 	 1593879.1794099994
+Efficiency: 0.33028 	estimated leakage percent -82337.58834 	 1593879.1770299997
+Efficiency: 0.3303 	estimated leakage percent -82347.13424 	 1593879.1746499995
+Efficiency: 0.33032 	estimated leakage percent -82356.20285 	 1593879.1722699997
+Efficiency: 0.33001 	estimated leakage percent -82282.28851 	 1593879.1698899998
+Efficiency: 0.33005 	estimated leakage percent -82294.59938 	 1593879.16751
+Efficiency: 0.33008 	estimated leakage percent -82306.29471 	 1593879.16513
+Efficiency: 0.33011 	estimated leakage percent -82317.40526 	 1593879.1627500001
+Efficiency: 0.33014 	estimated leakage percent -82327.96028 	 1593879.1603700002
+Efficiency: 0.33017 	estimated leakage percent -82337.98755 	 1593879.1579900002
+Efficiency: 0.3302 	estimated leakage percent -82347.51344 	 1593879.15561
+Efficiency: 0.33022 	estimated leakage percent -82356.56304 	 1593879.15323
+Efficiency: 0.33024 	estimated leakage percent -82365.16014 	 1593879.15085
+Efficiency: 0.33027 	estimated leakage percent -82373.32739 	 1593879.1484700004
+Efficiency: 0.33029 	estimated leakage percent -82381.08627 	 1593879.1460900002
+Efficiency: 0.3303 	estimated leakage percent -82388.45719 	 1593879.1437100002
+Efficiency: 0.33032 	estimated leakage percent -82395.45957 	 1593879.1416200001
+alicat read error ['']
+Efficiency: 0.33068 	estimated leakage percent -82488.08006 	 1593879.13953
+Efficiency: 0.33103 	estimated leakage percent -82576.06951 	 1593879.13744
+Efficiency: 0.33171 	estimated leakage percent -82749.28594 	 1593879.13535
+Efficiency: 0.33236 	estimated leakage percent -82913.84155 	 1593879.13326
+Efficiency: 0.33335 	estimated leakage percent -83163.69263 	 1593879.13091
+Efficiency: 0.3343 	estimated leakage percent -83401.05115 	 1593879.12882
+Efficiency: 0.33558 	estimated leakage percent -83724.22158 	 1593879.12673
+Efficiency: 0.3368 	estimated leakage percent -84031.23349 	 1593879.12464
+Efficiency: 0.33837 	estimated leakage percent -84425.01464 	 1593879.12229
+Efficiency: 0.33986 	estimated leakage percent -84799.10672 	 1593879.1202
+Efficiency: 0.34171 	estimated leakage percent -85261.36379 	 1593879.1181100002
+Efficiency: 0.34346 	estimated leakage percent -85700.508 	 1593879.1157600002
+Efficiency: 0.34557 	estimated leakage percent -86229.65362 	 1593879.11367
+Efficiency: 0.34758 	estimated leakage percent -86732.34196 	 1593879.1115800003
+Efficiency: 0.34995 	estimated leakage percent -87327.3159 	 1593879.1094900002
+Efficiency: 0.35221 	estimated leakage percent -87892.54113 	 1593879.1074
+Efficiency: 0.35485 	estimated leakage percent -88552.79612 	 1593879.1050500004
+Efficiency: 0.35736 	estimated leakage percent -89180.03836 	 1593879.1029600003
+Efficiency: 0.36026 	estimated leakage percent -89905.53212 	 1593879.1008700002
+Efficiency: 0.36301 	estimated leakage percent -90594.75118 	 1593879.0987800003
+Efficiency: 0.36617 	estimated leakage percent -91385.94469 	 1593879.0964300004
+Efficiency: 0.36439 	estimated leakage percent -90943.07257 	 1593879.0940800002
+Efficiency: 0.3627 	estimated leakage percent -90522.34405 	 1593879.0919900003
+Efficiency: 0.36109 	estimated leakage percent -90122.65195 	 1593879.0899
+Efficiency: 0.35957 	estimated leakage percent -89742.94445 	 1593879.0898200003
+Efficiency: 0.35812 	estimated leakage percent -89382.22233 	 1593879.0900000003
+Efficiency: 0.35674 	estimated leakage percent -89039.53631 	 1593879.0878800002
+Efficiency: 0.35543 	estimated leakage percent -88713.98459 	 1593879.0857600002
+Efficiency: 0.35418 	estimated leakage percent -88404.71044 	 1593879.08364
+Efficiency: 0.353 	estimated leakage percent -88110.9 	 1593879.0815200002
+Efficiency: 0.35188 	estimated leakage percent -87831.78007 	 1593879.0794000002
+Efficiency: 0.35081 	estimated leakage percent -87566.61614 	 1593879.0772800003
+Efficiency: 0.34979 	estimated leakage percent -87314.7104 	 1593879.0751600002
+Efficiency: 0.34883 	estimated leakage percent -87075.39993 	 1593879.0730400002
+Efficiency: 0.34791 	estimated leakage percent -86848.05499 	 1593879.0709200003
+Efficiency: 0.34704 	estimated leakage percent -86632.07729 	 1593879.0688000002
+Efficiency: 0.34621 	estimated leakage percent -86426.89846 	 1593879.0664200003
+Efficiency: 0.34542 	estimated leakage percent -86231.97858 	 1593879.0643000004
+Efficiency: 0.34468 	estimated leakage percent -86046.80468 	 1593879.0624600002
+Efficiency: 0.34397 	estimated leakage percent -85870.88947 	 1593879.0606200004
+Efficiency: 0.34296 	estimated leakage percent -85621.24052 	 1593879.0605600001
+Efficiency: 0.34234 	estimated leakage percent -85466.60352 	 1593879.0605000001
+Efficiency: 0.34174 	estimated leakage percent -85319.69837 	 1593879.0604400001
+Efficiency: 0.34118 	estimated leakage percent -85180.13848 	 1593879.0603800002
+Efficiency: 0.34064 	estimated leakage percent -85047.55658 	 1593879.0603200002
+Efficiency: 0.34013 	estimated leakage percent -84921.60377 	 1593879.0602600002
+Efficiency: 0.33965 	estimated leakage percent -84801.94861 	 1593879.0602000002
+Efficiency: 0.33918 	estimated leakage percent -84688.2762 	 1593879.0601400002
+Efficiency: 0.33875 	estimated leakage percent -84580.28742 	 1593879.0600800002
+Efficiency: 0.33833 	estimated leakage percent -84477.69807 	 1593879.0600200002
+Efficiency: 0.33794 	estimated leakage percent -84380.23819 	 1593879.0599600002
+Efficiency: 0.33756 	estimated leakage percent -84287.6513 	 1593879.0599000002
+Efficiency: 0.33687 	estimated leakage percent -84117.16426 	 1593879.0598400002
+Efficiency: 0.33655 	estimated leakage percent -84037.73107 	 1593879.0597800002
+Efficiency: 0.33624 	estimated leakage percent -83962.26954 	 1593879.0597200003
+Efficiency: 0.33595 	estimated leakage percent -83890.58109 	 1593879.0596600003
+Efficiency: 0.33534 	estimated leakage percent -83739.94756 	 1593879.0596000003
+Efficiency: 0.33509 	estimated leakage percent -83679.3752 	 1593879.0595400003
+Efficiency: 0.33486 	estimated leakage percent -83621.83146 	 1593879.0594800003
+Efficiency: 0.33463 	estimated leakage percent -83567.16491 	 1593879.0594200003
+Efficiency: 0.33409 	estimated leakage percent -83432.70219 	 1593879.0593600003
+Efficiency: 0.33391 	estimated leakage percent -83387.4921 	 1593879.0593000003
+Efficiency: 0.33373 	estimated leakage percent -83344.54252 	 1593879.0592400003
+Efficiency: 0.33356 	estimated leakage percent -83303.74042 	 1593879.0591800003
+Efficiency: 0.33307 	estimated leakage percent -83182.44892 	 1593879.0613900004
+Efficiency: 0.33293 	estimated leakage percent -83149.7515 	 1593879.0613000002
+Efficiency: 0.3328 	estimated leakage percent -83118.68896 	 1593879.0615000003
+Efficiency: 0.33268 	estimated leakage percent -83089.17954 	 1593879.0637100004
+Efficiency: 0.33223 	estimated leakage percent -82978.6161 	 1593879.0659200002
+Efficiency: 0.33214 	estimated leakage percent -82956.11034 	 1593879.0658300004
+Efficiency: 0.33205 	estimated leakage percent -82934.72986 	 1593879.0657400005
+Efficiency: 0.33196 	estimated leakage percent -82914.4184 	 1593879.0656500005
+Efficiency: 0.33155 	estimated leakage percent -82812.59302 	 1593879.0655600005
+Efficiency: 0.33149 	estimated leakage percent -82798.38841 	 1593879.0654700005
+Efficiency: 0.33143 	estimated leakage percent -82784.89403 	 1593879.0653800005
+Efficiency: 0.33137 	estimated leakage percent -82772.07436 	 1593879.0652900003
+Efficiency: 0.33099 	estimated leakage percent -82677.36618 	 1593879.0652000003
+Efficiency: 0.33095 	estimated leakage percent -82669.92291 	 1593879.0651100005
+Efficiency: 0.33126 	estimated leakage percent -82748.82003 	 1593879.0650200006
+Efficiency: 0.33121 	estimated leakage percent -82737.80407 	 1593879.0649300006
+Efficiency: 0.33083 	estimated leakage percent -82644.80939 	 1593879.0625700005
+Efficiency: 0.33081 	estimated leakage percent -82638.99395 	 1593879.0625100005
+Efficiency: 0.33112 	estimated leakage percent -82719.43752 	 1593879.0624500006
+Efficiency: 0.33108 	estimated leakage percent -82709.89067 	 1593879.0623900006
+Efficiency: 0.33071 	estimated leakage percent -82618.29167 	 1593879.0623300006
+Efficiency: 0.33068 	estimated leakage percent -82613.80211 	 1593879.0622700006
+Efficiency: 0.33101 	estimated leakage percent -82695.50527 	 1593879.0622100006
+Efficiency: 0.33097 	estimated leakage percent -82687.15503 	 1593879.0621500006
+Efficiency: 0.3306 	estimated leakage percent -82596.69281 	 1593879.0620900004
+Efficiency: 0.33058 	estimated leakage percent -82593.2832 	 1593879.0620300004
+Efficiency: 0.33056 	estimated leakage percent -82590.04407 	 1593879.0619700002
+Efficiency: 0.33055 	estimated leakage percent -82586.96689 	 1593879.0619100002
+Efficiency: 0.3302 	estimated leakage percent -82501.51408 	 1593879.0618500002
+Efficiency: 0.3302 	estimated leakage percent -82502.8634 	 1593879.0617900004
+Efficiency: 0.3302 	estimated leakage percent -82504.14526 	 1593879.0617300002
+Efficiency: 0.3302 	estimated leakage percent -82505.36303 	 1593879.0616700002
+Efficiency: 0.32987 	estimated leakage percent -82423.9904 	 1593879.0616100002
+Efficiency: 0.32989 	estimated leakage percent -82429.21591 	 1593879.0615500004
+Efficiency: 0.32957 	estimated leakage percent -82351.65064 	 1593879.0614900002
+Efficiency: 0.32927 	estimated leakage percent -82277.96364 	 1593879.0614300002
+Efficiency: 0.32899 	estimated leakage percent -82207.96098 	 1593879.0613700002
+Efficiency: 0.3284 	estimated leakage percent -82062.16541 	 1593879.06131
+Efficiency: 0.32754 	estimated leakage percent -81847.4163 	 1593879.0612500003
+Efficiency: 0.32672 	estimated leakage percent -81643.40465 	 1593879.06119
+Efficiency: 0.32594 	estimated leakage percent -81449.59357 	 1593879.06113
+Efficiency: 0.3249 	estimated leakage percent -81192.10684 	 1593879.06107
+Efficiency: 0.32364 	estimated leakage percent -80876.84551 	 1593879.0610100003
+Efficiency: 0.32243 	estimated leakage percent -80577.34724 	 1593879.06095
+Efficiency: 0.32129 	estimated leakage percent -80292.82388 	 1593879.0608900003
+Efficiency: 0.31993 	estimated leakage percent -79954.44681 	 1593879.0631000001
+Efficiency: 0.31838 	estimated leakage percent -79567.34012 	 1593879.0630100002
+Efficiency: 0.3169 	estimated leakage percent -79199.58877 	 1593879.0629200002
+Efficiency: 0.3155 	estimated leakage percent -78850.22498 	 1593879.0628300002
+Efficiency: 0.31392 	estimated leakage percent -78454.98437 	 1593879.0627400002
+Efficiency: 0.31216 	estimated leakage percent -78018.34509 	 1593879.0626500004
+Efficiency: 0.3105 	estimated leakage percent -77603.53778 	 1593879.0625600005
+Efficiency: 0.30892 	estimated leakage percent -77209.47083 	 1593879.0624700002
+Efficiency: 0.30718 	estimated leakage percent -76776.01977 	 1593879.0623800003
+Efficiency: 0.3053 	estimated leakage percent -76307.12339 	 1593879.0622900003
+Efficiency: 0.30351 	estimated leakage percent -75861.67183 	 1593879.0622000003
+Efficiency: 0.30484 	estimated leakage percent -76195.01327 	 1593879.0621100003
+Efficiency: 0.3061 	estimated leakage percent -76511.68763 	 1593879.06202
+Efficiency: 0.30697 	estimated leakage percent -76729.99878 	 1593879.06193
+Efficiency: 0.30812 	estimated leakage percent -77019.92387 	 1593879.06184
+Efficiency: 0.30922 	estimated leakage percent -77295.3527 	 1593879.0594800003
+Efficiency: 0.31026 	estimated leakage percent -77557.01008 	 1593879.0571200002
+Efficiency: 0.31125 	estimated leakage percent -77805.58459 	 1593879.0570600003
+Efficiency: 0.31219 	estimated leakage percent -78041.73038 	 1593879.057
+Efficiency: 0.31308 	estimated leakage percent -78266.06888 	 1593879.0569400003
+Efficiency: 0.31393 	estimated leakage percent -78479.19045 	 1593879.0568800003
+Efficiency: 0.31474 	estimated leakage percent -78681.65594 	 1593879.0568200003
+Efficiency: 0.3155 	estimated leakage percent -78873.99816 	 1593879.0570200002
+Efficiency: 0.31623 	estimated leakage percent -79056.72327 	 1593879.0569600002
+Efficiency: 0.31692 	estimated leakage percent -79230.31212 	 1593879.0569000002
+Efficiency: 0.31757 	estimated leakage percent -79395.22153 	 1593879.0568400004
+Efficiency: 0.31819 	estimated leakage percent -79551.88547 	 1593879.0567800002
+Efficiency: 0.31878 	estimated leakage percent -79700.71621 	 1593879.0567200002
+Efficiency: 0.31934 	estimated leakage percent -79842.10542 	 1593879.0566600002
+Efficiency: 0.31988 	estimated leakage percent -79976.42516 	 1593879.0566000002
+Efficiency: 0.32038 	estimated leakage percent -80104.02892 	 1593879.0565400003
+Efficiency: 0.32086 	estimated leakage percent -80225.25249 	 1593879.0564800003
+Efficiency: 0.32132 	estimated leakage percent -80340.41488 	 1593879.0564200003
+Efficiency: 0.32175 	estimated leakage percent -80449.81915 	 1593879.05636
+Efficiency: 0.32216 	estimated leakage percent -80553.75321 	 1593879.0563000003
+Efficiency: 0.32255 	estimated leakage percent -80652.49056 	 1593879.05624
+Efficiency: 0.32292 	estimated leakage percent -80746.29105 	 1593879.0561800003
+Efficiency: 0.32327 	estimated leakage percent -80835.40151 	 1593879.0563800002
+Efficiency: 0.32361 	estimated leakage percent -80920.05645 	 1593879.0563200002
+Efficiency: 0.32393 	estimated leakage percent -81000.47864 	 1593879.0562600002
+Efficiency: 0.32423 	estimated leakage percent -81076.87972 	 1593879.0562000002
+Efficiency: 0.32451 	estimated leakage percent -81149.46075 	 1593879.05614
+Efficiency: 0.32478 	estimated leakage percent -81218.41273 	 1593879.0560800002
+Efficiency: 0.32504 	estimated leakage percent -81283.9171 	 1593879.05602
+Efficiency: 0.32529 	estimated leakage percent -81346.14626 	 1593879.05596
+Efficiency: 0.32552 	estimated leakage percent -81405.26396 	 1593879.0559
+Efficiency: 0.32574 	estimated leakage percent -81461.42578 	 1593879.0561000002
+Efficiency: 0.32595 	estimated leakage percent -81514.77951 	 1593879.05832
+Efficiency: 0.32615 	estimated leakage percent -81565.46555 	 1593879.0582400002
+Efficiency: 0.32633 	estimated leakage percent -81613.6173 	 1593879.0584400003
+Efficiency: 0.32651 	estimated leakage percent -81659.36145 	 1593879.0583600001
+Efficiency: 0.32668 	estimated leakage percent -81702.8184 	 1593879.0582800002
+Efficiency: 0.32684 	estimated leakage percent -81744.1025 	 1593879.0582
+Efficiency: 0.32699 	estimated leakage percent -81783.32239 	 1593879.0581200002
+Efficiency: 0.32714 	estimated leakage percent -81820.58129 	 1593879.0580400003
+Efficiency: 0.32727 	estimated leakage percent -81855.97724 	 1593879.05569
+Efficiency: 0.3274 	estimated leakage percent -81889.60339 	 1593879.0556400002
+Efficiency: 0.32753 	estimated leakage percent -81921.54823 	 1593879.0553000001
+Efficiency: 0.32764 	estimated leakage percent -81951.89583 	 1593879.0529500002
+Efficiency: 0.32775 	estimated leakage percent -81980.72603 	 1593879.0506000002
+Efficiency: 0.32786 	estimated leakage percent -82008.11473 	 1593879.05055
+Efficiency: 0.32796 	estimated leakage percent -82034.134 	 1593879.0505
+Efficiency: 0.32805 	estimated leakage percent -82058.8523 	 1593879.05045
+Efficiency: 0.32814 	estimated leakage percent -82082.33468 	 1593879.0504
+Efficiency: 0.32823 	estimated leakage percent -82104.64294 	 1593879.0503500002
+Efficiency: 0.32831 	estimated leakage percent -82125.8358 	 1593879.0503
+Efficiency: 0.32838 	estimated leakage percent -82145.96901 	 1593879.05025
+Efficiency: 0.32845 	estimated leakage percent -82165.09555 	 1593879.0502000002
+Efficiency: 0.32819 	estimated leakage percent -82100.73627 	 1593879.05015
+Efficiency: 0.32827 	estimated leakage percent -82122.12446 	 1593879.0500999999
+Efficiency: 0.32835 	estimated leakage percent -82142.44323 	 1593879.05005
+Efficiency: 0.32842 	estimated leakage percent -82161.74607 	 1593879.05
+Efficiency: 0.32816 	estimated leakage percent -82097.55427 	 1593879.04995
+Efficiency: 0.32824 	estimated leakage percent -82119.10155 	 1593879.0499
+Efficiency: 0.32832 	estimated leakage percent -82139.57147 	 1593879.04985
+Efficiency: 0.32839 	estimated leakage percent -82159.01789 	 1593879.0498000002
+Efficiency: 0.32813 	estimated leakage percent -82094.9625 	 1593879.04975
+Efficiency: 0.32821 	estimated leakage percent -82116.63937 	 1593879.0497
+Efficiency: 0.32829 	estimated leakage percent -82137.2324 	 1593879.0496500002
+Q PRESSED
+Efficiency: 0.32837 	estimated leakage percent -82156.79578 	 1593879.0496000003
 finished - exiting
-15.6 V	3.0 A	46.8 W	0x1c	0x40
-	restoring original setpoint
-	restoring original mode    
-	turning load off
-	Set to local control

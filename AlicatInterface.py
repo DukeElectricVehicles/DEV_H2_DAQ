@@ -18,6 +18,8 @@ from CommInterface import CommInterface
 
 class AlicatInterface(CommInterface):
 	def __init__(self,port = '/dev/tty.usbserial',baudrate = 9600):
+		CommInterface.__init__(self, logfileName='H2flow')
+		self.serialLock = threading.Lock()
 		self.serialName = port
 		self.baudRate = baudrate
 		self.timeout = 0.1
@@ -34,11 +36,11 @@ class AlicatInterface(CommInterface):
 		assert(not self.running)
 		if not self.ser.isOpen():
 			self.ser.open()
-		self.ser.write(b'\r')
-		self.ser.write(b'\r')
+		self.flushSerial()
 		self.poll()
 		tmp = self.readLineData();
-		if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)==12)):
+		# print(tmp)
+		if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)>=12)):
 			toRet = True
 		else:
 			toRet = False
@@ -48,15 +50,19 @@ class AlicatInterface(CommInterface):
 	def run(self):
 		if not self.ser.isOpen():
 			self.ser.open()
-		self.ser.write(b'\r')
-		self.ser.write(b'\r')
+		self.flushSerial()
+		startT = time.time()
 		while self.running:
 			self.poll()
 			tmp = self.readLineData();
-			if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)==12)):
+			if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)>=12)):
 				self.mostRecentData = tmp
+				self.log((time.time()-startT),str(tmp))
 			else:
-				print('alicat read error')
+				print('alicat read error',str(tmp))
+				self.ser.close()
+				self.ser.open()
+				self.flushSerial()
 		self.ser.close()
 	def close(self):
 		if self.ser.isOpen():
@@ -64,14 +70,26 @@ class AlicatInterface(CommInterface):
 	def getMostRecentData(self):
 		print(self.mostRecentData)
 		return self.mostRecentData
+	def flushSerial(self):
+		self.serialLock.acquire()
+		try:
+			self.ser.write(b'\r')
+			self.ser.write(b'\r')
+		except:
+			pass
+		self.serialLock.release()
+
 	def poll(self):
+		self.serialLock.acquire()
 		try:
 			self.ser.write(b'\r')
 			self.ser.write(b'A\r')
 			time.sleep(0.001);
 		except:
 			print('Alicat Poll Error')
+		self.serialLock.release()
 	def readLine(self):
+		self.serialLock.acquire()
 		try:
 			startTime = time.time()
 			toRet = ""
@@ -84,6 +102,7 @@ class AlicatInterface(CommInterface):
 			return ""
 		while(len(toRet)!=0 and (toRet[-1]=='\n' or toRet[-1]=='\r')):
 			toRet = toRet[0:-1]
+		self.serialLock.release()
 		return toRet
 	def readLineData(self):
 		dat = self.readLine();

@@ -11,6 +11,10 @@ import threading
 
 class CommInterface():
 
+	def __init__(self,logfileName = ''):
+		if logfileName=='':
+			logfileName = type(self).__name__
+		self.dataFile = open('data/'+logfileName+'.txt','w')
 	def initialize(self):
 		raise NotImplementedError()
 	def checkValidSerial(self):
@@ -29,4 +33,17 @@ class CommInterface():
 				t.start()
 	def stop(self):
 		self.running = False
+		try:
+			self.runThread.join()
+			self.dataFile.close()
+		except Exception as e:
+			print('error terminating process',type(self).__name__)
+			print(e)
 		# self.ser.close()
+
+	def log(self,time,text):
+		if (time==-1):
+			self.dataFile.write(text)
+		else:
+			self.dataFile.write(str(round(time,4))+'s\t'+text+'\n')
+		self.dataFile.flush()

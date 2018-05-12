@@ -601,7 +601,7 @@ class DCLoad(InstrumentInterface):
         op_state = hex(self.DecodeInteger(response[15]))
         demand_state = hex(self.DecodeInteger(response[16:18]))
         s = [str(voltage) + " V", str(current) + " A", str(power) + " W", str(op_state), str(demand_state)]
-        return "\t".join(s)
+        return "\t".join(s),[voltage,current,power]
     # Returns model number, serial number, and firmware version number
     def GetProductInformation(self):
         "Returns model number, serial number, and firmware version"

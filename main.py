@@ -106,7 +106,7 @@ class MainManager():
 			return
 		while(self.running):
 			try:
-				if (self.dcload.mostRecentData[2]<1 and self.dcload.mostRecentData[3]>3): # dc load needs to be reset
+				if (self.dcload.mostRecentData[1]<1 and self.dcload.mostRecentData[2]>3): # dc load needs to be reset
 					self.dcload.SetMode('cw')
 					self.dcload.SetCWPower(0)
 					timeToReset = time.time()+.25
@@ -118,6 +118,7 @@ class MainManager():
 					else:
 						timeToReset = time.time()+.25
 			except IndexError:
+				print('no recent data yet')
 				pass
 			except:
 				print("error with resetting DC load")

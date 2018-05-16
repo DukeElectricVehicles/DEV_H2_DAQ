@@ -73,9 +73,15 @@ class InstrumentInterface:
     # Values for setting modes of CC, CV, CW, or CR
     modes = {"cc":0, "cv":1, "cw":2, "cr":3}
     def Initialize(self, com_port, baudrate, address=0):
-        self.serialLock = threading.Lock()
+        try:
+            self.serialLock
+        except AttributeError:
+            self.serialLock = threading.Lock()
         self.serialLock.acquire()
-        self.sp = serial.Serial(com_port, baudrate, timeout=0.1, write_timeout=0.1)
+        try:
+            self.sp.open()
+        except AttributeError:
+            self.sp = serial.Serial(com_port, baudrate, timeout=0.05, write_timeout=0.3)
         self.serialLock.release()
         self.address = address
     def DumpCommand(self, bytes1):
@@ -150,16 +156,29 @@ class InstrumentInterface:
         return checksum
     def StartCommand(self, byte):
         return chr(0xaa) + chr(self.address) + chr(byte)
-    def SendCommand(self, command):
+    def SendCommand(self, command): # I have modified this code quite a bit
         '''Sends the command to the serial stream and returns the 26 byte
         response.
         '''
         command = [ord(c) for c in command] # python3 hack
         assert(len(command) == self.length_packet)
+        # begin serial interactions
         self.serialLock.acquire()
-        self.sp.write(command)
+        check = self.sp.write(command)
+        assert(check == self.length_packet)
         response = self.sp.read(self.length_packet)
+        # if we didn't get all the bytes yet, keep reading
+        tmpT = time.time()
+        while (len(response) < self.length_packet and (time.time()-tmpT)<0.1):
+            if (len(response) == self.length_packet-1 and response[0]!=0xaa):
+                response = b'\xaa'+response # sometimes the first byte gets chopped off
+                break;
+            else:
+                response = response+self.sp.read(self.length_packet-len(response))
         self.serialLock.release()
+        # cleanup
+        if (len(response) != self.length_packet):
+            print('invalid response from BK...',response)
         response = [chr(r) for r in response] # python3 hack
         assert(len(response) == self.length_packet)
         return response

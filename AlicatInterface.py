@@ -3,7 +3,7 @@ Name:               AlicatInterface.py
 Description:      	Alicat communication class
 Author:             Gerry Chen
 Created:            May 10, 2018
-Modified:           May 11, 2018
+Modified:           May 15, 2018
 
 '''
 
@@ -15,6 +15,7 @@ from parse import *
 import threading
 import time
 from CommInterface import CommInterface
+import numpy as np
 
 class AlicatInterface(CommInterface):
 	def __init__(self,port = '/dev/tty.usbserial',baudrate = 9600):
@@ -22,7 +23,7 @@ class AlicatInterface(CommInterface):
 		self.serialLock = threading.Lock()
 		self.serialName = port
 		self.baudRate = baudrate
-		self.timeout = 0.1
+		self.timeout = 0.2
 		self.ser = serial.Serial()
 		self.ser.baudrate = self.baudRate
 		self.ser.port = self.serialName
@@ -31,44 +32,71 @@ class AlicatInterface(CommInterface):
 		datVec = "A +0.0 +0.0 +0.0 +0.0 Air".split(' ');
 		self.mostRecentData = datVec;
 		self.running = False;
+		self.ID = 'A'
 
 	def checkValidSerial(self):
 		assert(not self.running)
-		if not self.ser.isOpen():
-			self.ser.open()
-		self.flushSerial()
-		self.poll()
-		tmp = self.readLineData();
-		# print(tmp)
-		if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)>=12)):
-			toRet = True
-		else:
-			toRet = False
-		self.ser.close()
-		return toRet
-
-	def run(self):
-		if not self.ser.isOpen():
-			self.ser.open()
-		self.flushSerial()
-		startT = time.time()
-		while self.running:
+		for ID in ['A','B']:
+			self.ID = ID
+			if not self.ser.isOpen():
+				self.ser.open()
+			self.flushSerial()
 			self.poll()
 			tmp = self.readLineData();
+			# print(tmp)
 			if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)>=12)):
-				self.mostRecentData = tmp
-				self.log((time.time()-startT),str(tmp))
+				toRet = True
+				break
 			else:
-				print('alicat read error',str(tmp))
-				self.ser.close()
-				self.ser.open()
-				self.flushSerial()
+				toRet = False
+			self.ser.close()
+		return toRet
+
+	def run(self, startT=None):
+		if not self.ser.isOpen():
+			self.ser.open()
+		self.flushSerial()
+		if (startT is None):
+			startT = time.time()
+		countE = 0
+		while self.running:
+			try:
+				self.poll()
+				tmp = self.readLineData();
+				# print(tmp)
+				if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)>=12)):
+					data = [float(d) for d in tmp[1:5]]
+					if (tmp[-1]=='TMF' or len(tmp)==12): # new alicat with totalizer
+						data.append(float(tmp[5]))
+					self.mostRecentData = data
+					self.log((time.time()-startT),self.stringifyData(data))
+					self.allData.append([time.time()-startT]+data)
+					countE = 0
+				else:
+					countE += 1
+					print('alicat read error',str(tmp))
+					if(countE>1):
+						self.resetConnection()
+					else:
+						self.flushSerial()
+			except Exception as e:
+				print('alicat read error...',e)
 		self.ser.close()
+	def stringifyData(self,data):
+		if len(data)==4:
+			return '%.2fpsia\t%.2f°C\t%.3fLPM\t%.3fmg/s\n'%tuple(data)
+		elif len(data)==5:
+			return '%.2fpsia\t%.2f°C\t%.3fLPM\t%.3fmg/s\t%.3fg\n'%tuple(data)
+		else:
+			return str(data)
 	def close(self):
 		if self.ser.isOpen():
 			self.ser.close()
+	def resetConnection(self):
+		self.ser.close()
+		self.ser.open()
+		self.flushSerial()
 	def getMostRecentData(self):
-		print(self.mostRecentData)
 		return self.mostRecentData
 	def flushSerial(self):
 		self.serialLock.acquire()
@@ -82,8 +110,8 @@ class AlicatInterface(CommInterface):
 	def poll(self):
 		self.serialLock.acquire()
 		try:
-			self.ser.write(b'\r')
-			self.ser.write(b'A\r')
+			# self.ser.write(b'\r')
+			self.ser.write((self.ID+'\r').encode())
 			time.sleep(0.001);
 		except:
 			print('Alicat Poll Error')
@@ -94,7 +122,7 @@ class AlicatInterface(CommInterface):
 			startTime = time.time()
 			toRet = ""
 			thisChar = ""
-			while (thisChar != chr(13)) and (time.time()-startTime<self.timeout):
+			while (thisChar != chr(13)) and ((time.time()-startTime)<5*self.timeout):
 				thisChar = self.ser.read().decode()
 				toRet = toRet+thisChar
 		except:

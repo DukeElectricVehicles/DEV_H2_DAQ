@@ -15,6 +15,8 @@ from ControllerInterface import ControllerInterface
 import copy
 import threading
 import numpy as np
+from scipy.io import savemat
+import traceback
 
 with open('log.txt', 'wb') as outf:
     # os.dup2(inf.fileno(), 0)
@@ -27,14 +29,24 @@ class MainManager():
 		self.alicat = alicat
 		self.controller = controller
 		self.running = True
+		self.startT = time.time()
 
 	def startAll(self):
+		startT = self.startT
 		if self.dcload is not None:
-			self.dcload.start()
+			self.dcload.start(startT=startT)
 		if self.alicat is not None:
-			self.alicat.start()
+			self.alicat.start(startT=startT)
 		if self.controller is not None:
-			self.controller.start()
+			self.controller.start(startT=startT)
+
+	def saveAll(self):
+		toSave = {}
+		for comm in [self.dcload,self.alicat,self.controller]:
+			if comm is not None:
+				toSave[comm.saveName] = comm.allData
+				# comm.save()
+		savemat('data/data',toSave)
 
 	def stopAll(self):
 		if self.dcload is not None:
@@ -58,6 +70,7 @@ class MainManager():
 					self.dcload.SetMode('cw')
 					self.dcload.SetCWPower(float(command[0:-1]))
 					self.dcload.loadFunc = doNothing # don't change after set
+					print('set to constant power mode:',float(command[0:-1]))
 				elif command[-1]=='V':
 					self.dcload.SetMode('cv')
 					self.dcload.SetCVVoltage(float(command[0:-1]))
@@ -71,7 +84,6 @@ class MainManager():
 			command = input('')
 		self.running = False
 		print('Q PRESSED')
-		self.stopAll()
 
 	def run(self):
 		avgTime = 10
@@ -90,59 +102,70 @@ class MainManager():
 		if (self.dcload is None or self.alicat is None):
 			return
 		while(self.running):
-			while(time.time()-prevT<deltaT):
-				time.sleep(0.001)
-			H2vals[ind] = float(self.alicat.mostRecentData[5])
-			powers[ind] = self.dcload.mostRecentData[2]
-			currents[ind] = float(self.dcload.mostRecentData[1])
-			H2cons = H2vals[ind]-H2vals[ind-numInds+1]
-			energy = np.sum(powers)*deltaT
-			charge = np.sum(currents)*deltaT
-			eff = 0.95*(eff) + 0.05*(energy / (H2cons*0.08235*119.93e3))
-			h2charge = (2*1.60217662e-19*6.022e23*(H2cons*0.08235/2.01588)) / 20 # 20 stacks in series
-			leak = 0.95*(leak) + 0.05*((h2charge-charge)/h2charge)
-			print('Efficiency:',round(eff,5),'\testimated leakage percent',round(leak,5),'\t',charge)
-			prevTot = H2cons
-			prevT = time.time()
-			ind = (ind+1)%(numInds)
+			try:
+				while(time.time()-prevT<deltaT):
+					time.sleep(0.001)
+				H2vals[ind] = self.alicat.mostRecentData[4]
+				powers[ind] = self.dcload.mostRecentData[2]
+				currents[ind] = self.dcload.mostRecentData[1]
+				H2cons = H2vals[ind]-H2vals[ind-numInds+1]
+				energy = np.sum(powers)*deltaT
+				charge = np.sum(currents)*deltaT
+				eff = 0.95*(eff) + 0.05*(energy / (H2cons*119.93e3))
+				h2charge = (2*1.60217662e-19*6.022e23*(H2cons/2.01588)) / 20 # 20 stacks in series
+				leak = 0.95*(leak) + 0.05*((h2charge-charge)/h2charge)
+				print('%.2fs\tEff: %.5f\tleak: %.5f'%(time.time()-self.startT,eff,leak))
+				prevTot = H2cons
+				prevT = time.time()
+				ind = (ind+1)%(numInds)
+			except:
+				# traceback.print_exc()
+				pass
 
 def checkUSBnames():
 	print('Identifying serial ports...')
 	goodPorts = []
 	toRet = {'alicat':None,'BK':None,'Controller':None}
-	for dev in list_ports.grep('usbserial*'):
+	for dev in list_ports.grep('usb*'):
 		port, desc, misc = dev
 		goodPorts.append(port)
+	toRet['alicat'] = scanForComm(goodPorts,'alicat')
+	toRet['Controller'] = scanForComm(goodPorts,'Controller')
+	toRet['BK'] = scanForComm(goodPorts,'BK')
 	for port in goodPorts:
-		alicat = AlicatInterface(port)
-		isAlicat = alicat.checkValidSerial()
-		load = BKInterface(port)
-		isBK = load.checkValidSerial()
-		controller = ControllerInterface(port)
-		isController = controller.checkValidSerial()
-
-		if (isAlicat and (not isBK) and (not isController)):
-			print('\tport '+port+' is an Alicat flowmeter')
-			toRet['alicat'] = port
-		elif ((not isAlicat) and isBK and (not isController)):
-			print('\tport '+port+' is a BK DC load')
-			toRet['BK'] = port
-		elif((not isAlicat) and (not isBK) and isController):
-			print('\tport '+port+' is a FC Controller')
-			toRet['Controller'] = port
-		elif((not isAlicat) and (not isBK) and (not isController)):
-			print('\tport '+port+' cannot be recognized')
-		else:
-			print('\tport '+port+' was identified as multiple devices...')
-			print('\t\t',isAlicat,isBK,isController)
+		print('\tport '+port+' was not recognized')
+	# rescan - comment these lines out if you don't want to rescan
+	# for device in ['alicat','BK','Controller']:
+	# 	while(toRet[device] is None):
+	# 		print(device,' not found - try again?')
+	# 		repeat = input()
+	# 		if not (repeat[0]=='y' or repeat[0]=='Y'):
+	# 			break;
+	# 		toRet[device] = scanForComm(goodPorts, device)
+	# end rescan section
 	print('Finished identifying serial ports')
 	return toRet
 
+def scanForComm(goodPorts,name):
+	info = {'alicat':[AlicatInterface,'Alicat flowmeter'],
+					'Controller':[ControllerInterface,'FC Controller'],
+					'BK':[BKInterface,'BK DC load']}
+	commClass = info[name][0]
+	text = info[name][1]
+	for port in goodPorts:
+		comm = commClass(port)
+		isComm = comm.checkValidSerial()
+		if (isComm):
+			print('\tport '+port+' is a',text)
+			goodPorts.remove(port)
+			return comm
+	return None
+
 def main():
-	ports = checkUSBnames()
-	dcload = BKInterface(port=ports['BK']) if ports['BK'] is not None else None
-	alicat = AlicatInterface(port=ports['alicat']) if ports['alicat'] is not None else None
-	controller = ControllerInterface(port=ports['Controller']) if ports['Controller'] is not None else None
+	comms = checkUSBnames()
+	dcload = comms['BK'] if comms['BK'] is not None else None
+	alicat = comms['alicat'] if comms['alicat'] is not None else None
+	controller = comms['Controller'] if comms['Controller'] is not None else None
 	mainP = MainManager(dcload,alicat,controller)
 	mainP.startAll()
 	time.sleep(1)
@@ -150,6 +173,7 @@ def main():
 	usrThread = threading.Thread(target=mainP.checkInputs)
 	usrThread.start()
 	usrThread.join()
+	mainP.saveAll()
 	mainP.stopAll()
 
 if __name__ == '__main__':

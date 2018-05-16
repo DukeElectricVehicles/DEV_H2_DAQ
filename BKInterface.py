@@ -3,50 +3,54 @@ Name:					BKInterface.py
 Description:	BK load communication class
 Author:  			Gerry Chen
 Created: 			May 10, 2018
-Modified:			May 11, 2018
+Modified:			May 15, 2018
 
 '''
 
 import sys, time
 from BK import dcload
 from CommInterface import CommInterface
+import numpy as np
+import traceback
 
 class BKInterface(dcload.DCLoad,CommInterface):
-	def __init__(self,port = '/dev/tty.usbserial',baudrate = 9600):
+	def __init__(self,port = '/dev/tty.usbserial',baudrate = 38400):
 		CommInterface.__init__(self, logfileName='powerstats')
+		dcload.DCLoad.__init__(self)
 		self.port        = port
 		self.baudrate    = baudrate
-		dcload.DCLoad.__init__(self)
+		self.sp = None
 		def loadFunc(t,dcload):
 			return # don't do anything
 		self.setLoadFunc(loadFunc)
 		self.running = False
 		self.mostRecentData = [0,0,0]
-		# self.ser = self.sp # for compatibility
 
 	def initialize(self):
-		self.Initialize(self.port,self.baudrate)
+		self.Initialize(self.port, self.baudrate)
 
-	def checkValidSerial(self):
-		self.Initialize(self.port,self.baudrate)
-		try:
-			if self.SetLocalControl():
+	def checkValidSerial(self, closeWhenDone = True):
+		self.initialize()
+		for i in range(3):
+			try:
+				if self.SetLocalControl():
+					toRet = False
+					self.resetConnection()
+				else:
+					toRet = True
+					break
+			except AssertionError as e:
 				toRet = False
-			else:
-				toRet = True
-		except AssertionError:
-			toRet = False
-		self.sp.close()
+		if (closeWhenDone):
+			self.sp.close()
 		return toRet
 
 	def setLoadFunc(self,	loadFunc):
 		self.loadFunc = loadFunc
 
-	def run(self, updateRate=.1):
-		self.Initialize(self.port,self.baudrate)
+	def run(self, updateRate=.1, startT=None):
 		print('Running DC load')
-		self.Initialize(self.port,self.baudrate)
-		self.SetRemoteControl()
+		self.initialize()
 		def test(cmd, results):
 			if results:
 				print(cmd, "failed:")
@@ -54,23 +58,35 @@ class BKInterface(dcload.DCLoad,CommInterface):
 				exit(1)
 			else:
 				print(cmd)
+		for i in range(3):
+			try:
+				test('\tSetting to remote control: ',self.SetRemoteControl())
+				break
+			except AssertionError as e:
+				print('error starting up BK:',e)
+				traceback.print_exc()
+				if (i>0):
+					self.resetConnection()
+		print('DC load initialized')
+		print("\tGetting original setpoint ")
 		origV = self.GetCCCurrent()
+		print("\tGetting original mode     ")
 		origM = self.GetMode()
 		print("\toriginal setpoint          =", origV)
 		print("\toriginal mode              =", origM)
-		test("\tSet max current to 7 A", self.SetMaxCurrent(7))
+		test("\tSet max current to 10 A", self.SetMaxCurrent(10))
 		test("\tturning load on",self.TurnLoadOn())
-		startTime = time.time()
+		if (startT is None):
+			startT = time.time()
 		while self.running:
 			try:
-				thisT = time.time()-startTime
+				thisT = time.time()-startT
 				self.loadFunc(thisT,self)
-				while((time.time()-startTime)-thisT<updateRate):
-					# print(self.GetInputValues())
+				while((time.time()-startT)-thisT<updateRate):
 					dataStr,thisDat = self.GetInputValues()
 					self.mostRecentData = thisDat
-					self.log(thisT,dataStr)
-					# time.sleep(0.001)
+					self.log(time.time()-startT,dataStr)
+					self.allData.append([time.time()-startT]+thisDat)
 			except AssertionError as e:
 				print(e)
 			except Exception as e:
@@ -80,23 +96,14 @@ class BKInterface(dcload.DCLoad,CommInterface):
 		test("\tturning load off", self.TurnLoadOff())
 		test("\tSet to local control", self.SetLocalControl())
 		self.sp.close()
-	
-	# def setShortCircuitTrans
+
+	def resetConnection(self):
+		self.sp.close()
+		self.initialize()
+		# self.sp.flush()
 
 def main():
-	if len(sys.argv) != 4: 
-		Usage()
-	access_type = sys.argv[1]
-	port        = sys.argv[2]
-	baudrate    = int(sys.argv[3])
-	if access_type == "com":
-		load = Dispatch('BKServers.DCLoad85xx')
-	elif access_type == "obj":
-		load = dcload.DCLoad()
-	else:
-		Usage()
-	TalkToLoad(load, port, baudrate)
-	return 0
+	pass
 
 if __name__ == '__main__':
 	main()

@@ -61,6 +61,7 @@ class MainManager():
 		print('starting input checking')
 		def doNothing(t,dcload):
 			return
+		self.setPower = 0
 		while command!='q':
 			print(command)
 			if command=='q':
@@ -69,6 +70,7 @@ class MainManager():
 				if command[-1]=='W':
 					self.dcload.SetMode('cw')
 					self.dcload.SetCWPower(float(command[0:-1]))
+					self.setPower = float(command[0:-1])
 					self.dcload.loadFunc = doNothing # don't change after set
 					print('set to constant power mode:',float(command[0:-1]))
 				elif command[-1]=='V':
@@ -98,10 +100,28 @@ class MainManager():
 		ind = 0
 		eff = 0
 		leak = 0
+		timeToReset = time.time()+999999999999
 
 		if (self.dcload is None or self.alicat is None):
 			return
 		while(self.running):
+			try:
+				if (self.dcload.mostRecentData[2]<1 and self.dcload.mostRecentData[3]>3): # dc load needs to be reset
+					self.dcload.SetMode('cw')
+					self.dcload.SetCWPower(0)
+					timeToReset = time.time()+.25
+				if time.time()>timeToReset:
+					if not (self.dcload.mostRecentData[2]<1 and self.dcload.mostRecentData[3]>3):
+						self.dcload.SetMode('cw')
+						self.dcload.SetCWPower(self.setPower)
+						timeToReset = time.time()+999999999999
+					else:
+						timeToReset = time.time()+.25
+			except IndexError:
+				pass
+			except:
+				print("error with resetting DC load")
+				traceback.print_exc()
 			try:
 				while(time.time()-prevT<deltaT):
 					time.sleep(0.001)

@@ -12,25 +12,41 @@ uint32_t startTime;
 double fanSpeed = 0.4;
 
 
-uint32_t SC_Intervals[12] = {10,10,10,300,300,10,10,10,600,10,10,10};
-const uint32_t SC_Durations[12] = {100,100,100,100,100,
+uint32_t SC_Intervals[32] = {10,10,10,30,30,30,30,30,
+                             10,10,10,30,30,30,30,30,
+                             10,10,10,30,30,30,30,30,
+                             10,10,10,30,30,30,30,30};
+const uint32_t SC_Durations[32] = {100,100,100,
+                                   25,25,25,25,25,
+                                   100,100,100,
+                                   50,50,50,50,50,
+                                   100,100,100,
                                    100,100,100,100,100,
-                                   100,100};
+                                   100,100,100,
+                                   200,200,200,200,200};
 uint8_t SC_ind = 0;
-uint32_t Purge_Intervals[12] = {10,10,10,600,10,10,10,300,300,10,10,10};
-const uint32_t Purge_Durations[12] = {100,100,100,100,100,
+uint32_t Purge_Intervals[16] = {10,10,10,150,
+                                10,10,10,150,
+                                10,10,10,150,
+                                10,10,10,150};
+const uint32_t Purge_Durations[16] = {100,100,100,100,100,
                                       100,100,100,100,100,
-                                      100,100};
+                                      100,100,100,100,100,
+                                      100};
 uint8_t Purge_ind = 0;
+uint32_t Reboot_Intervals[4] = {181,180,180,180};
+uint8_t Reboot_ind = 0;
 
-uint32_t SC_Interval = SC_Intervals[0];
+uint32_t SC_Interval = SC_Intervals[0]*1000;
 uint32_t SC_Duration = SC_Durations[0];
-uint32_t Purge_Interval = Purge_Intervals[0];
+uint32_t Purge_Interval = Purge_Intervals[0]*1000;
 uint32_t Purge_Duration = Purge_Durations[0];
+uint32_t Reboot_Interval = Reboot_Intervals[0]*1000;
 Metro SC_IntervalTimer = Metro(SC_Interval);
 Metro SC_DurationTimer = Metro(SC_Duration);
 Metro Purge_IntervalTimer = Metro(Purge_Interval);
 Metro Purge_DurationTimer = Metro(Purge_Duration);
+Metro Reboot_IntervalTimer = Metro(Reboot_Interval);
 
 Metro watchdogTimer = Metro(10);
 //Metro printStatsTimer = Metro(10); // polling mode
@@ -43,12 +59,14 @@ uint8_t SC_StartupIndex = 0;
 void setup() {
   kickDog();
 
-  
-  for (int i = 0; i<(sizeof(Purge_Intervals)/sizeof(uint32_t)); i++){
+  for (int i = 0; i<(sizeof(SC_Intervals)/sizeof(uint32_t)); i++){
     SC_Intervals[i] = SC_Intervals[i]*1000; // convert s to ms
   }
   for (int i = 0; i<(sizeof(Purge_Intervals)/sizeof(uint32_t)); i++){
     Purge_Intervals[i] = Purge_Intervals[i]*1000; // convert s to ms
+  }
+  for (int i = 0; i<(sizeof(Reboot_Intervals)/sizeof(uint32_t)); i++){
+    Reboot_Intervals[i] = Reboot_Intervals[i]*1000; // convert s to ms
   }
 
   analogWriteFrequency(FAN,100000);
@@ -66,11 +84,6 @@ void setup() {
 
   bootup();
   printInstructions();
-  Purge_IntervalTimer.reset();
-  Serial.println("purge reset");
-  delay2(5000);
-  SC_IntervalTimer.reset();
-  Serial.println("SC reset");
 }
 
 void loop() {
@@ -85,6 +98,9 @@ void loop() {
   }
   if (Purge_DurationTimer.check()){
     digitalWrite(PURGE,LOW);
+  }
+  if (Reboot_IntervalTimer.check()){
+    reboot();
   }
   
   if (watchdogTimer.check()){
@@ -116,6 +132,12 @@ void bootup(){
   analogWrite(FAN,HIGH);
   delay2(100);
   analogWrite(FAN,fanSpeed*256);
+  
+  Purge_IntervalTimer.reset();
+  delay2(5000);
+  SC_IntervalTimer.reset();
+  kickDog();
+  Reboot_IntervalTimer.reset();
 }
 void SC(){
   digitalWrite(LFET,LOW);
@@ -148,6 +170,19 @@ void purge(){
   Purge_Interval = Purge_Intervals[Purge_ind];
   Purge_IntervalTimer.interval(Purge_Interval);
   Purge_IntervalTimer.reset();
+}
+
+void reboot(){
+  if (Reboot_ind<(sizeof(Reboot_Intervals)/sizeof(uint32_t)-1)){
+    Reboot_ind++;
+  }
+  else{
+    Reboot_ind = 0;
+  }
+  Reboot_Interval = Reboot_Intervals[Reboot_ind];
+  Reboot_IntervalTimer.interval(Reboot_Interval);
+  Reboot_IntervalTimer.reset();
+  bootup();
 }
 double readTemp(){
   double prct = analogRead(TEMP)/1024.0;

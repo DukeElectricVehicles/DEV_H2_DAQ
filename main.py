@@ -57,7 +57,7 @@ class MainManager():
 			self.controller.stop()
 
 	def checkInputs(self): # blocking
-		command = ''
+		command = ' '
 		print('starting input checking')
 		def doNothing(t,dcload):
 			return
@@ -67,6 +67,10 @@ class MainManager():
 			if command=='q':
 				break
 			try:
+				if command=='>':
+					self.dcload.SetMode('cw')
+					self.dcload.SetCWPower(0)
+					self.dcload.loadFunc = powerStepLoad
 				if command[-1]=='W':
 					self.dcload.SetMode('cw')
 					self.dcload.SetCWPower(float(command[0:-1]))
@@ -82,6 +86,7 @@ class MainManager():
 					self.dcload.SetCCCurrent(float(command[0:-1]))
 					self.dcload.loadFunc = doNothing
 			except:
+				traceback.print_exc()
 				pass
 			command = input('')
 		self.running = False
@@ -106,12 +111,12 @@ class MainManager():
 			return
 		while(self.running):
 			try:
-				if (self.dcload.mostRecentData[1]<1 and self.dcload.mostRecentData[2]>3): # dc load needs to be reset
+				if (self.dcload.mostRecentData[0]<1 and self.dcload.mostRecentData[1]>3): # dc load needs to be reset
 					self.dcload.SetMode('cw')
 					self.dcload.SetCWPower(0)
 					timeToReset = time.time()+.25
 				if time.time()>timeToReset:
-					if not (self.dcload.mostRecentData[2]<1 and self.dcload.mostRecentData[3]>3):
+					if not (self.dcload.mostRecentData[0]<1 and self.dcload.mostRecentData[1]>3):
 						self.dcload.SetMode('cw')
 						self.dcload.SetCWPower(self.setPower)
 						timeToReset = time.time()+999999999999
@@ -181,6 +186,10 @@ def scanForComm(goodPorts,name):
 			goodPorts.remove(port)
 			return comm
 	return None
+
+def powerStepLoad(t,dcload):
+	if (t%15 < 0.2):
+		dcload.SetCWPower(int((t%150)/3))
 
 def main():
 	comms = checkUSBnames()

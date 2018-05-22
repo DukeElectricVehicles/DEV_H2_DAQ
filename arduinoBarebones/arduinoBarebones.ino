@@ -12,38 +12,26 @@ uint32_t startTime;
 double fanSpeed = 0.4;
 
 
-uint32_t SC_Intervals[32] = {10,10,10,30,30,30,30,30,
-                             10,10,10,30,30,30,30,30,
-                             10,10,10,30,30,30,30,30,
-                             10,10,10,30,30,30,30,30};
-const uint32_t SC_Durations[32] = {100,100,100,
-                                   25,25,25,25,25,
-                                   100,100,100,
-                                   50,50,50,50,50,
-                                   100,100,100,
-                                   100,100,100,100,100,
-                                   100,100,100,
-                                   200,200,200,200,200};
-uint8_t SC_ind = 0;
-uint32_t Purge_Intervals[16] = {10,10,10,150,
-                                10,10,10,150,
-                                10,10,10,150,
-                                10,10,10,150};
-const uint32_t Purge_Durations[16] = {100,100,100,100,100,
-                                      100,100,100,100,100,
-                                      100,100,100,100,100,
-                                      100};
+uint32_t Short_Intervals[12] = {99999999,100,100,100,100,100,
+                                99999999,100,100,100,100,100};
+const uint32_t Short_Durations[12] = {20,20,20,20,20,20,
+                                      20,20,20,20,20,20};
+uint8_t Short_ind = 0;
+uint32_t Purge_Intervals[12] = {99999999,0,0,300,0,0,
+                                300,0,0,300,0,0};
+const uint32_t Purge_Durations[12] = {175,175,175,175,175,175,
+                                      175,175,175,175,175,175};
 uint8_t Purge_ind = 0;
-uint32_t Reboot_Intervals[4] = {181,180,180,180};
+uint32_t Reboot_Intervals[1] = {999999999}; // 9342
 uint8_t Reboot_ind = 0;
 
-uint32_t SC_Interval = SC_Intervals[0]*1000;
-uint32_t SC_Duration = SC_Durations[0];
+uint32_t Short_Interval = Short_Intervals[0]*1000;
+uint32_t Short_Duration = Short_Durations[0];
 uint32_t Purge_Interval = Purge_Intervals[0]*1000;
 uint32_t Purge_Duration = Purge_Durations[0];
 uint32_t Reboot_Interval = Reboot_Intervals[0]*1000;
-Metro SC_IntervalTimer = Metro(SC_Interval);
-Metro SC_DurationTimer = Metro(SC_Duration);
+Metro Short_IntervalTimer = Metro(Short_Interval);
+Metro Short_DurationTimer = Metro(Short_Duration);
 Metro Purge_IntervalTimer = Metro(Purge_Interval);
 Metro Purge_DurationTimer = Metro(Purge_Duration);
 Metro Reboot_IntervalTimer = Metro(Reboot_Interval);
@@ -52,20 +40,20 @@ Metro watchdogTimer = Metro(10);
 //Metro printStatsTimer = Metro(10); // polling mode
 bool shorted, purged;
 
-const uint32_t SC_StartupIntervals[6] = {0, 616, 616, 616, 313, 313};
-const uint32_t SC_StartupDurations[6] = {50, 50, 50, 50, 100, 50};
-uint8_t SC_StartupIndex = 0;
+const uint32_t Short_StartupIntervals[6] = {0, 616, 616, 616, 313, 313};
+const uint32_t Short_StartupDurations[6] = {50, 50, 50, 50, 100, 50};
+uint8_t Short_StartupIndex = 0;
 
 void setup() {
   kickDog();
 
-  for (int i = 0; i<(sizeof(SC_Intervals)/sizeof(uint32_t)); i++){
-    SC_Intervals[i] = SC_Intervals[i]*1000; // convert s to ms
+  for (uint8_t i = 0; i<(sizeof(Short_Intervals)/sizeof(uint32_t)); i++){
+    Short_Intervals[i] = Short_Intervals[i]*1000; // convert s to ms
   }
-  for (int i = 0; i<(sizeof(Purge_Intervals)/sizeof(uint32_t)); i++){
+  for (uint8_t i = 0; i<(sizeof(Purge_Intervals)/sizeof(uint32_t)); i++){
     Purge_Intervals[i] = Purge_Intervals[i]*1000; // convert s to ms
   }
-  for (int i = 0; i<(sizeof(Reboot_Intervals)/sizeof(uint32_t)); i++){
+  for (uint8_t i = 0; i<(sizeof(Reboot_Intervals)/sizeof(uint32_t)); i++){
     Reboot_Intervals[i] = Reboot_Intervals[i]*1000; // convert s to ms
   }
 
@@ -87,10 +75,10 @@ void setup() {
 }
 
 void loop() {
-  if (SC_IntervalTimer.check()){
+  if (Short_IntervalTimer.check()){
     SC();
   }
-  if (SC_DurationTimer.check()){
+  if (Short_DurationTimer.check()){
     digitalWrite(LFET,HIGH);
   }
   if (Purge_IntervalTimer.check()){
@@ -123,37 +111,51 @@ void bootup(){
   digitalWrite(PURGE,LOW);
   delay2(2000);
   
-  for(uint8_t ind = 0; ind<(sizeof(SC_StartupIntervals)/sizeof(double)); ind++){
-    delay2(SC_StartupIntervals[ind]);
+  for(uint8_t ind = 0; ind<(sizeof(Short_StartupIntervals)/sizeof(uint32_t)); ind++){
+    delay2(Short_StartupIntervals[ind]);
     digitalWrite(LFET,LOW);
-    delay2(SC_StartupDurations[ind]);
+    delay2(Short_StartupDurations[ind]);
     digitalWrite(LFET,HIGH);
   }
   analogWrite(FAN,HIGH);
   delay2(100);
   analogWrite(FAN,fanSpeed*256);
+
+  for (uint8_t ind = 0; ind<2; ind++){
+    Purge_IntervalTimer.reset();
+    Short_IntervalTimer.reset();
+    delay2(4900);
+    digitalWrite(PURGE,HIGH);
+    delay2(100);
+    digitalWrite(PURGE,LOW);
+    delay2(4900);
+    digitalWrite(LFET,LOW);
+    delay2(100);
+    digitalWrite(LFET,HIGH);
+    delay(100);
+  }
   
   Purge_IntervalTimer.reset();
-  delay2(5000);
-  SC_IntervalTimer.reset();
+//  delay2(5000);
+  Short_IntervalTimer.reset();
   kickDog();
   Reboot_IntervalTimer.reset();
 }
 void SC(){
   digitalWrite(LFET,LOW);
-  SC_Duration = SC_Durations[SC_ind];
-  SC_DurationTimer.interval(SC_Duration);
-  SC_DurationTimer.reset();
+  Short_Duration = Short_Durations[Short_ind];
+  Short_DurationTimer.interval(Short_Duration);
+  Short_DurationTimer.reset();
   shorted = true;
-  if (SC_ind<(sizeof(SC_Durations)/sizeof(uint32_t)-1)){
-    SC_ind++;
+  if (Short_ind<(sizeof(Short_Durations)/sizeof(uint32_t)-1)){
+    Short_ind++;
   }
   else{
-    SC_ind = 0;
+    Short_ind = 0;
   }
-  SC_Interval = SC_Intervals[SC_ind];
-  SC_IntervalTimer.interval(SC_Interval);
-  SC_IntervalTimer.reset();
+  Short_Interval = Short_Intervals[Short_ind];
+  Short_IntervalTimer.interval(Short_Interval);
+  Short_IntervalTimer.reset();
 }
 void purge(){
   digitalWrite(PURGE,HIGH);
@@ -192,7 +194,7 @@ double readTemp(){
 // serial commands
 void printStats(){
   char toPrint [100];
-  sprintf(toPrint,"%d\t%d\t%d\t",SC_Interval,SC_Duration,shorted);
+  sprintf(toPrint,"%d\t%d\t%d\t",Short_Interval,Short_Duration,shorted);
   Serial.print(toPrint);
   sprintf(toPrint,"%d\t%d\t%d\t",Purge_Interval,Purge_Duration,purged);
   Serial.print(toPrint);
@@ -231,7 +233,7 @@ void readSerial(){
         break;
       case 'r':
         digitalWrite(LFET,LOW);
-        SC_DurationTimer.reset();
+        Short_DurationTimer.reset();
         Serial.println("short circuit started");
         break;
       case 'q':
@@ -244,8 +246,8 @@ void readSerial(){
         resetSerialBuffer();
         break;
       case 'S':
-        SC_Interval = (int)atoi(buf);
-        SC_IntervalTimer.interval(SC_Interval);
+        Short_Interval = (int)atoi(buf);
+        Short_IntervalTimer.interval(Short_Interval);
         resetSerialBuffer();
         break;
       case 'P':
@@ -254,8 +256,8 @@ void readSerial(){
         resetSerialBuffer();
         break;
       case 's':
-        SC_Duration = (int)atoi(buf);
-        SC_DurationTimer.interval(SC_Duration);
+        Short_Duration = (int)atoi(buf);
+        Short_DurationTimer.interval(Short_Duration);
         resetSerialBuffer();
         break;
       case 'p':
@@ -273,7 +275,7 @@ void readSerial(){
   }
 }
 void resetSerialBuffer(){
-  for (int i=0;i<bufInd;i++){
+  for (uint8_t i=0;i<bufInd;i++){
     buf[i] = 0;
   }
   bufInd = 0;

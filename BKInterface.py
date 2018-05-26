@@ -78,15 +78,21 @@ class BKInterface(dcload.DCLoad,CommInterface):
 		test("\tturning load on",self.TurnLoadOn())
 		if (startT is None):
 			startT = time.time()
+		self.startT = startT
+		index = 0 # for the loadFunc function
 		while self.running:
 			try:
-				thisT = time.time()-startT
-				self.loadFunc(thisT,self)
-				while((time.time()-startT)-thisT<updateRate):
+				self.thisT = time.time()-self.startT
+				try:
+					index = self.loadFunc(self.thisT,self,index=index)
+				except TypeError as t:
+					self.loadFunc(self.thisT,self)
+
+				while((time.time()-self.startT)-self.thisT<updateRate):
 					dataStr,thisDat = self.GetInputValues()
 					self.mostRecentData = thisDat
-					self.log(time.time()-startT,dataStr)
-					self.allData.append([time.time()-startT]+thisDat)
+					self.log(time.time()-self.startT,dataStr)
+					self.allData.append([time.time()-self.startT]+thisDat)
 			except AssertionError as e:
 				print(e)
 			except Exception as e:

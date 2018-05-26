@@ -10,6 +10,7 @@ Modified:			May 11, 2018
 import threading
 import numpy as np
 from scipy.io import savemat
+import time
 
 class CommInterface():
 
@@ -53,7 +54,12 @@ class CommInterface():
 		# self.ser.close()
 	def save(self):
 		savemat('data/'+self.saveName,{'data':self.allData})
-
+	def resetData(self,startT = None):
+		if startT is None:
+			startT = time.time()
+		self.allData = []
+		self.startT = startT
+		self.thisT = 0
 	def log(self,time,text):
 		if (time==-1):
 			self.dataFile.write(text)

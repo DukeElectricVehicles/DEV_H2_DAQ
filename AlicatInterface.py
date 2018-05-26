@@ -33,6 +33,7 @@ class AlicatInterface(CommInterface):
 		self.mostRecentData = datVec;
 		self.running = False;
 		self.ID = 'A'
+		self.hasTot = False;
 
 	def checkValidSerial(self):
 		assert(not self.running)
@@ -58,19 +59,21 @@ class AlicatInterface(CommInterface):
 		self.flushSerial()
 		if (startT is None):
 			startT = time.time()
+		self.startT = startT
 		countE = 0
 		while self.running:
 			try:
 				self.poll()
 				tmp = self.readLineData();
 				# print(tmp)
-				if ((len(tmp)==6) or (len(tmp)==11) or (len(tmp)>=12)):
+				if ((len(tmp)==6) or (len(tmp)==11 and (not self.hasTot)) or (len(tmp)>=12)):
 					data = [float(d) for d in tmp[1:5]]
 					if (tmp[-1]=='TMF' or len(tmp)==12): # new alicat with totalizer
+						self.hasTot = True
 						data.append(float(tmp[5]))
 					self.mostRecentData = data
-					self.log((time.time()-startT),self.stringifyData(data))
-					self.allData.append([time.time()-startT]+data)
+					self.log((time.time()-self.startT),self.stringifyData(data))
+					self.allData.append([time.time()-self.startT]+data)
 					countE = 0
 				else:
 					countE += 1

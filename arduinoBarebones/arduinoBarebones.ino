@@ -9,15 +9,15 @@
 #define TEMP A9
 
 uint32_t startTime;
-double fanSpeed = 0.4;
+double fanSpeed = 0.3;
 
 
-uint32_t Short_Intervals[12] = {99999999,100,100,100,100,100,
-                                99999999,100,100,100,100,100};
+uint32_t Short_Intervals[12] = {100,100,100,100,100,100,
+                                100,100,100,100,100,100};
 const uint32_t Short_Durations[12] = {20,20,20,20,20,20,
                                       20,20,20,20,20,20};
 uint8_t Short_ind = 0;
-uint32_t Purge_Intervals[12] = {99999999,0,0,300,0,0,
+uint32_t Purge_Intervals[12] = {300,0,0,300,0,0,
                                 300,0,0,300,0,0};
 const uint32_t Purge_Durations[12] = {175,175,175,175,175,175,
                                       175,175,175,175,175,175};
@@ -132,7 +132,7 @@ void bootup(){
     digitalWrite(LFET,LOW);
     delay2(100);
     digitalWrite(LFET,HIGH);
-    delay(100);
+    delay2(100);
   }
   
   Purge_IntervalTimer.reset();

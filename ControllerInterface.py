@@ -1,6 +1,6 @@
 '''
-Name:               AlicatInterface.py
-Description:      	Alicat communication class
+Name:               ControllerInterface.py
+Description:      	Controller communication class
 Author:             Gerry Chen
 Created:            May 10, 2018
 Modified:           May 13, 2018
@@ -17,6 +17,7 @@ import time
 from CommInterface import CommInterface
 import numpy as np
 
+# warning: this was pretty much copy/pasted from AlicatInterface.py and has not been tested
 class ControllerInterface(CommInterface):
 	def __init__(self,port = '/dev/tty.usbmodem',baudrate = 115200):
 		CommInterface.__init__(self, logfileName='controller')

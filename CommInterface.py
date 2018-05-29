@@ -12,8 +12,10 @@ import numpy as np
 from scipy.io import savemat
 import time
 
+'''
+	CommInterface abstract class provides some useful functions that are the same amongst serial devices
+'''
 class CommInterface():
-
 	def __init__(self,logfileName = ''):
 		if logfileName=='':
 			logfileName = type(self).__name__
@@ -24,6 +26,7 @@ class CommInterface():
 		raise NotImplementedError()
 	def checkValidSerial(self):
 		raise NotImplementedError()
+	# start a thread running "run()"
 	def start(self, attempt=0, startT=None):
 		try:
 			if (attempt==0):
@@ -36,6 +39,7 @@ class CommInterface():
 				print("Attempting to connect again in 3 seconds...")
 				t = threading.Timer(3,self.start,kwargs={'attempt':attempt+1})
 				t.start()
+	# stops running thread
 	def stop(self):
 		self.running = False
 		for i in range(3):
@@ -52,14 +56,17 @@ class CommInterface():
 				print('error terminating process',type(self).__name__)
 				print(e)
 		# self.ser.close()
+	# save to a matlab file (not used)
 	def save(self):
 		savemat('data/'+self.saveName,{'data':self.allData})
+	# clear all data
 	def resetData(self,startT = None):
 		if startT is None:
 			startT = time.time()
 		self.allData = []
 		self.startT = startT
 		self.thisT = 0
+	# print to a log file
 	def log(self,time,text):
 		if (time==-1):
 			self.dataFile.write(text)

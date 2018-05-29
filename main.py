@@ -3,7 +3,7 @@ Name:					main.py
 Description:	main script for DEV's H2 FC efficiency characterization
 Author:  			Gerry Chen
 Created: 			May 10, 2018
-Modified:			May 11, 2018
+Modified:			May 24, 2018
 
 '''
 
@@ -19,6 +19,9 @@ from scipy.io import savemat, loadmat
 import traceback
 from functools import partial
 
+'''
+MainManager - this class continuously runs and holds onto serial interface objects
+'''
 class MainManager():
 	def __init__(self, dcload, alicat, controller):
 		self.dcload = dcload
@@ -54,7 +57,8 @@ class MainManager():
 		if self.controller is not None:
 			self.controller.stop()
 
-	def checkInputs(self): # blocking
+	# Checks for keyboard command inputs into command line
+	def checkInputs(self): # blocking (run as thread)
 		command = ' '
 		print('starting input checking')
 		def doNothing(t,dcload):
@@ -62,26 +66,31 @@ class MainManager():
 		self.setPower = 0
 		while command!='q':
 			print(command)
-			if command=='q':
+			if command=='q': # quit command - manual if statement is a safety measure
 				break
 			try:
+				# begin hard-coded simulated step load
 				if command=='b':
 					self.dcload.SetMode('cv')
 					self.dcload.SetCVVoltage(0)
 					self.dcload.loadFunc = simStepLoad
 					print('registered sim command')
+				# run simulation profile from matlab file
 				if command=='matlab':
 					self.startT = time.time()
 					self.clearAllData()
-					Ts,Vs,Is,Ps = importMatlabCurve('simulationProfiles/Galot_basic2_noisy.mat')
+					Ts,Vs,Is,Ps = importMatlabCurve('simulationProfiles/Galot_basic2_noisy.mat') # change matlab filename here
 					self.dcload.loadFunc = partial(simStepData,Ts=Ts,Vs=Vs,Is=Is,Ps=Ps)
 					print('registered matlab simulation command')
+				# manually save (automatically saves on program exit, but may want to see data partway through a test)
 				if command=='s':
 					self.saveAll()
+				# gradually ramp up power
 				if command=='>':
 					self.dcload.SetMode('cw')
 					self.dcload.SetCWPower(0)
 					self.dcload.loadFunc = powerStepLoad
+				# constant power/voltage/current
 				if command[-1]=='W':
 					self.dcload.SetMode('cw')
 					self.dcload.SetCWPower(float(command[0:-1]))
@@ -103,7 +112,8 @@ class MainManager():
 		self.running = False
 		print('Q PRESSED')
 
-	def run(self):
+	# just prints out summary info (i.e. efficiency) - not a critical function
+	def run(self): # blocking (run as thread)
 		avgTime = 10
 		deltaT = 0.1
 		numInds = int(avgTime/deltaT)
@@ -161,6 +171,9 @@ class MainManager():
 				# traceback.print_exc()
 				pass
 
+# identifies USB ports to find DCload, alicat, and controller
+# note: this should really be made a part of the MainManager class but I never got around to re-organizing
+# returns: dict of interface types and Serial object corresponding
 def checkUSBnames():
 	print('Identifying serial ports...')
 	goodPorts = []
@@ -185,6 +198,7 @@ def checkUSBnames():
 	print('Finished identifying serial ports')
 	return toRet
 
+# scans/identifies 1 serial device
 def scanForComm(goodPorts,name):
 	info = {'alicat':[AlicatInterface,'Alicat flowmeter'],
 					'Controller':[ControllerInterface,'FC Controller'],
@@ -200,10 +214,8 @@ def scanForComm(goodPorts,name):
 			return comm
 	return None
 
-def powerStepLoad(t,dcload):
-	if (t%20 < 0.2):
-		dcload.SetCWPower(int((t%160)/3))
-
+# here begins the miscellaneous useful dcload simulation functions
+# they should probably be in the "BKInterface" file, but I couldn't get them to get imported properly there
 tSim = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
 	51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
 	101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
@@ -213,11 +225,15 @@ tSim = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1
 	])
 vSim = np.array([16.48, 16.45, 16.42, 16.40, 16.37, 16.34, 16.31, 16.29, 16.26, 16.23, 16.21, 16.18, 16.15, 16.13, 16.10, 16.07, 16.05, 16.02, 16.00, 15.97, 15.95, 15.92, 15.90, 15.87, 15.85, 15.82, 15.80, 15.77, 15.75, 15.73, 15.70, 15.68, 15.65, 15.63, 15.61, 15.58, 15.56, 15.54, 15.52, 15.49, 15.47, 15.45, 15.43, 15.40, 15.38, 15.36, 15.34, 15.32, 15.30, 15.27, 15.25, 15.23, 15.21, 15.19, 15.17, 15.15, 15.13, 15.11, 15.09, 15.07, 15.05, 15.03, 15.01, 14.99, 14.97, 14.95, 14.93, 14.91, 14.89, 14.88, 14.87, 14.87, 14.87, 14.88, 14.90, 14.91, 14.93, 14.94, 14.96, 14.97, 14.99, 15.00, 15.01, 15.03, 15.04, 15.05, 15.07, 15.08, 15.09, 15.11, 15.12, 15.13, 15.14, 15.16, 15.17, 15.18, 15.19, 15.21, 15.22, 15.23, 15.24, 15.25, 15.27, 15.28, 15.29, 15.30, 15.31, 15.32, 15.33, 15.34, 15.36, 15.37, 15.38, 15.39, 15.40, 15.41, 15.42, 15.43, 15.44, 15.45, 15.46, 15.47, 15.48, 15.49, 15.50, 15.51, 15.52, 15.53, 15.54, 15.55, 15.56, 15.56, 15.57, 15.58, 15.59, 15.60, 15.61, 15.62, 15.63, 15.64, 15.64, 15.65, 15.66, 15.67, 15.68, 15.69, 15.69, 15.70, 15.71, 15.72, 15.73, 15.73, 15.74, 15.75, 15.76, 15.76, 15.77, 15.78, 15.79, 15.79, 15.80, 15.81, 15.82, 15.82, 15.83, 15.84, 15.84, 15.85, 15.86, 15.86, 15.87, 15.88, 15.88, 15.89, 15.90, 15.90, 15.91, 15.92, 15.92, 15.93, 15.94, 15.94, 15.95, 15.95, 15.96, 15.97, 15.97, 15.98, 15.98, 15.99, 16.00, 16.00, 16.01, 16.01, 16.02, 16.02, 16.03, 16.04, 16.04, 16.05, 16.05, 16.06, 16.06, 16.07, 16.07, 16.08, 16.08, 16.09, 16.09, 16.10, 16.10, 16.11, 16.11, 16.12, 16.12, 16.13, 16.13, 16.14, 16.14, 16.15, 16.15, 16.16, 16.16, 16.17, 16.17, 16.17, 16.18, 16.18, 16.19, 16.19, 16.20, 16.20, 16.20, 16.21, 16.21, 16.22, 16.22, 16.23, 16.23, 16.23, 16.24, 16.24, 16.25, 16.25, 16.25, 16.26, 16.26, 16.26, 16.27, 16.27, 16.28, 16.28, 16.28, 16.29, 16.29, 16.29, 16.30, 16.30, 16.30, 16.31, 16.31, 16.31, 16.32, 16.32, 16.32, 16.33, 16.33, 16.33, 16.34, 16.34, 16.34, 16.35, 16.35, 16.35, 16.36, 16.36, 16.36, 16.37, 16.37, 16.37, 16.38, 16.38, 16.38, 16.38, 16.39, 16.39, 16.39, 16.40, 16.40, 16.40, 16.40, 16.41, 16.41, 16.41, 16.41, 16.42, 16.42, 16.42, 16.43, 16.43, 16.43
 	])
-
+def powerStepLoad(t,dcload):
+	if (t%20 < 0.2):
+		dcload.SetCWPower(int((t%160)/3))
 def simStepLoad(t,dcload):
 	if (t%1 < 0.1):
 		print('simStepLoad:',vSim[int(t%300)])
 		dcload.SetCVVoltage(vSim[int(t%300)])
+# simStepData: runs simulation from list of Ts and Vs
+#		select the variable to step by only giving the kw-arg corresponding
 def simStepData(t,dcload,index=0,Ts=[],Vs=[],Is=[],Ps=[]):
 	# define what to send to BK
 	if (len(Vs)>0):
@@ -238,13 +254,13 @@ def simStepData(t,dcload,index=0,Ts=[],Vs=[],Is=[],Ps=[]):
 	else:
 		print('invalid sim data - doing nothing')
 		return 0
-
 	# print(index,(t%Ts[-1]),Ts[index])
 	if ((t%Ts[-1])>Ts[index] and (t%Ts[-1]<Ts[(index+1)%len(Ts)])):
 		sendCom(index)
 		return (index+1)%(len(Ts)-1) # don't do the last one
 	else:
 		return index
+# import matlab list for use in simStepData()
 def importMatlabCurve(filename):
 	data = loadmat(filename)
 	tRet = []
@@ -272,26 +288,27 @@ def importMatlabCurve(filename):
 		tRet = np.array(range(max(len(VRet),len(IRet),len(PRet))))
 	return tRet,VRet,IRet,PRet
 
+# main function
 def main():
 	comms = checkUSBnames()
 	dcload = comms['BK'] if comms['BK'] is not None else None
 	alicat = comms['alicat'] if comms['alicat'] is not None else None
 	controller = comms['Controller'] if comms['Controller'] is not None else None
 	mainP = MainManager(dcload,alicat,controller)
-	mainP.startAll()
+	mainP.startAll() # starts serial interface threads
 	time.sleep(1)
+	# start mainManager's threads
 	threading.Thread(target=mainP.run).start()
 	usrThread = threading.Thread(target=mainP.checkInputs)
 	usrThread.start()
-	usrThread.join()
+	usrThread.join() # exits when 'Q' is pressed
 	mainP.saveAll()
 	mainP.stopAll()
 
 if __name__ == '__main__':
 	with open('log.txt', 'wb') as outf:
-		# os.dup2(inf.fileno(), 0)
-	  os.dup2(outf.fileno(), 1)
-	  # os.dup2(outf.fileno(), 2)
+	  os.dup2(outf.fileno(), 1) # writes stdout to 'log.txt'
+	  # (and keeps calling terminal window clean for keyboard commands)
 	main()
 	print('finished - exiting')
 	exit(0)
